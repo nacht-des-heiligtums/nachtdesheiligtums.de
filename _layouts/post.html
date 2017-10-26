@@ -1,0 +1,31 @@
+---
+layout: default
+---
+<article class="article article--post" itemscope itemtype="http://schema.org/Article">
+  {% assign img_url = page.image.cover | replace: '{{ site.baseurl }}', site.baseurl %}
+  {% if page.image.cover %}<meta itemprop="image" content="{{ img_url }}" />{% endif %}
+
+  <header class="article__header">
+    <hgroup>
+      <h1 class="article__title" itemprop="headline name">{{ page.title }}</h1>
+      {% if page.tagline %}
+      <h3 class="article__tagline" itemprop="alternativeHeadline">{{ page.tagline }}</h3>
+      {% endif %}
+    </hgroup>
+
+    <div class="article__meta">
+      <time datetime="{{ page.date | date_to_xmlschema }}" class="article__date" itemprop="datePublished">{{ page.date | localize: '%e. %B %Y' }}</time>
+      {% if page.author %}<span class="article__author" itemprop="author">{{ page.author }}</span>{% endif %}
+
+      {% include metadata/publisher.html %}
+    </div>
+  </header>
+
+  <div class="content" itemprop="text">
+    {{ content }}
+  </div>
+</article>
+
+{% include post/pagination.html %}
+
+{% include post/related_posts.html %}

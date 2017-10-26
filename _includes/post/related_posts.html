@@ -1,0 +1,15 @@
+{% if site.related_posts %}
+<aside class="related-posts">
+  <h3>Ähnliche Artikel</h3>
+  <ol class="related-posts__list">
+  {% for relpost in site.related_posts %}
+    <li class="postref">
+      <a href="{{ site.baseurl }}{{ relpost.url }}" title="{{ relpost.excerpt | strip_html | strip_newlines | truncatewords: 20 }}">
+        <span class="postref__title">{{ relpost.title }}</span>
+        <time class="postref__date" datetime="{{ relpost.date | date_to_xmlschema }}">{{ relpost.date | localize: '%e. %B %Y' }}</time>
+      </a>
+    </li>
+  {% endfor %}
+  </ol>
+</aside>
+{% endif %}

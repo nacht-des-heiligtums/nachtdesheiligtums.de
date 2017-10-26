@@ -1,0 +1,44 @@
+{% assign collections = site.collections | where_exp:'collection','collection.output != false' %}
+{% for collection in collections %}
+  <h3>{{ collection.label }}</h3>
+  <ul>
+  {% assign docs = collection.docs | where_exp:'doc','doc.sitemap != false' %}
+  {% for doc in docs %}
+    <li>
+      <a href="{{ doc.url | replace:'/index.html','/' | absolute_url }}">
+        {{ doc.title }}
+      {% if doc.last_modified_at or doc.date %}
+        ({{ doc.last_modified_at | default: doc.date | localize: '%e. %B %Y' }})
+      {% endif %}
+      </a>
+    </li>
+  {% endfor %}
+  </ul>
+{% endfor %}
+
+{% assign pages = site.html_pages | where_exp:'doc','doc.sitemap != false' | where_exp: 'doc','doc.sitemap.exclude != true' %}
+<h3>Seiten</h3>
+<ul>
+{% for page in pages %}
+  <li>
+    <a href="{{ page.url | replace:'/index.html','/' | absolute_url }}">
+      {{ page.title }}
+    {% if page.last_modified_at %}
+      ({{ page.last_modified_at | localize: '%e. %B %Y' }})
+    {% endif %}
+    </a>
+  </li>
+{% endfor %}
+</ul>
+
+<ul>
+{% for file in page.static_files %}
+  <li>
+    <a href="{{ file.path | absolute_url }}">
+      {{ file.title }}
+     ({{ file.modified_time | date_to_xmlschema }})
+      }
+    </a>
+  </li>
+{% endfor %}
+</ul>

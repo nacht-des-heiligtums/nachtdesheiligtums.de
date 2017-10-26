@@ -1,0 +1,11 @@
+<footer class="footer">
+  <div class="container">
+    {% include layout/social-links.html %}
+  </div>
+
+  <div class="container">
+    <p class="content">
+      © {{ site.time | date: '%Y' }} {{ site.copyright | default: site.title }} · <a href="{{ site.baseurl }}/impressum">Impressum</a> · <a href="{{ site.baseurl }}/datenschutz">Datenschutz</a> · <a href="mailto:{{ site.email }}">{{ site.email }}</a>
+    </p>
+  </div>
+</footer>

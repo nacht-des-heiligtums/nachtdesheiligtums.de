@@ -1,0 +1,30 @@
+{% if site.facebook.publisher %}
+<a href="{{ site.facebook.publisher }}" title="Folge {{ site.facebook.title | default: site.title }} auf Facebook">
+  <svg width="50" height="50" class="social-icon"><use class="icon" xlink:href="#icon-facebook" /></svg>
+  <span class="icon-label">Facebook</span>
+</a>
+{% endif %}
+{% if site.twitter.username %}
+<a href="https://twitter.com/{{ site.twitter.username }}" title="Folge @{{ site.twitter.username }} auf Twitter">
+  <svg width="50" height="50" class="social-icon"><use class="icon" xlink:href="#icon-twitter" /></svg>
+  <span class="icon-label">Twitter</span>
+</a>
+{% endif %}
+{% if site.instagram.username %}
+<a href="https://instagram.com/{{ site.instagram.username }}" title="Folge @{{ site.instagram.username }} auf Instagram">
+  <svg width="50" height="50" class="social-icon"><use class="icon" xlink:href="#icon-instagram" /></svg>
+  <span class="icon-label">Instagram</span>
+</a>
+{% endif %}
+<a href="{{ site.baseurl }}/sitemap" title="Sitemap für {{ site.url | default: site.title }}">
+  <svg width="50" height="50" class="social-icon"><use class="icon" xlink:href="#icon-sitemap" /></svg>
+  <span class="icon-label">Sitemap</span>
+</a>
+<a href="{{ '/feed.xml' | absolute_url }}" title="RSS-Feed für {{ site.url | default: site.title }}">
+  <svg width="50" height="50" class="social-icon"><use class="icon" xlink:href="#icon-rss" /></svg>
+  <span class="icon-label">RSS-Feed</span>
+</a>
+<a href="mailto:{{ site.email }}" title="Schreib uns eine E-Mail">
+  <svg width="50" height="50" class="social-icon"><use class="icon" xlink:href="#icon-email" /></svg>
+  <span class="icon-label">E-Mail</span>
+</a>

@@ -1,0 +1,25 @@
+---
+layout: none
+---
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: 'en' }}">
+<head>
+  <!--[if IE]>
+  {% include layout/stylesheets.html %}
+  <![endif]-->
+  {% include layout/head.html %}
+</head>
+<body>
+  <!--[if !IE]> -->
+  {% include layout/stylesheets.html lazyload=true %}
+  <!-- <![endif]-->
+
+  {% include layout/header.html %}
+
+  {{ content }}
+
+  {% include layout/footer.html %}
+  {% include icons/social-icons.svg %}
+  {% include layout/scripts.html %}
+</body>
+</html>

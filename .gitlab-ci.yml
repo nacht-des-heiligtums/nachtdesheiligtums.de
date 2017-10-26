@@ -1,0 +1,61 @@
+image: ruby:2.4
+stages:
+  - build
+  - test
+  - deploy
+
+cache:
+  key: "$CI_BUILD_REF_NAME/$CI_BUILD_NAME"
+  paths:
+    - vendor
+
+before_script:
+  - apt-get update >/dev/null
+  - apt-get install -y locales >/dev/null
+  - echo "de_DE UTF-8" > /etc/locale.gen
+  - locale-gen de_DE.UTF-8
+  - export LANG=de_DE.UTF-8
+  - export LANGUAGE=de_DE:de
+  - export LC_ALL=de_DE.UTF-8
+  - ruby -v
+  - which ruby
+  - gem install bundler --no-ri --no-rdoc
+
+jekyll_production:
+  stage: build
+  script:
+    - apt-get install -y libgsl0-dev
+    - bundle install --jobs $(nproc) --path vendor/ --without update_content
+    - bundle exec jekyll build -d public --lsi
+  artifacts:
+    expire_in: 1 month
+    paths:
+    - public
+  only:
+    - master
+
+pages: #Name required by Gitlab Pages!
+  stage: build
+  script:
+    - apt-get install -y libgsl0-dev
+    - bundle install --jobs $(nproc) --path vendor/ --without update_content
+    - bundle exec jekyll build -d public/$CI_BUILD_REF_NAME --baseurl /$CI_PROJECT_NAME/$CI_BUILD_REF_NAME --lsi
+  artifacts:
+    expire_in: 1 month
+    paths:
+    - public/$CI_BUILD_REF_NAME
+  dependencies:
+      - update_calendar
+  except:
+    - master # Master is already deployed to external hosting, don't necessarily need to host it on
+             # Gitlab Pages as well. Saves an additional job for master pipeline.
+
+link_checker:
+  image: debian:jessie
+  before_script:
+    - pip install linkchecker
+  stage: test
+  script:
+    - if [ "$CI_BUILD_REF_NAME" != "master" ]; then ln -s ../public public/$CI_PROJECT_NAME; export BASE_URL=$CI_PROJECT_NAME/$CI_BUILD_REF_NAME; fi
+    - scripts/linkchecker
+  allow_failure: true
