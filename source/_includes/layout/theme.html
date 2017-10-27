@@ -1,0 +1,23 @@
+<meta name="favicon" content="{{ site.baseurl }}/favicon.png" >
+<link rel="icon" type="image/png" href="{{ site.baseurl }}/favicon.png" >
+<link rel="icon" type="image/x-icon" href="{{ site.baseurl }}/favicon.ico" >
+
+{% if site.application_name %}
+<meta name="apple-mobile-web-app-title" content="{{ site.application_name }}" >
+<meta name="application-name" content="{{ site.application_name }}" >
+{% endif %}
+
+{% if site.appicons %}
+<link rel="apple-touch-icon" href="{{ site.baseurl }}/assets/appicons/apple-icon-200x200.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="{{ site.baseurl }}/assets/appicons/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="{{ site.baseurl }}/assets/appicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="{{ site.baseurl }}/assets/appicons/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="{{ site.baseurl }}/assets/appicons/favicon-16x16.png">
+<link rel="manifest" href="{{ site.baseurl }}/assets/appicons/manifest.webmanifest">
+<meta name="msapplication-TileImage" content="{{ site.baseurl }}/assets/appicons/ms-icon-144x144.png">
+{% endif %}
+
+{% if site.theme_color %}
+<meta name="msapplication-TileColor" content="{{ site.theme_color }}" >
+<meta name="theme-color" content="{{ site.theme_color }}">
+{% endif %}

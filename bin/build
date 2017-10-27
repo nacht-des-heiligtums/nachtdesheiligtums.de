@@ -1,0 +1,9 @@
+#! /usr/bin/env bash
+
+env=${1:-dev}
+if [ "$env" == "production" ]; then
+  config=""
+else
+  config=",_config.${env}.yml"
+fi
+bundle exec jekyll build --config "_config.yml${config}"

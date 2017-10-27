@@ -1,0 +1,22 @@
+---
+layout: none
+---
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.locale | slice: 0,2 | default: 'en' }}">
+<head>
+  {% include layout/head.html %}
+
+  <!--[if IE]>
+  {% include layout/stylesheets.html %}
+  <![endif]-->
+</head>
+<body>
+  <!--[if !IE]> -->
+  {% include layout/stylesheets.html lazyload=true %}
+  <!-- <![endif]-->
+
+  {{ content }}
+
+  {% include layout/scripts.html %}
+</body>
+</html>

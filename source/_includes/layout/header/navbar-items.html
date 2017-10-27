@@ -1,0 +1,16 @@
+
+        {% for item in include.items %}
+          {%- assign link = item[1] -%}
+          {%- if link.label %}
+            {%- if link.items %}
+              <div class="navbar-item has-dropdown  is-hoverable">
+                <a class="navbar-link" href="{{ link.url | rel_url_ng }}" title="{{ link.title | default: link.label }}">{{ link.label | escape }}</a>
+                <div class="navbar-dropdown">
+                  {% include layout/header/navbar-items.html items=link.items %}
+                </div>
+              </div>
+            {% else %}
+              <a class="navbar-item" href="{{ link.url | relative_url }}" title="{{ link.title | default: link.label }}">{{ link.label | escape }}</a>
+            {% endif -%}
+          {% endif -%}
+        {% endfor %}

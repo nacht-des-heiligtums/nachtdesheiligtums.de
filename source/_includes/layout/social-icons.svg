@@ -1,0 +1,7 @@
+<!-- icons based on https://codepen.io/ruandre/pen/howFi -->
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;" class="social-icons">
+{% include icon/email.xml %}
+{% include icon/facebook.xml %}
+{% include icon/rss.xml %}
+{% include icon/sitemap.xml %}
+</svg>

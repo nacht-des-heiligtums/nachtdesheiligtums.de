@@ -1,0 +1,36 @@
+---
+layout: base
+---
+<div class="section">
+  <article class="article container" itemscope itemtype="http://schema.org/Article">
+    <header class="page-header">
+      <hgroup>
+        <h1 class="title" itemprop="headline name">{{ page.title | markdownify | remove: '<p>' | remove: '</p>' }}</h1>
+        {% if page.tagline %}
+        <h3 class="tagline" itemprop="alternativeHeadline">{{ page.tagline | markdownify | remove: '<p>' | remove: '</p>' }}</h3>
+        {% endif %}
+      </hgroup>
+      <div class="page-meta">
+        {% assign page_date = page.date | default: page.last_modified_at %}
+        {% if page_date %}
+          <time datetime="{{ page_date | date_to_xmlschema }}" itemprop="datePublished">{{ page_date | localize: ':default' }}</time>
+        {% endif %}
+        {% if page.author %}<span class="author" itemprop="author">{{ page.author }}</span>{% endif %}
+        {% if page.read_time %}{% include post/read-time.html %}{% endif %}
+      </div>
+    </header>
+
+    <main class="page-main content" itemprop="text">
+    {{ content }}
+    </main>
+
+    <footer class="page-footer">
+    </footer>
+
+    {% include metadata/page.html %}
+  </article>
+</div>
+
+{% include post/pagination.html %}
+
+{% include post/related_posts.html %}

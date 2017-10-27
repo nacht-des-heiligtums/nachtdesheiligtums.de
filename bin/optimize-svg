@@ -1,0 +1,9 @@
+#! /usr/bin/env bash
+
+for file in `find _build -name \*.svg -type f`; do
+  echo -n "$file: "
+  orig_size=`stat --printf="%s" "$file"`
+  svgo "$file"
+  new_size=`stat --printf="%s" "$file"`
+  echo "$(numfmt --to=iec-i ${orig_size}) -> $(numfmt --to=iec-i ${new_size}) ($(echo \"scale=2; ${new_size} / ${orig_size}\" | bc))"
+done

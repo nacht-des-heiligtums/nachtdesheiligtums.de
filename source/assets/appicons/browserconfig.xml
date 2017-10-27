@@ -1,0 +1,6 @@
+---
+layout: null
+sitemap: false
+---
+<?xml version="1.0" encoding="utf-8"?>
+<browserconfig><msapplication><tile><square310x310logo src="{{ site.baseurl }}/assets/appicons/ms-icon-310x310.png"/><TileColor>{{ site.theme_color }}</TileColor></tile></msapplication></browserconfig>

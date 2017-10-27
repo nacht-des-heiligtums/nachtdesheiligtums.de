@@ -1,0 +1,14 @@
+{% assign words_per_minute = site.words_per_minute | default: 200 %}
+
+{% if post.read_time %}
+  {% assign words = post.content | strip_html | number_of_words %}
+{% elsif page.read_time %}
+  {% assign words = page.content | strip_html | number_of_words %}
+{% endif %}
+
+{% if words < words_per_minute %}
+  {{ "datetime.distance_in_words.less_than_x_minutes" | translate: count: 1 }}
+{% else %}
+  {% minutes = words | divided_by:words_per_minute %}
+  {{ "datetime.distance_in_words.x_minutes" | translate: count: minutes %}
+{% endif %}

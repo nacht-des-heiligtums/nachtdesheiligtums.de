@@ -1,0 +1,9 @@
+#! /usr/bin/env bash
+
+for file in `find _build -name \*.xml -type f`; do
+  echo "$file: "
+  orig_size=`stat --printf="%s" "$file"`
+  tidy -q -modify --input-xml true --output-xml true --wrap 0 "$file"
+  new_size=`stat --printf="%s" "$file"`
+  echo "${file}: $(numfmt --to=iec-i ${orig_size}) -> $(numfmt --to=iec-i ${new_size}) ($(echo "scale=0; ${new_size} * 100 / ${orig_size}" | bc)%)"
+done

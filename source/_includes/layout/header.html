@@ -1,0 +1,25 @@
+{% assign navbar_start_nav = site.data.nav.main  %}
+{% assign navbar_end_nav = site.data.nav.secondary %}
+
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="container">
+    <div class="navbar-brand">
+      <a class="navbar-item site-title" href="/">
+        {% include layout/header/navbar-brand.html %}
+      </a>
+      <button class="button navbar-burger" data-target="navMenu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div class="navbar-menu" id="navMenu">
+      <div class="navbar-start">
+        {% include layout/header/navbar-items.html items=navbar_start_nav %}
+      </div>
+      <div class="navbar-end">
+        {% include layout/header/navbar-items.html items=navbar_end_nav %}
+      </div>
+    </div>
+  </div>
+</nav>

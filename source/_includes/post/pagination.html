@@ -1,0 +1,21 @@
+{% if page.previous or page.next %}
+<aside class="paginator container">
+  {% if page.previous %}
+    <a href="{{ page.previous.url | relative_url }}" rel="prev" class="postref pagination--prev" title="{{ page.previous.excerpt | strip_html | strip_newlines | truncatewords: 20 }}">
+      <span class="postref__title">{{ page.previous.title }}</span>
+      <time class="postref__date" datetime="{{ page.previous.date | date_to_xmlschema }}">{{ page.previous.date | localize: '%e. %B %Y' }}</time>
+    </a>
+  {% else %}
+    <span class="pagination--prev pagination--empty" />
+  {% endif %}
+
+  {% if page.next %}
+    <a href="{{ page.next.url | relative_url }}" rel="next" class="postref pagination--next" title="{{ page.next.excerpt | strip_html | strip_newlines | truncatewords: 20 }}">
+      <span class="postref__title">{{ page.next.title }}</span>
+      <time class="postref__date" datetime="{{ page.next.date | date_to_xmlschema }}">{{ page.next.date | localize: '%e. %B %Y' }}</time>
+    </a>
+  {% else %}
+    <span class="pagination--next pagination--empty" />
+  {% endif %}
+</aside>
+{% endif %}

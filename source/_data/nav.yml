@@ -1,0 +1,37 @@
+main:
+  home:
+    label: Homepage
+    url: /
+  artikel:
+    label: Artikel
+    url: /artikel/
+  about:
+    label: About
+    url: /about/
+  external:
+    label: External
+    title: Open external link
+    url: http://jekyllrb.com
+  # Example:
+  # smj-fulda:
+  #   label: SMJ-Fulda
+  #   url: /die-smj-fulda/
+  #   items:
+  #     zentrum:
+  #       label: Zentrum
+  #       url: /zentrum/
+  #     geschichte:
+  #       label: Geschichte
+  #       url: /geschichte/
+  #     säulen:
+  #       label: 5 Säulen
+  #       url: /s%C3%A4ulen/
+  #     jahresparole:
+  #       label: Jahresparole
+  #       url: /jahresparole/
+  #     schönstatt:
+  #       label: Schönstatt
+  #       url: /schönstatt/
+
+
+

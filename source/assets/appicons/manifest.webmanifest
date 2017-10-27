@@ -1,0 +1,15 @@
+---
+layout: null
+sitemap: false
+---
+{
+ "name": "{{ site.title }}",
+ "icons": [
+  {
+   "src": "{{ site.baseurl | replace: '/', '\/' }}\/assets\/appicons\/android-icon-192x192.png",
+   "sizes": "192x192",
+   "type": "image\/png",
+   "density": "4.0"
+  }
+ ]
+}
