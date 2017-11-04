@@ -1,0 +1,36 @@
+---
+sitemap: false
+---
+backend:
+  name: {{ backend.name }}
+  repo: {{ backend.repo }} # Path to your Github repository
+  branch: {{ backend.branch | default: "master" }} # Branch to update (master by default)
+
+media_folder: "assets/uploads" # Folder where user uploaded files should go
+public_folder: "assets/uploads"
+
+collections: # A list of collections the CMS should be able to edit
+  - name: "post" # Used in routes, ie.: /admin/collections/:slug/edit
+    label: "Artikel" # Used in the UI, ie.: "New Post"
+    folder: "_posts" # The path to the folder where the documents are stored
+    sort: "date:desc" # Default is Titel:asc
+    create: true # Allow users to create new documents in this collection
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields: # The fields each document in this collection have
+      - {label: "Layout", name: "layout", widget: "hidden", default: "post"}
+      - {label: "Titel", name: "title", widget: "string", tagname: "h1"}
+      - {label: "Tagline", name: "tagline", widget: "string", tagname: "h2", required: false}
+      - {label: "Author", name: "author", width: "string"}
+      - {label: "Vorschautext", name: "excerpt", widget: "markdown", required: false}
+      - {label: "Bild", name: "image", widget: "object", fields: [
+          - {label: "Cover", name: "cover", widget: "image" }
+        ]}
+      - {label: "Body", name: "body", widget: "markdown"}
+      - {label: "Tags", name: "tags", widget: "list"}
+    meta: # Meta data fields. Just like fields, but without any preview element
+      - {label: "Veröffentlichungsdatum", name: "date", widget: "datetime", format: "YYYY-MM-DD hh:mm:ss"}
+
+  - name: "page"
+    label: "Seiten"
+    sort: "slug"
+    files:
