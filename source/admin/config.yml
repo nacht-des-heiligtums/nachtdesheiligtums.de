@@ -2,17 +2,17 @@
 sitemap: false
 ---
 backend:
-  name: {{ backend.name }}
-  repo: {{ backend.repo }} # Path to your Github repository
-  branch: {{ backend.branch | default: "master" }} # Branch to update (master by default)
+  name: "{{ site.backend.name }}"
+  repo: "{{ site.backend.repo }}" # Path to your Github repository
+  branch: "{{ site.backend.branch | default: 'master' }}" # Branch to update (master by default)
 
-media_folder: "assets/uploads" # Folder where user uploaded files should go
+media_folder: "source/assets/uploads" # Folder where user uploaded files should go
 public_folder: "assets/uploads"
 
 collections: # A list of collections the CMS should be able to edit
   - name: "post" # Used in routes, ie.: /admin/collections/:slug/edit
     label: "Artikel" # Used in the UI, ie.: "New Post"
-    folder: "_posts" # The path to the folder where the documents are stored
+    folder: "source/_posts" # The path to the folder where the documents are stored
     sort: "date:desc" # Default is Titel:asc
     create: true # Allow users to create new documents in this collection
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"

@@ -32,6 +32,7 @@ timezone: Europe/Berlin
 backend:
   name: github
   repo:
+identity_provider: netlify
 
 # Build settings
 markdown: kramdown
