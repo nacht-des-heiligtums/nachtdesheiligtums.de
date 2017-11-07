@@ -1,4 +1,14 @@
-# Welcome to Jekyll!
+################################################################
+# This is the PRODUCTION config file.
+#
+# Run this command when ready to deploy/upload to your server:
+# `jekyll build`
+#
+# This file is *NOT* rebuilt automatically.
+# If you change this file, please restart the server process
+###############################################################
+#
+# Welcome to Jekyll+Rohbau!
 #
 # This config file is meant for settings that affect your whole blog, values
 # which you are expected to set up once and rarely edit after that. If you find
@@ -20,7 +30,7 @@
 title: Statik-Rohbau
 email: hallo@example.com
 description: >-
-  Statik-Rohbau is a starting pack for static websites with some sane but opinionated defaults.
+  Rohbau is a starting pack for static websites with some sane but opinionated defaults.
   It is based on Jekyll, Bulma CSS and Netlify CMS.
 tagline: Verbum domini manet in eternum.
 baseurl: "" # the subpath of your site, e.g. /blog

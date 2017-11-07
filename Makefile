@@ -6,13 +6,18 @@ export ENV
 build:
 	bin/build $(ENV)
 
+.PHONY: serve
+serve:
+	bin/serve $(ENV)
+
+
 $(BUILD_DIR): $(BUILD_DIR)/index.html
 
 $(BUILD_DIR)/index.html:
 	$(MAKE) build
 
 .PHONY: validate
-validate: optimize linkchecker
+validate: linkchecker
 
 .PHONY: linkchecker
 linkchecker: $(BUILD_DIR)
