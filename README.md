@@ -1,3 +1,7 @@
+# Nacht des Heiligtums
+
+Static side generator source for public website [nachtdesheiligtums.de](http://nachtdesheiligtums.de) (in development).
+
 # Rohbau
 
 Rohbau is a starting pack for static websites with some sane, opinionated defaults.

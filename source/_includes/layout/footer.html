@@ -1,5 +1,27 @@
 <footer class="footer">
   <div class="container">
+    {% for nav in site.data.nav %}
+    <div class="footer-nav">
+      <strong>{{ nav.label }}</strong>
+      <ul>
+      {% for item in nav.items %}
+        <li><a href="{{ item.url }}" title="{{ item.title }}">{{ item.label }}</a></li>
+      {% endfor %}
+      </ul>
+    </div>
+    {% endfor %}
+
+    <div class="footer-nav">
+      <strong>Rückblick</strong>
+      <ul>
+      {% for ndh in site.ndhs %}
+        <li><a href="{{ ndh.url }}" title="Nacht des Heiligtums {{ ndh.slug }}">{{ ndh.slug }}</a></li>
+      {% endfor %}
+      </ul>
+    </div>
+  </div>
+
+  <div class="container">
     {% include layout/social-links.html %}
   </div>
 

@@ -1,37 +1,23 @@
 main:
-  home:
-    label: Homepage
-    url: /
-  artikel:
-    label: Artikel
-    url: /artikel/
   about:
-    label: About
-    url: /about/
-  external:
-    label: External
-    title: Open external link
-    url: http://jekyllrb.com
-  # Example:
-  # smj-fulda:
-  #   label: SMJ-Fulda
-  #   url: /die-smj-fulda/
-  #   items:
-  #     zentrum:
-  #       label: Zentrum
-  #       url: /zentrum/
-  #     geschichte:
-  #       label: Geschichte
-  #       url: /geschichte/
-  #     säulen:
-  #       label: 5 Säulen
-  #       url: /s%C3%A4ulen/
-  #     jahresparole:
-  #       label: Jahresparole
-  #       url: /jahresparole/
-  #     schönstatt:
-  #       label: Schönstatt
-  #       url: /schönstatt/
-
-
-
+    label: Über uns
+    items:
+      kernteam:
+        label: Kernteam
+        title: Kernteam
+        url: /kernteam
+      mitmachen:
+        label: Mitmachen
+        title: Mitmachen
+        url: /mitmachen
+  medien:
+    label: Medien
+    items:
+      foto-video:
+        label: Fotos & Videos
+        title: Fotos & Videos
+        url: /fotos-videos
+      zeitung:
+        label: "Zeitung: Night of the Shrine"
+        title: "Zeitung: Night of the Shrine"
+        url: /night-of-the-shrine

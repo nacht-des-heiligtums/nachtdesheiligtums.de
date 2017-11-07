@@ -1,15 +1,12 @@
 ---
-layout: page
+layout: base
 ---
-{% assign ndh = site.ndhs.last %}
-<div class="home">
-  <img src="{{ ndh.header_image }}" />
+<div class="event">
+  <img src="{{ page.header_image }}" />
 
   <div class="intro">
-    {{ page.intro.description | markdownify }}
+    {{ content | markdownify }}
   </div>
-
-  {{ ndh.datum }}
 
   <div class="blurbs">
     {% for blurb in page.intro.blurbs %}
@@ -22,19 +19,14 @@ layout: page
     {% endfor %}
   </div>
 
-  {{ content }}
-
-  {%- if page.quote %}
   <blockquote>
     {{ page.quote }}
   </blockquote>
-  {%- endif %}
 
   <ul class="post-list">
-    {% assign related_posts = site.posts | where: "ndh", ndh.slug %}
-    {% for post in related_posts %}
+    {% for post in site.posts | where: "event", page.slug %}
       <li>
-        <span class="post-meta">{{ post.date | localize: ":long" }}</span>
+        <span class="post-meta">{{ post.date | date: ":long" }}</span>
 
         <strong>
           <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>

@@ -27,11 +27,10 @@
 # you will see  them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Statik-Rohbau
-email: hallo@example.com
+title: Nacht des Heiligtums
+email: hallo@nacht-des-heiligtums.de
 description: >-
-  Rohbau is a starting pack for static websites with some sane but opinionated defaults.
-  It is based on Jekyll, Bulma CSS and Netlify CMS.
+  Die Nacht des Heiligtums ist das Jugendfestival der Schönstattjugend in Deutschland.
 tagline: Verbum domini manet in eternum.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
@@ -41,7 +40,8 @@ timezone: Europe/Berlin
 
 backend:
   name: github
-  repo:
+  repo: nacht-des-heiligtums/nachtdesheiligtums.de
+
 identity_provider: netlify
 
 # Build settings
@@ -88,6 +88,11 @@ kramdown:
 sass:
   style: compressed
 
+collections:
+  ndhs:
+    output: true
+    permalink: /nacht:name
+
 defaults:
 - scope:
     path: ""
@@ -97,6 +102,11 @@ defaults:
     section: artikel
     permalink: "/artikel/:year-:month-:day-:slug/"
     read_time: false
+- scope:
+    path: ""
+    type: events
+  values:
+    layout: event
 
 # # Settings for _includes/head/theme.html:
 #

@@ -19,18 +19,27 @@ collections: # A list of collections the CMS should be able to edit
     fields: # The fields each document in this collection have
       - {label: "Layout", name: "layout", widget: "hidden", default: "post"}
       - {label: "Titel", name: "title", widget: "string", tagname: "h1"}
-      - {label: "Tagline", name: "tagline", widget: "string", tagname: "h2", required: false}
-      - {label: "Author", name: "author", width: "string"}
-      - {label: "Vorschautext", name: "excerpt", widget: "markdown", required: false}
-      - {label: "Bild", name: "image", widget: "object", fields: [
-          - {label: "Cover", name: "cover", widget: "image" }
-        ]}
+      - {label: "Autor", name: "author", widget: "string"}
       - {label: "Body", name: "body", widget: "markdown"}
-      - {label: "Tags", name: "tags", widget: "list"}
+      - {label: "Categories", name: "categories", widget: "string"}
     meta: # Meta data fields. Just like fields, but without any preview element
-      - {label: "Veröffentlichungsdatum", name: "date", widget: "datetime", format: "YYYY-MM-DD hh:mm:ss"}
+      - {label: "Publish Date", name: "date", widget: "datetime", format: "YYYY-MM-DD hh:mm:ss"}
 
-  - name: "page"
-    label: "Seiten"
+  - name: "event"
+    label: "Event"
+    folder: "source/_events"
     sort: "slug"
-    files:
+    create: true
+    fields:
+      - {label: "Titel", name: "title", widget: "string", tagname: "h1"}
+      - {label: Intro, name: intro, widget: object, fields: [
+          {label: Heading, name: heading, widget: string},
+          {label: Description, name: description, widget: text},
+          {label: Blurbs, name: blurbs, widget: list, fields: [
+            {label: Image, name: image, widget: image},
+            {label: Text, name: text, widget: text},
+            {label: URL, name: url, widget: string}
+          ]}
+        ]}
+      - {label: "Text", name: "body", widget: "markdown"}
+
