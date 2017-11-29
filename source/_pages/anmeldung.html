@@ -5,21 +5,62 @@ permalink: /anmeldung/
 ---
 <div class="container registration-form">
   <div class="box">
-    <div class="field"><div class="control"><input class="input" type="text" placeholder="Vorname"></div></div>
-    <div class="field"><div class="control"><input class="input" type="text" placeholder="Name"></div></div>
-    <div class="field"><div class="control"><input class="input" type="text" placeholder="Straße / Hausnummer"></div></div>
-    <div class="field"><div class="control"><input class="input" type="number" placeholder="PLZ"></div></div>
-    <div class="field"><div class="control"><input class="input" type="text" placeholder="Wohnort"></div></div>
-    <div class="field"><div class="control"><input class="input" type="text" placeholder="Diözese"></div></div>
-    <div class="field"><div class="control"><input class="input" type="email" placeholder="Email"></div></div>
-    <div class="field"><div class="control"><input class="input" type="number" placeholder="Telefonnummer"></div></div>
-    <div class="field"><div class="control"><input class="input" type="date" placeholder="Geburtsdatum"></div></div>
-    <div class="field"><div class="control"><label class="checkbox"><input type="checkbox">Vegetarier</a></label></div></div>
-    <div class="field">
-      <label class="label">Bezahlmethode</label>
-      <div class="control">
-        <label class="radio"><input type="radio" name="question">Bar</label>
-        <label class="radio"><input type="radio" name="question">Überweisung</label>
+    <div class="field is-horizontal">
+      <div class="field-label"><label class="label">Vorname</label></div>
+      <div class="field-body"><input class="input" type="text" placeholder="Vorname"></div>
+    </div>
+    <div class="field is-horizontal">
+      <div class="field-label"><label class="label">Name</label></div>
+      <div class="field-body"><input class="input" type="text" placeholder="Name"></div>
+    </div>
+    <div class="field is-horizontal">
+      <div class="field-label is-normal"><label class="label">Straße / Nr.</label></div>
+      <div class="field-body"><input class="input" type="text" placeholder="Straße / Hausnummer"></div>
+    </div>
+    <div class="field is-horizontal">
+      <div class="field-label is-normal"><label class="label">PLZ</label></div>
+      <div class="field-body"><input class="input" type="number" placeholder="PLZ"></div>
+    </div>
+    <div class="field is-horizontal">
+      <div class="field-label is-normal"><label class="label">Wohnort</label></div>
+      <div class="field-body"><input class="input" type="text" placeholder="Wohnort"></div>
+    </div>
+    <div class="field is-horizontal">
+      <div class="field-label is-normal"><label class="label">Diözese</label></div>
+      <div class="field-body"><input class="input" type="text" placeholder="Diözese"></div>
+    </div>
+    <div class="field is-horizontal">
+      <div class="field-label is-normal"><label class="label">Email</label></div>
+      <div class="field-body"><input class="input" type="email" placeholder="Email"></div>
+    </div>
+    <div class="field is-horizontal">
+      <div class="field-label is-normal"><label class="label">Telefonnummer</label></div>
+      <div class="field-body"><input class="input" type="tel" placeholder="Telefonnummer"></div>
+    </div>
+    <div class="field is-horizontal">
+      <div class="field-label is-normal"><label class="label">Geburtsdatum</label></div>
+      <div class="field-body"><input class="input" type="date" placeholder="Geburtsdatum"></div>
+    </div>
+    <div class="field is-horizontal">
+      <div class="field-label is-normal"><label class="label">Vegetarier</label></div>
+      <div class="field-body">
+        <div class="select is-fullwidth">
+            <select>
+              <option>Nein</option>
+              <option>Ja</option>
+            </select>
+        </div>
+      </div>
+    </div>
+    <div class="field is-horizontal">
+      <div class="field-label is-normal"><label class="label">Bezahlmethode</label></div>
+      <div class="field-body">
+        <div class="select is-fullwidth">
+            <select>
+              <option>Bar</option>
+              <option>Überweisung</option>
+            </select>
+        </div>
       </div>
     </div>
     <div class="field"><div class="control"><button class="button is-link">Submit</button> </div> </div>
