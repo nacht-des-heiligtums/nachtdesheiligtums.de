@@ -3,51 +3,91 @@ layout: page
 title: Anmeldung
 permalink: /anmeldung/
 ---
-<div class="container registration-form">
+<form class="container registration-form" method="post" action="registration.php">
   <div class="box">
     <div class="field is-horizontal">
-      <div class="field-label"><label class="label">Vorname</label></div>
-      <div class="field-body"><input class="input" type="text" placeholder="Vorname"></div>
+      <div class="field-label is-normal"><label class="label">Anmeldungstyp</label></div>
+      <div class="field-body">
+        <div class="select is-fullwidth">
+            <select name="registration-type">
+              <option value="single">Einzelanmeldung</option>
+              <option value="group-leader">Gruppenverantwortlicher</option>
+              <option value="group-participant">Gruppenteilnehmer</option>
+            </select>
+        </div>
+      </div>
     </div>
     <div class="field is-horizontal">
-      <div class="field-label"><label class="label">Name</label></div>
-      <div class="field-body"><input class="input" type="text" placeholder="Name"></div>
+      <div class="field-label is-normal"><label class="label">Gruppen-ID:</label></div>
+      <div class="field-body"><input name="group-id" class="input" type="text" placeholder="Gruppe"></div>
+    </div>
+    <div class="field is-horizontal">
+      <div class="field-label is-normal"><label class="label">Vorname</label></div>
+      <div class="field-body"><input name="first-name" class="input" type="text" placeholder="Vorname"></div>
+    </div>
+    <div class="field is-horizontal">
+      <div class="field-label is-normal"><label class="label">Name</label></div>
+      <div class="field-body"><input name="last-name" class="input" type="text" placeholder="Name"></div>
     </div>
     <div class="field is-horizontal">
       <div class="field-label is-normal"><label class="label">Straße / Nr.</label></div>
-      <div class="field-body"><input class="input" type="text" placeholder="Straße / Hausnummer"></div>
+      <div class="field-body"><input name="street" class="input" type="text" placeholder="Straße / Hausnummer"></div>
     </div>
     <div class="field is-horizontal">
       <div class="field-label is-normal"><label class="label">PLZ</label></div>
-      <div class="field-body"><input class="input" type="number" placeholder="PLZ"></div>
+      <div class="field-body"><input name="plz" class="input" type="number" placeholder="PLZ"></div>
     </div>
     <div class="field is-horizontal">
       <div class="field-label is-normal"><label class="label">Wohnort</label></div>
-      <div class="field-body"><input class="input" type="text" placeholder="Wohnort"></div>
+      <div class="field-body"><input name="residence" class="input" type="text" placeholder="Wohnort"></div>
     </div>
     <div class="field is-horizontal">
       <div class="field-label is-normal"><label class="label">Diözese</label></div>
-      <div class="field-body"><input class="input" type="text" placeholder="Diözese"></div>
+      <div class="field-body"><input name="diocese" class="input" type="text" placeholder="Diözese"></div>
     </div>
     <div class="field is-horizontal">
       <div class="field-label is-normal"><label class="label">Email</label></div>
-      <div class="field-body"><input class="input" type="email" placeholder="Email"></div>
+      <div class="field-body"><input name="email" class="input" type="email" placeholder="Email"></div>
     </div>
     <div class="field is-horizontal">
       <div class="field-label is-normal"><label class="label">Telefonnummer</label></div>
-      <div class="field-body"><input class="input" type="tel" placeholder="Telefonnummer"></div>
+      <div class="field-body"><input name="phone" class="input" type="tel" placeholder="Telefonnummer"></div>
     </div>
     <div class="field is-horizontal">
       <div class="field-label is-normal"><label class="label">Geburtsdatum</label></div>
-      <div class="field-body"><input class="input" type="date" placeholder="Geburtsdatum"></div>
+      <div class="field-body"><input name="date-of-birth" class="input" type="date" placeholder="Geburtsdatum"></div>
     </div>
     <div class="field is-horizontal">
       <div class="field-label is-normal"><label class="label">Vegetarier</label></div>
       <div class="field-body">
         <div class="select is-fullwidth">
-            <select>
-              <option>Nein</option>
-              <option>Ja</option>
+            <select name="nutrition-habit">
+              <option value="default">Nein</option>
+              <option value="vegetarian">Ja</option>
+            </select>
+        </div>
+      </div>
+    </div>
+    <div class="field is-horizontal">
+      <div class="field-label is-normal"><label class="label">Übernachtung</label></div>
+      <div class="field-body">
+        <div class="select is-fullwidth">
+            <select name="room-type">
+              <option value="dorm">Schlafsaal (Schlafack, Isomatte/Luftmatratze)</option>
+              <option value="double">Bett im Doppelzimmer (zzgl. 10 Euro/Nacht + bitte Schlafsack mitbringen)</option>
+              <option value="single">Einzelzimmer (zzgl. 20 Euro/Nacht + bitte Schlafsack mitbringen)</option>
+            </select>
+        </div>
+      </div>
+    </div>
+    <div class="field is-horizontal">
+      <div class="field-label is-normal"><label class="label">Paketwahl</label></div>
+      <div class="field-body">
+        <div class="select is-fullwidth">
+            <select name="package">
+              <option value="package-a">Paket A: Wochenende komplett (55 Euro)</option>
+              <option value="package-b">Paket B: Wochende Samstagnachmittag bis Sonntagmittag (35 Euro)</option>
+              <option value="package-c">Paket C: Wochenende ohne Übernachtung (45 Euro)</option>
             </select>
         </div>
       </div>
@@ -56,13 +96,13 @@ permalink: /anmeldung/
       <div class="field-label is-normal"><label class="label">Bezahlmethode</label></div>
       <div class="field-body">
         <div class="select is-fullwidth">
-            <select>
-              <option>Bar</option>
-              <option>Überweisung</option>
+            <select name="payment-method">
+              <option value="cash">Bar</option>
+              <option value="remittance">Überweisung</option>
             </select>
         </div>
       </div>
     </div>
-    <div class="field"><div class="control"><button class="button is-link">Submit</button> </div> </div>
+    <div class="field"><div class="control"><button class="button is-link" id="submit" name="submit" type="submit">Submit</button></div></div>
   </div>
-</div>
+</form>
