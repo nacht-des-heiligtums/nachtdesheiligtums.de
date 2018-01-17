@@ -3,6 +3,8 @@ require 'i18n'
 
 LOCALE = Jekyll.configuration({})['locale'] # set your locale from config var
 
+I18n.enforce_available_locales = false
+
 # Create folder "_locales" and put some locale file from https://github.com/svenfuchs/rails-i18n/tree/master/rails/locale
 module Jekyll
   module I18nFilter
