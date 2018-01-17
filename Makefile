@@ -32,3 +32,7 @@ optimize: _build
 .PHONY: clean
 clean:
 	\rm -rf $(BUILD_DIR)
+
+.PHONY: watch
+watch:
+	bin/watch $(ENV)
