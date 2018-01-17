@@ -150,7 +150,12 @@ webmaster_verification:
 
 # # Settings for impressum.html
 impressum:
-  name:
-  address:
-  email:
+  name: >
+    Schönstatt-Bewegung Deutschland e.V. – Nacht des Heiligtums
+    Sr. M. Anastasia Brand
+  address: >
+    Hillscheider Straße 7
+    56179 Vallendar
+  email: kontakt@nachtdesheiligtums.de
+  fon: 0261 / 65 06 1336
 
