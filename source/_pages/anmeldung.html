@@ -9,7 +9,7 @@ permalink: /anmeldung/
       <div class="field-label is-normal"><label class="label">Anmeldungstyp</label></div>
       <div class="field-body">
         <div class="select is-fullwidth">
-            <select name="registration-type">
+            <select name="registration-type" id="registration-type-field" onchange="onRegistrationTypeChange()">
               <option value="single">Einzelanmeldung</option>
               <option value="group-leader">Gruppenverantwortlicher</option>
               <option value="group-participant">Gruppenteilnehmer</option>
@@ -17,7 +17,7 @@ permalink: /anmeldung/
         </div>
       </div>
     </div>
-    <div class="field is-horizontal">
+    <div class="field is-horizontal is-removed" id="group-id">
       <div class="field-label is-normal"><label class="label">Gruppen-ID:</label></div>
       <div class="field-body"><input name="group-id" class="input" type="text" placeholder="Gruppe"></div>
     </div>
@@ -29,27 +29,27 @@ permalink: /anmeldung/
       <div class="field-label is-normal"><label class="label">Name</label></div>
       <div class="field-body"><input name="last-name" class="input" type="text" placeholder="Name"></div>
     </div>
-    <div class="field is-horizontal">
+    <div class="field is-horizontal" id="street">
       <div class="field-label is-normal"><label class="label">Straße / Nr.</label></div>
       <div class="field-body"><input name="street" class="input" type="text" placeholder="Straße / Hausnummer"></div>
     </div>
-    <div class="field is-horizontal">
+    <div class="field is-horizontal" id="plz">
       <div class="field-label is-normal"><label class="label">PLZ</label></div>
       <div class="field-body"><input name="plz" class="input" type="number" placeholder="PLZ"></div>
     </div>
-    <div class="field is-horizontal">
+    <div class="field is-horizontal" id="residence">
       <div class="field-label is-normal"><label class="label">Wohnort</label></div>
       <div class="field-body"><input name="residence" class="input" type="text" placeholder="Wohnort"></div>
     </div>
-    <div class="field is-horizontal">
+    <div class="field is-horizontal" id="diocese">
       <div class="field-label is-normal"><label class="label">Diözese</label></div>
       <div class="field-body"><input name="diocese" class="input" type="text" placeholder="Diözese"></div>
     </div>
-    <div class="field is-horizontal">
+    <div class="field is-horizontal" id="email">
       <div class="field-label is-normal"><label class="label">Email</label></div>
       <div class="field-body"><input name="email" class="input" type="email" placeholder="Email"></div>
     </div>
-    <div class="field is-horizontal">
+    <div class="field is-horizontal" id="phone">
       <div class="field-label is-normal"><label class="label">Telefonnummer</label></div>
       <div class="field-body"><input name="phone" class="input" type="tel" placeholder="Telefonnummer"></div>
     </div>
@@ -85,14 +85,14 @@ permalink: /anmeldung/
       <div class="field-body">
         <div class="select is-fullwidth">
             <select name="package">
-              <option value="package-a">Paket A: Wochenende komplett (55 Euro)</option>
-              <option value="package-b">Paket B: Wochende Samstagnachmittag bis Sonntagmittag (35 Euro)</option>
-              <option value="package-c">Paket C: Wochenende ohne Übernachtung (45 Euro)</option>
+              <option value="package-a">Wochenende komplett (55 Euro)</option>
+              <option value="package-b">Wochende Samstagnachmittag bis Sonntagmittag (35 Euro)</option>
+              <option value="package-c">Wochenende ohne Übernachtung (45 Euro)</option>
             </select>
         </div>
       </div>
     </div>
-    <div class="field is-horizontal">
+    <div class="field is-horizontal" id="payment-method">
       <div class="field-label is-normal"><label class="label">Bezahlmethode</label></div>
       <div class="field-body">
         <div class="select is-fullwidth">
@@ -103,6 +103,35 @@ permalink: /anmeldung/
         </div>
       </div>
     </div>
-    <div class="field"><div class="control"><button class="button is-link" id="submit" name="submit" type="submit">Submit</button></div></div>
+    <div class="field is-grouped is-grouped-centered"><div class="control"><button class="button is-link" id="submit" name="submit" type="submit">Submit</button></div></div>
   </div>
 </form>
+
+
+<script>
+function onRegistrationTypeChange() {
+   var registrationType = document.getElementById('registration-type-field').value;
+
+   if (registrationType === 'single') {
+     document.getElementById('group-id').classList.add('is-removed');
+   } else {
+     document.getElementById('group-id').classList.remove('is-removed');
+   }
+
+   if (registrationType === 'group-participant') {
+     document.getElementById('street').classList.add('is-removed');
+     document.getElementById('plz').classList.add('is-removed');
+     document.getElementById('residence').classList.add('is-removed');
+     document.getElementById('diocese').classList.add('is-removed');
+     document.getElementById('email').classList.add('is-removed');
+     document.getElementById('tel').classList.add('is-removed');
+   } else {
+     document.getElementById('street').classList.remove('is-removed');
+     document.getElementById('plz').classList.remove('is-removed');
+     document.getElementById('residence').classList.remove('is-removed');
+     document.getElementById('diocese').classList.remove('is-removed');
+     document.getElementById('email').classList.remove('is-removed');
+     document.getElementById('tel').classList.remove('is-removed');
+   }
+}
+</script>

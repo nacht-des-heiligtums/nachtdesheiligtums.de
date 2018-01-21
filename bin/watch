@@ -6,4 +6,4 @@ if [ "$env" == "production" ]; then
 else
   config=",_config.${env}.yml"
 fi
-bundle exec jekyll serve --config "_config.yml${config}" --livereload --incremental
+bundle exec jekyll build --config "_config.yml${config}" --watch
