@@ -3,7 +3,10 @@ layout: page
 ---
 {% assign ndh = site.ndhs.last %}
 <div class="home">
-  <img src="{{ ndh.header_image }}" />
+
+  <div class="image-wide">
+    {% include /layout/image-wide.html %}
+  </div>
 
   <div class="intro">
     {{ page.intro.description | markdownify }}

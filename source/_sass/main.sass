@@ -8,6 +8,9 @@
 
 @import "bulma/sass/utilities/_all"
 
+//Import custom mixins
+//@import "utilities/derived-variables" // NOT WORKING
+
 // # Import reset and generic styles
 
 @import "bulma/sass/base/minireset"
@@ -28,13 +31,18 @@
 // @import "bulma/sass/elements/progress.sass"
 // @import "bulma/sass/elements/table.sass"
 // @import "bulma/sass/elements/tag.sass"
-@import "bulma/sass/elements/title.sass"
+//@import "bulma/sass/elements/title.sass"
 
 // @import "bulma/sass/elements/other.sass"
 
 // # Import custom elements.
+@import "elements/footer"
+@import "elements/image-wide"
 @import "elements/registration"
 @import "elements/social-icon"
+@import "elements/title"
+//@import "elements/content"
+
 
 // # Import Bulma components. Uncomment as needed.
 
@@ -60,7 +68,8 @@
 
 // @import "bulma/sass/layout/hero.sass"
 @import "bulma/sass/layout/section.sass"
-@import "bulma/sass/layout/footer.sass"
+//@import "bulma/sass/layout/footer.sass"
 
 //2. Set derived variables
 $primary: $blue
+$background: $blue
