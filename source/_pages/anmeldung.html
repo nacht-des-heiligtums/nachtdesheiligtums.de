@@ -18,43 +18,46 @@ permalink: /anmeldung/
       </div>
     </div>
     <div class="field is-horizontal is-removed" id="group-id">
-      <div class="field-label is-normal"><label class="label">Gruppen-ID:</label></div>
+      <div class="field-label is-normal"><label class="label">Gruppen-ID*</label></div>
       <div class="field-body"><input name="group-id" class="input" type="text" placeholder="Gruppe"></div>
     </div>
     <div class="field is-horizontal">
-      <div class="field-label is-normal"><label class="label">Vorname</label></div>
-      <div class="field-body"><input name="first-name" class="input" type="text" placeholder="Vorname"></div>
+      <div class="field-label is-normal"><label class="label">Vorname*</label></div>
+      <div class="field-body">
+        <input name="first-name" class="input" type="text" placeholder="Vorname">
+        <p class="help">Mit * markierte Felder sind erforderlich</p>
+      </div>
     </div>
     <div class="field is-horizontal">
-      <div class="field-label is-normal"><label class="label">Name</label></div>
+      <div class="field-label is-normal"><label class="label">Name*</label></div>
       <div class="field-body"><input name="last-name" class="input" type="text" placeholder="Name"></div>
     </div>
     <div class="field is-horizontal" id="street">
-      <div class="field-label is-normal"><label class="label">Straße / Nr.</label></div>
+      <div class="field-label is-normal"><label class="label">Straße / Nr.*</label></div>
       <div class="field-body"><input name="street" class="input" type="text" placeholder="Straße / Hausnummer"></div>
     </div>
     <div class="field is-horizontal" id="plz">
-      <div class="field-label is-normal"><label class="label">PLZ</label></div>
+      <div class="field-label is-normal"><label class="label">PLZ*</label></div>
       <div class="field-body"><input name="plz" class="input" type="number" placeholder="PLZ"></div>
     </div>
     <div class="field is-horizontal" id="residence">
-      <div class="field-label is-normal"><label class="label">Wohnort</label></div>
+      <div class="field-label is-normal"><label class="label">Wohnort*</label></div>
       <div class="field-body"><input name="residence" class="input" type="text" placeholder="Wohnort"></div>
     </div>
     <div class="field is-horizontal" id="diocese">
-      <div class="field-label is-normal"><label class="label">Diözese</label></div>
+      <div class="field-label is-normal"><label class="label">Diözese*</label></div>
       <div class="field-body"><input name="diocese" class="input" type="text" placeholder="Diözese"></div>
     </div>
     <div class="field is-horizontal" id="email">
-      <div class="field-label is-normal"><label class="label">Email</label></div>
+      <div class="field-label is-normal"><label class="label">Email*</label></div>
       <div class="field-body"><input name="email" class="input" type="email" placeholder="Email"></div>
     </div>
     <div class="field is-horizontal" id="phone">
-      <div class="field-label is-normal"><label class="label">Telefonnummer</label></div>
+      <div class="field-label is-normal"><label class="label">Telefonnummer*</label></div>
       <div class="field-body"><input name="phone" class="input" type="tel" placeholder="Telefonnummer"></div>
     </div>
     <div class="field is-horizontal">
-      <div class="field-label is-normal"><label class="label">Geburtsdatum</label></div>
+      <div class="field-label is-normal"><label class="label">Geburtsdatum*</label></div>
       <div class="field-body"><input name="date-of-birth" class="input" type="date" placeholder="Geburtsdatum"></div>
     </div>
     <div class="field is-horizontal">
@@ -98,7 +101,7 @@ permalink: /anmeldung/
         <div class="select is-fullwidth">
             <select name="payment-method">
               <option value="cash">Bar</option>
-              <option value="remittance">Überweisung</option>
+              <option value="transfer">Überweisung</option>
             </select>
         </div>
       </div>

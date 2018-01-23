@@ -20,6 +20,23 @@ permalink: /anmeldung/registration.php
     $_package = $_POST['package'];
     $_payment_method = $_POST['payment-method'];
 
+    // validate
+
+    // Gruppen-ID* Required.
+    // Vorname* Required. Only Letters, '-' and Whitespace.
+    // Name* Required. Only Letters, '-' and Whitespace.
+    // Straße / Nr.* Required. Only Letters, '-' and Whitespace.
+    // PLZ* Required. Only Numbers.
+    // Wohnort* Required. Only Letters, '-' and Whitespace.
+    // Diözese* Required. Only Letters, '-' and Whitespace.
+    // Email* Required. Valid Email-Adress.
+    // Telefonnummer* Required. Only Numbers and Whitespace (can start with +).
+    // Geburtsdatum* Required. Valid Date.
+    // Vegetarier Required.
+    // Übernachtung Required.
+    // Paketwahl Required.
+    // Bezahlmethode Required.
+
     $_file = NULL;
     if (!file_exists($_c_filename)) {
       $_file = fopen($_c_filename, "w");
