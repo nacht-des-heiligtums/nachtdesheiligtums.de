@@ -1,0 +1,13 @@
+<section class ="banner">
+    <div class = "quotes">
+        // https://jekyllcodex.org/without-plugin/slider/
+        {% if page.slider %}
+        {% include slider.html height="50" unit="%" transition="slide" duration="7" %}
+        {% endif %}
+        {% for person in site.data.testimonials.slider.slides %}
+        <h2> {{person.name}} </h2>
+        <img src = "{{person.image}}"/>
+        <h2> {{person.quote}}</h2>
+        {% endfor %}
+    </div>
+</section>

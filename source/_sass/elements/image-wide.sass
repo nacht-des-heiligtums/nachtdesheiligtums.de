@@ -1,33 +1,28 @@
+$overlay-color: $white !default
+
 .image-wide
-  display: block
-  position: relative
+  height: auto
+  width: 100%
+
   img
     display: block
-    height: 40%
+    height: auto
     width: 100%
-  // Ratio
-  &.is-square,
-  &.is-1by1,
-  &.is-4by3,
-  &.is-3by2,
-  &.is-16by9,
-  &.is-2by1
+
+  .overlay
     img
       +overlay
-      height: 100%
-      width: 100%
-  &.is-square,
-  &.is-1by1
-    padding-top: 100%
-  &.is-4by3
-    padding-top: 75%
-  &.is-3by2
-    padding-top: 66.6666%
-  &.is-16by9
-    padding-top: 56.25%
-  &.is-2by1
-    padding-top: 50%
-  // Sizes
+      width: 12%
+      height: auto
+      position: absolute
+      padding-top: 10%
+      margin-left: 87%
+      opacity: 0.5
 
-  height: 20%
-  width: 100%
+    p
+      +overlay
+      padding-top: 23%
+      color: $white
+      font-size: 2em
+      margin-left: 25%
+

@@ -4,9 +4,7 @@ layout: page
 {% assign ndh = site.ndhs.last %}
 <div class="home">
 
-  <div class="image-wide">
-    {% include /layout/image-wide.html %}
-  </div>
+  {% include layout/image-wide.html %}
 
   <div class="intro">
     {{ page.intro.description | markdownify }}
@@ -32,6 +30,8 @@ layout: page
     {{ page.quote }}
   </blockquote>
   {%- endif %}
+
+  {% include layout/banner.html %}
 
   <ul class="post-list">
     {% assign related_posts = site.posts | where: "ndh", ndh.slug %}

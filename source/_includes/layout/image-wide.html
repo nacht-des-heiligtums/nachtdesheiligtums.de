@@ -1,1 +1,10 @@
-<img src="{{ ndh.header_image }}" />
+<section>
+    {% assign ndh = site.ndhs.last %}
+    <div class = "image-wide">
+        <img src="{{ ndh.header_image }}" />
+        <div class = "overlay">
+            <p> Nacht des Heiligtums </p>
+            <img src="{{ ndh.overlay_image }}" />
+        </div>
+    </div>
+</section>
