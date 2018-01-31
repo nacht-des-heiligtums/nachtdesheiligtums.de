@@ -31,7 +31,7 @@ layout: page
   </blockquote>
   {%- endif %}
 
-  {% include layout/banner.html %}
+  {% include slider.html %}
 
   <ul class="post-list">
     {% assign related_posts = site.posts | where: "ndh", ndh.slug %}
@@ -48,3 +48,7 @@ layout: page
 
   <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
 </div>
+
+<script>
+  {% include scripts/carousel.js %}
+</script>
