@@ -6,6 +6,10 @@ main:
         label: Kernteam
         title: Kernteam
         url: /kernteam
+      helferwoche:
+        label: Helferwoche
+        title: Helferwoche
+        url: /helferwoche
       mitmachen:
         label: Mitmachen
         title: Mitmachen
