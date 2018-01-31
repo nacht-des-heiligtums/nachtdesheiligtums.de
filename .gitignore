@@ -4,3 +4,5 @@ _build
 .git-metadata
 .bundle
 .env
+vendor
+node_modules
