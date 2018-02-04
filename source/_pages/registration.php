@@ -22,18 +22,20 @@ permalink: /anmeldung/registration.php
   $_payment_method = getPostInput('payment-method');
 
   // validate
+  $type_single = $_registration_type == 'single';
+  $type_group_leader = $_registration_type == 'group-leader';
+  $type_group_participant = $_registration_type == 'group-participant';
+
   $valid_registration_type = (boolean)isValidRequired($_registration_type);
-  $valid_group_id = ($_registration_type == 'group-leader' || $_registration_type == 'group-participant')
-    ? (boolean)isValidRequired($_group_id)
-    : TRUE;
+  $valid_group_id = $type_single || (boolean)isValidRequired($_group_id);
   $valid_first_name = (boolean)isValidName($_first_name);
   $valid_last_name = (boolean)isValidName($_last_name);
-  $valid_street = (boolean)isValidStreet($_street);
-  $valid_plz = (boolean)isValidNumber($_plz);
-  $valid_residence = (boolean)isValidName($_residence);
-  $valid_diocese = (boolean)isValidName($_diocese);
-  $valid_email = (boolean)isValidEmail($_email);
-  $valid_phone = (boolean)isValidPhone($_phone);
+  $valid_street = $type_group_participant || (boolean)isValidStreet($_street);
+  $valid_plz = $type_group_participant || (boolean)isValidNumber($_plz);
+  $valid_residence = $type_group_participant || (boolean)isValidName($_residence);
+  $valid_diocese = $type_group_participant || (boolean)isValidName($_diocese);
+  $valid_email = $type_group_participant || (boolean)isValidEmail($_email);
+  $valid_phone = $type_group_participant || (boolean)isValidPhone($_phone);
   $valid_date_of_birth = (boolean)isValidRequired($_date_of_birth);
   $valid_nutrition_habit = (boolean)isValidRequired($_nutrition_habit);
   $valid_room_type = (boolean)isValidRequired($_room_type);
@@ -105,6 +107,10 @@ permalink: /anmeldung/registration.php
 
   function getPostInput($_inputname) {
     return htmlspecialchars(stripslashes(trim($_POST[$_inputname])));
+  }
+
+  function validIf($_input, $_validate) {
+    return $_validate ? $_input : TRUE;
   }
 
   function isValidRequired($_input) {

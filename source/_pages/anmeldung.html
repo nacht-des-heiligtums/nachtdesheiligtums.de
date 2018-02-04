@@ -3,7 +3,7 @@ layout: page
 title: Anmeldung
 permalink: /anmeldung/
 ---
-<form class="container registration-form" method="post" action="registration.php" onsubmit="return onRegistrationSubmit(this)">
+<form id="registration-form" class="container registration-form" method="post" action="registration.php" onsubmit="return onRegistrationSubmit(this)">
   <div class="box">
     <p class="help">Mit * markierte Felder sind erforderlich</p>
     <div class="field is-horizontal">
@@ -22,54 +22,63 @@ permalink: /anmeldung/
       <div class="field-label is-normal"><label class="label">Gruppen-ID*</label></div>
       <div class="field-body">
         <input name="group-id" class="input" type="text" placeholder="Gruppe">
+        <p class="help">Ein Name für deine Gruppe (bspw. "SMJ Augsburg"). Mit diesem können später auch weitere Gruppenteilnehmer angemeldet werden.</p>
       </div>
     </div>
     <div class="field is-horizontal">
       <div class="field-label is-normal"><label class="label">Vorname*</label></div>
       <div class="field-body">
         <input name="first-name" class="input" type="text" placeholder="Vorname">
+        <p class="help is-danger is-removed" id="first-name-validation">Dieses Feld ist erforderlich. Bitte nur Buchstaben, Leerzeichen und Bindestriche verwenden.</p>
       </div>
     </div>
     <div class="field is-horizontal">
       <div class="field-label is-normal"><label class="label">Name*</label></div>
       <div class="field-body">
         <input name="last-name" class="input" type="text" placeholder="Name">
+        <p class="help is-danger is-removed" id="last-name-validation">Dieses Feld ist erforderlich. Bitte nur Buchstaben, Leerzeichen und Bindestriche verwenden.</p>
       </div>
     </div>
     <div class="field is-horizontal" id="street">
       <div class="field-label is-normal"><label class="label">Straße / Nr.*</label></div>
       <div class="field-body">
         <input name="street" class="input" type="text" placeholder="Straße / Hausnummer">
+        <p class="help is-danger is-removed" id="street-validation">Dieses Feld ist erforderlich. Bitte nur Buchstaben, Leerzeichen und Bindestriche und Zahlen verwenden.</p>
       </div>
     </div>
     <div class="field is-horizontal" id="plz">
       <div class="field-label is-normal"><label class="label">PLZ*</label></div>
       <div class="field-body">
         <input name="plz" class="input" type="number" placeholder="PLZ">
+        <p class="help is-danger is-removed" id="plz-validation">Dieses Feld ist erforderlich. Bitte nur Zahlen verwenden.</p>
       </div>
     </div>
     <div class="field is-horizontal" id="residence">
       <div class="field-label is-normal"><label class="label">Wohnort*</label></div>
       <div class="field-body">
         <input name="residence" class="input" type="text" placeholder="Wohnort">
+        <p class="help is-danger is-removed" id="residence-validation">Dieses Feld ist erforderlich. Bitte nur Buchstaben, Leerzeichen und Bindestriche verwenden.</p>
       </div>
     </div>
     <div class="field is-horizontal" id="diocese">
       <div class="field-label is-normal"><label class="label">Diözese*</label></div>
       <div class="field-body">
         <input name="diocese" class="input" type="text" placeholder="Diözese">
+        <p class="help is-danger is-removed" id="diocese-validation">Dieses Feld ist erforderlich. Bitte nur Buchstaben, Leerzeichen und Bindestriche verwenden.</p>
       </div>
     </div>
     <div class="field is-horizontal" id="email">
       <div class="field-label is-normal"><label class="label">Email*</label></div>
       <div class="field-body">
         <input name="email" class="input" type="email" placeholder="Email">
+        <p class="help is-danger is-removed" id="email-validation">Dieses Feld ist erforderlich. Bitte verwenden sie eine gültige Email-Adresse.</p>
       </div>
     </div>
     <div class="field is-horizontal" id="phone">
       <div class="field-label is-normal"><label class="label">Telefonnummer*</label></div>
       <div class="field-body">
         <input name="phone" class="input" type="tel" placeholder="Telefonnummer">
+        <p class="help is-danger is-removed" id="phone-validation">Dieses Feld ist erforderlich. Bitte nur Zahlen verwenden.</p>
       </div>
     </div>
     <div class="field is-horizontal">
@@ -124,9 +133,20 @@ permalink: /anmeldung/
         </div>
       </div>
     </div>
-    <div class="field is-grouped is-grouped-centered"><div class="control"><button class="button is-link" id="submit" name="submit" type="submit">Submit</button></div></div>
+    <div class="field is-grouped is-grouped-centered"><div class="control"><button class="button is-link" id="submit" name="submit" type="submit">Absenden</button></div></div>
+    <p class="help is-danger is-removed" id="registration-validation">Die Anmeldung konnte nicht erfolgreich abgeschlossen werden.<br />Stelle sicher, dass alle erforderlichen Felder ausgefüllt sind.</p>
+    <p class="help is-danger is-removed" id="registration-validation-error">Die Anmeldung konnte aufgrund eines Fehlers nicht erfolgreich abgeschlossen werden.<br />Bitte versuche es später noch einmal.</p>
   </div>
 </form>
+
+
+<div id="registration-finished" class="registration-form container is-removed">
+  <div class="box content">
+    <p>Deine Anmeldung wurde erfolgreich abgeschickt.</p>
+    <p><a href="#">Weitere Anmeldung</a></p>
+    <p><a href="{{ site.baseurl }}{% link index.md %}">Zurück zur Startseite</a></p>
+  </div>
+</div>
 
 
 <script>
@@ -159,43 +179,69 @@ function onRegistrationTypeChange() {
 }
 
 function onRegistrationSubmit(_form) {
-  var url = _form.action;
-  var xhr = new XMLHttpRequest();
+  try {
+    document.getElementById('submit').classList.add('is-loading');
+    document.getElementById('registration-validation-error').classList.add('is-removed');
 
-  // [].fn.call(form.elements, ...) allows us to call .fn
-  // on the form's elements, even though it's not an array.
-  var params = [].map.call(_form.elements, function(el) {
-      // Map each field into a name=value string, make sure to properly escape!
-      return encodeURIComponent(el.name) + '=' + encodeURIComponent(el.value);
-  }).join('&'); // Then join all the strings by &
+    var url = _form.action;
+    var xhr = new XMLHttpRequest();
 
-  xhr.open("POST", url);
-  xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+    // [].fn.call(form.elements, ...) allows us to call .fn
+    // on the form's elements, even though it's not an array.
+    var params = [].map.call(_form.elements, function(el) {
+        // Map each field into a name=value string, make sure to properly escape!
+        return encodeURIComponent(el.name) + '=' + encodeURIComponent(el.value);
+    }).join('&'); // Then join all the strings by &
 
-  //.bind ensures that this inside of the function is the XHR object.
-  xhr.onload = onRegistrationSubmitCallback.bind(xhr);
+    xhr.open("POST", url);
+    xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
 
-  //All preperations are clear, send the request!
-  xhr.send(params);
+    //.bind ensures that this inside of the function is the XHR object.
+    xhr.onload = onRegistrationSubmitCallback.bind(xhr);
+
+    //All preperations are clear, send the request!
+    xhr.send(params);
+  } catch(_error) {
+    // todo: error handling: Some error occured -- please try again later. (in de)
+    document.getElementById('submit').classList.remove('is-loading');
+    document.getElementById('registration-validation-error').classList.remove('is-removed');
+  }
 
   return false;
 }
 
 function onRegistrationSubmitCallback(_xhr) {
-  var validation = JSON.parse(_xhr.currentTarget.responseText);
-  for (var key in validation) {
-    // skip loop if the property is from prototype
-    if (!validation.hasOwnProperty(key)) continue;
+  try {
+    document.getElementById('submit').classList.remove('is-loading');
 
-    // your code
-    var elements = document.getElementsByName(key);
-    if (elements.length != 0) {
-      if (validation[key] === true) {
-        elements[0].classList.remove('is-danger');
-      } else {
-        elements[0].classList.add('is-danger');
+    var validation = JSON.parse(_xhr.currentTarget.responseText);
+    for (var key in validation) {
+      // skip loop if the property is from prototype
+      if (!validation.hasOwnProperty(key)) continue;
+
+      var valid = validation[key] === true;
+
+      // your code
+      var elements = document.getElementsByName(key);
+      if (elements.length != 0) {
+        if (valid) {
+          elements[0].classList.remove('is-danger');
+        } else {
+          elements[0].classList.add('is-danger');
+        }
+      }
+
+      var validationElement = document.getElementById(key + '-validation');
+      if (validationElement) {
+        if (valid) {
+          validationElement.classList.add('is-removed');
+        } else {
+          validationElement.classList.remove('is-removed');
+        }
       }
     }
+  } catch(_error) {
+    document.getElementById('registration-validation-error').classList.remove('is-removed');
   }
 }
 
