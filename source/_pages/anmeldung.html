@@ -3,8 +3,9 @@ layout: page
 title: Anmeldung
 permalink: /anmeldung/
 ---
-<form class="container registration-form" method="post" action="registration.php">
+<form class="container registration-form" method="post" action="registration.php" onsubmit="return onRegistrationSubmit(this)">
   <div class="box">
+    <p class="help">Mit * markierte Felder sind erforderlich</p>
     <div class="field is-horizontal">
       <div class="field-label is-normal"><label class="label">Anmeldungstyp</label></div>
       <div class="field-body">
@@ -19,46 +20,63 @@ permalink: /anmeldung/
     </div>
     <div class="field is-horizontal is-removed" id="group-id">
       <div class="field-label is-normal"><label class="label">Gruppen-ID*</label></div>
-      <div class="field-body"><input name="group-id" class="input" type="text" placeholder="Gruppe"></div>
+      <div class="field-body">
+        <input name="group-id" class="input" type="text" placeholder="Gruppe">
+      </div>
     </div>
     <div class="field is-horizontal">
       <div class="field-label is-normal"><label class="label">Vorname*</label></div>
       <div class="field-body">
         <input name="first-name" class="input" type="text" placeholder="Vorname">
-        <p class="help">Mit * markierte Felder sind erforderlich</p>
       </div>
     </div>
     <div class="field is-horizontal">
       <div class="field-label is-normal"><label class="label">Name*</label></div>
-      <div class="field-body"><input name="last-name" class="input" type="text" placeholder="Name"></div>
+      <div class="field-body">
+        <input name="last-name" class="input" type="text" placeholder="Name">
+      </div>
     </div>
     <div class="field is-horizontal" id="street">
       <div class="field-label is-normal"><label class="label">Straße / Nr.*</label></div>
-      <div class="field-body"><input name="street" class="input" type="text" placeholder="Straße / Hausnummer"></div>
+      <div class="field-body">
+        <input name="street" class="input" type="text" placeholder="Straße / Hausnummer">
+      </div>
     </div>
     <div class="field is-horizontal" id="plz">
       <div class="field-label is-normal"><label class="label">PLZ*</label></div>
-      <div class="field-body"><input name="plz" class="input" type="number" placeholder="PLZ"></div>
+      <div class="field-body">
+        <input name="plz" class="input" type="number" placeholder="PLZ">
+      </div>
     </div>
     <div class="field is-horizontal" id="residence">
       <div class="field-label is-normal"><label class="label">Wohnort*</label></div>
-      <div class="field-body"><input name="residence" class="input" type="text" placeholder="Wohnort"></div>
+      <div class="field-body">
+        <input name="residence" class="input" type="text" placeholder="Wohnort">
+      </div>
     </div>
     <div class="field is-horizontal" id="diocese">
       <div class="field-label is-normal"><label class="label">Diözese*</label></div>
-      <div class="field-body"><input name="diocese" class="input" type="text" placeholder="Diözese"></div>
+      <div class="field-body">
+        <input name="diocese" class="input" type="text" placeholder="Diözese">
+      </div>
     </div>
     <div class="field is-horizontal" id="email">
       <div class="field-label is-normal"><label class="label">Email*</label></div>
-      <div class="field-body"><input name="email" class="input" type="email" placeholder="Email"></div>
+      <div class="field-body">
+        <input name="email" class="input" type="email" placeholder="Email">
+      </div>
     </div>
     <div class="field is-horizontal" id="phone">
       <div class="field-label is-normal"><label class="label">Telefonnummer*</label></div>
-      <div class="field-body"><input name="phone" class="input" type="tel" placeholder="Telefonnummer"></div>
+      <div class="field-body">
+        <input name="phone" class="input" type="tel" placeholder="Telefonnummer">
+      </div>
     </div>
     <div class="field is-horizontal">
       <div class="field-label is-normal"><label class="label">Geburtsdatum*</label></div>
-      <div class="field-body"><input name="date-of-birth" class="input" type="date" placeholder="Geburtsdatum"></div>
+      <div class="field-body">
+        <input name="date-of-birth" class="input" type="date" placeholder="Geburtsdatum">
+      </div>
     </div>
     <div class="field is-horizontal">
       <div class="field-label is-normal"><label class="label">Vegetarier</label></div>
@@ -127,14 +145,58 @@ function onRegistrationTypeChange() {
      document.getElementById('residence').classList.add('is-removed');
      document.getElementById('diocese').classList.add('is-removed');
      document.getElementById('email').classList.add('is-removed');
-     document.getElementById('tel').classList.add('is-removed');
+     document.getElementById('phone').classList.add('is-removed');
+     document.getElementById('payment-method').classList.add('is-removed');
    } else {
      document.getElementById('street').classList.remove('is-removed');
      document.getElementById('plz').classList.remove('is-removed');
      document.getElementById('residence').classList.remove('is-removed');
      document.getElementById('diocese').classList.remove('is-removed');
      document.getElementById('email').classList.remove('is-removed');
-     document.getElementById('tel').classList.remove('is-removed');
+     document.getElementById('phone').classList.remove('is-removed');
+     document.getElementById('payment-method').classList.remove('is-removed');
    }
 }
+
+function onRegistrationSubmit(_form) {
+  var url = _form.action;
+  var xhr = new XMLHttpRequest();
+
+  // [].fn.call(form.elements, ...) allows us to call .fn
+  // on the form's elements, even though it's not an array.
+  var params = [].map.call(_form.elements, function(el) {
+      // Map each field into a name=value string, make sure to properly escape!
+      return encodeURIComponent(el.name) + '=' + encodeURIComponent(el.value);
+  }).join('&'); // Then join all the strings by &
+
+  xhr.open("POST", url);
+  xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+
+  //.bind ensures that this inside of the function is the XHR object.
+  xhr.onload = onRegistrationSubmitCallback.bind(xhr);
+
+  //All preperations are clear, send the request!
+  xhr.send(params);
+
+  return false;
+}
+
+function onRegistrationSubmitCallback(_xhr) {
+  var validation = JSON.parse(_xhr.currentTarget.responseText);
+  for (var key in validation) {
+    // skip loop if the property is from prototype
+    if (!validation.hasOwnProperty(key)) continue;
+
+    // your code
+    var elements = document.getElementsByName(key);
+    if (elements.length != 0) {
+      if (validation[key] === true) {
+        elements[0].classList.remove('is-danger');
+      } else {
+        elements[0].classList.add('is-danger');
+      }
+    }
+  }
+}
+
 </script>
