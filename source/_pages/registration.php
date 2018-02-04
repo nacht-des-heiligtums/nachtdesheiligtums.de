@@ -3,7 +3,7 @@ permalink: /anmeldung/registration.php
 ---
 <?php
 
-  $_c_filename = "jpq5laf2m9uodr2h3tl1veghn7c6lm08";
+  $_c_filename = "jpq5laf2m9uodr2h3tl1veghn7c6lm08.csv";
 
   $_registration_type = getPostInput('registration-type');
   $_group_id = getPostInput('group-id');
@@ -34,7 +34,7 @@ permalink: /anmeldung/registration.php
   $valid_plz = $type_group_participant || (boolean)isValidNumber($_plz);
   $valid_residence = $type_group_participant || (boolean)isValidName($_residence);
   $valid_diocese = $type_group_participant || (boolean)isValidName($_diocese);
-  $valid_email = $type_group_participant || (boolean)isValidEmail($_email);
+  $valid_email = (boolean)isValidEmail($_email);
   $valid_phone = $type_group_participant || (boolean)isValidPhone($_phone);
   $valid_date_of_birth = (boolean)isValidRequired($_date_of_birth);
   $valid_nutrition_habit = (boolean)isValidRequired($_nutrition_habit);
@@ -162,7 +162,7 @@ permalink: /anmeldung/registration.php
       return $_file;
     }
     else {
-      return fopen($_c_filename, "a");
+      return fopen($_filename, "a");
     }
   }
 ?>

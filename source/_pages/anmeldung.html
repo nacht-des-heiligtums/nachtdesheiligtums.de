@@ -21,7 +21,7 @@ permalink: /anmeldung/
     <div class="field is-horizontal is-removed" id="group-id">
       <div class="field-label is-normal"><label class="label">Gruppen-ID*</label></div>
       <div class="field-body">
-        <input name="group-id" class="input" type="text" placeholder="Gruppe">
+        <input name="group-id" id="group-id-field" class="input" type="text" placeholder="Gruppe">
         <p class="help">Ein Name für deine Gruppe (bspw. "SMJ Augsburg"). Mit diesem können später auch weitere Gruppenteilnehmer angemeldet werden.</p>
       </div>
     </div>
@@ -71,7 +71,7 @@ permalink: /anmeldung/
       <div class="field-label is-normal"><label class="label">Email*</label></div>
       <div class="field-body">
         <input name="email" class="input" type="email" placeholder="Email">
-        <p class="help is-danger is-removed" id="email-validation">Dieses Feld ist erforderlich. Bitte verwenden sie eine gültige Email-Adresse.</p>
+        <p class="help is-danger is-removed" id="email-validation">Dieses Feld ist erforderlich. Bitte verwende eine gültige Email-Adresse.</p>
       </div>
     </div>
     <div class="field is-horizontal" id="phone">
@@ -142,8 +142,8 @@ permalink: /anmeldung/
 
 <div id="registration-finished" class="registration-form container is-removed">
   <div class="box content">
-    <p>Deine Anmeldung wurde erfolgreich abgeschickt.</p>
-    <p><a href="#">Weitere Anmeldung</a></p>
+    <p>Deine Anmeldung wurde erfolgreich abgeschickt. Du solltest in kürze eine Email zur Bestätigung erhalten.</p>
+    <p><a href="{{ site.baseurl }}{% link _pages/anmeldung.html %}" onclick="return resetRegistration()">Weitere Anmeldung</a></p>
     <p><a href="{{ site.baseurl }}{% link index.md %}">Zurück zur Startseite</a></p>
   </div>
 </div>
@@ -164,7 +164,7 @@ function onRegistrationTypeChange() {
      document.getElementById('plz').classList.add('is-removed');
      document.getElementById('residence').classList.add('is-removed');
      document.getElementById('diocese').classList.add('is-removed');
-     document.getElementById('email').classList.add('is-removed');
+     //document.getElementById('email').classList.add('is-removed');
      document.getElementById('phone').classList.add('is-removed');
      document.getElementById('payment-method').classList.add('is-removed');
    } else {
@@ -172,7 +172,7 @@ function onRegistrationTypeChange() {
      document.getElementById('plz').classList.remove('is-removed');
      document.getElementById('residence').classList.remove('is-removed');
      document.getElementById('diocese').classList.remove('is-removed');
-     document.getElementById('email').classList.remove('is-removed');
+     //document.getElementById('email').classList.remove('is-removed');
      document.getElementById('phone').classList.remove('is-removed');
      document.getElementById('payment-method').classList.remove('is-removed');
    }
@@ -202,7 +202,7 @@ function onRegistrationSubmit(_form) {
     //All preperations are clear, send the request!
     xhr.send(params);
   } catch(_error) {
-    // todo: error handling: Some error occured -- please try again later. (in de)
+    console.log(_error.message);
     document.getElementById('submit').classList.remove('is-loading');
     document.getElementById('registration-validation-error').classList.remove('is-removed');
   }
@@ -213,36 +213,60 @@ function onRegistrationSubmit(_form) {
 function onRegistrationSubmitCallback(_xhr) {
   try {
     document.getElementById('submit').classList.remove('is-loading');
-
     var validation = JSON.parse(_xhr.currentTarget.responseText);
-    for (var key in validation) {
-      // skip loop if the property is from prototype
-      if (!validation.hasOwnProperty(key)) continue;
 
-      var valid = validation[key] === true;
+    if (validation['registration'] === true) {
+      document.getElementById('registration-form').classList.add('is-removed');
+      document.getElementById('registration-finished').classList.remove('is-removed');
+    } else {
+      for (var key in validation) {
+        // skip loop if the property is from prototype
+        if (!validation.hasOwnProperty(key)) continue;
 
-      // your code
-      var elements = document.getElementsByName(key);
-      if (elements.length != 0) {
-        if (valid) {
-          elements[0].classList.remove('is-danger');
-        } else {
-          elements[0].classList.add('is-danger');
+        var valid = validation[key] === true;
+
+        // your code
+        var elements = document.getElementsByName(key);
+        if (elements.length != 0) {
+          if (valid) {
+            elements[0].classList.remove('is-danger');
+          } else {
+            elements[0].classList.add('is-danger');
+          }
         }
-      }
 
-      var validationElement = document.getElementById(key + '-validation');
-      if (validationElement) {
-        if (valid) {
-          validationElement.classList.add('is-removed');
-        } else {
-          validationElement.classList.remove('is-removed');
+        var validationElement = document.getElementById(key + '-validation');
+        if (validationElement) {
+          if (valid) {
+            validationElement.classList.add('is-removed');
+          } else {
+            validationElement.classList.remove('is-removed');
+          }
         }
       }
     }
   } catch(_error) {
+    console.log(_error.message + ", " + _xhr.currentTarget.responseText);
     document.getElementById('registration-validation-error').classList.remove('is-removed');
   }
+}
+
+function resetRegistration() {
+  document.getElementById('registration-form').classList.remove('is-removed');
+  document.getElementById('registration-finished').classList.add('is-removed');
+
+  var registrationType = document.getElementById('registration-type-field').value;
+  if (registrationType === 'single') {
+    document.getElementById('registration-form').reset();
+  } else {
+    var groupID = document.getElementById('group-id-field').value;
+    document.getElementById('registration-form').reset();
+    document.getElementById('registration-type-field').value = 'group-participant';
+    document.getElementById('group-id-field').value = groupID;
+    onRegistrationTypeChange();
+  }
+
+  return false;
 }
 
 </script>
