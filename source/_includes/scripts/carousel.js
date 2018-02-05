@@ -14,28 +14,28 @@ class Carousel {
 
     MOUSE_EVENTS.forEach((event) => {
       let previousControl = this.element.querySelector('.carousel-nav-left');
-      let nextControl = this.element.querySelector('.carousel-nav-right');
-      if (previousControl) {
-        previousControl.addEventListener(event, (e) => {
-          e.preventDefault();
-          this.move('previous');
-          if (this.autoplayInterval) {
-            clearInterval(this.autoplayInterval);
-            this.autoPlay(this.element.dataset.delay || 5000);
-          }
-        }, false);
+    let nextControl = this.element.querySelector('.carousel-nav-right');
+    if (previousControl) {
+      previousControl.addEventListener(event, (e) => {
+        e.preventDefault();
+      this.move('previous');
+      if (this.autoplayInterval) {
+        clearInterval(this.autoplayInterval);
+        this.autoPlay(this.element.dataset.delay || 5000);
       }
-      if (nextControl) {
-        nextControl.addEventListener(event, (e) => {
-          e.preventDefault();
-          this.move('next');
-          if (this.autoplayInterval) {
-            clearInterval(this.autoplayInterval);
-            this.autoPlay(this.element.dataset.delay || 5000);
-          }
-        }, false);
+    }, false);
+    }
+    if (nextControl) {
+      nextControl.addEventListener(event, (e) => {
+        e.preventDefault();
+      this.move('next');
+      if (this.autoplayInterval) {
+        clearInterval(this.autoplayInterval);
+        this.autoPlay(this.element.dataset.delay || 5000);
       }
-    });
+    }, false);
+    }
+  });
 
     this.initOrder();
 
@@ -60,12 +60,12 @@ class Carousel {
   setOrder() {
     this.items.forEach((item, index) => {
       if (index !== 1) {
-        item.style['z-index'] = '0';
-      } else {
-        item.style['z-index'] = '1';
-      }
-      item.style.order = index;
-    });
+      item.style['z-index'] = '0';
+    } else {
+      item.style['z-index'] = '1';
+    }
+    item.style.order = index;
+  });
   }
 
   move(direction = 'next') {
@@ -101,14 +101,14 @@ class Carousel {
       // Enable transition to animate order 1 to order 2
       setTimeout(() => {
         this.element.classList.toggle('carousel-animated');
-      }, 50);
+    }, 50);
     }
   }
 
   autoPlay(delay = 5000) {
     this.autoplayInterval = setInterval(() => {
       this.move('next');
-    }, delay);
+  }, delay);
   }
 }
 

@@ -1,11 +1,17 @@
 ---
-layout: page
+layout: base
 ---
 {% assign ndh = site.ndhs.last %}
-<div class="home">
 
-  {% include layout/image-wide.html %}
+<section class="hero is-medium has-background-image" style="background-image:url({{ ndh.header_image }})">
+  <div class = "hero-body">
+    <div class="container">
+      <img src="{{ ndh.overlay_image }}"  style="margin-left: 20%; top: 50%; bottom: 50%; width: 60%"/>
+    </div>
+  </div>
+</section>
 
+<section class="container home">
   <div class="intro">
     {{ page.intro.description | markdownify }}
   </div>
@@ -30,9 +36,13 @@ layout: page
     {{ page.quote }}
   </blockquote>
   {%- endif %}
+</section>
 
+<section>
   {% include slider.html %}
+</section>
 
+<section class="container home">
   <ul class="post-list">
     {% assign related_posts = site.posts | where: "ndh", ndh.slug %}
     {% for post in related_posts %}
@@ -52,3 +62,7 @@ layout: page
 <script>
   {% include scripts/carousel.js %}
 </script>
+<<<<<<< HEAD
+=======
+</section>
+>>>>>>> f46c038... filled slider with images
