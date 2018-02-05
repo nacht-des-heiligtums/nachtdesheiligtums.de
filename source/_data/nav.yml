@@ -2,18 +2,16 @@ main:
   about:
     label: Über uns
     items:
+      idee:
+        label: Die Nacht des Heiligtums
+        title: Die Nacht des Heiligtums
+        url: /idee
       kernteam:
         label: Kernteam
         title: Kernteam
         url: /kernteam
-      helferwoche:
-        label: Helferwoche
-        title: Helferwoche
-        url: /helferwoche
-      mitmachen:
-        label: Mitmachen
-        title: Mitmachen
-        url: /mitmachen
+
+
   medien:
     label: Medien
     items:
@@ -25,3 +23,20 @@ main:
         label: "Zeitung: Night of the Shrine"
         title: "Zeitung: Night of the Shrine"
         url: /night-of-the-shrine
+
+  support:
+    label: Unterstützen
+    items:
+      sponsoring:
+        label: Sponsoring
+        title: Sponsoring
+        url: /sponsoring
+      mitmachen:
+        label: Mitmachen
+        title: Mitmachen
+        url: /mitmachen
+      helferwoche:
+        label: Helferwoche
+        title: Helferwoche
+        url: /helferwoche
+
