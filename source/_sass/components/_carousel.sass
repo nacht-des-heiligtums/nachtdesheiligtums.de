@@ -7,6 +7,7 @@ $carousel-title-size: $size-7 !default
 $carousel-border: none
 $carousel-animation-speed: .5s
 $carousel-animation-method: ease-in-out
+$carousel-background-color: $lightblue !default
 
 $carousel-sizes: (2, 3, 4, 5) !default
 
@@ -14,6 +15,7 @@ $carousel-sizes: (2, 3, 4, 5) !default
   display: block
   position: relative
   flex: 1 0 100%
+  margin-left: 10%
   &.has-background
     .is-background
       object-fit: cover
@@ -25,10 +27,9 @@ $carousel-sizes: (2, 3, 4, 5) !default
     left: 0
     right: 0
     bottom: 0
-    padding: 1.5em
+    padding: 10%
     margin: 0
     text-align: center
-    background: $carousel-title-background
     font-size: $carousel-title-size
 
   &.has-image
@@ -37,18 +38,25 @@ $carousel-sizes: (2, 3, 4, 5) !default
     align-items: center
 
     .carousel-image
+      margin-top: 3%
       object-fit: cover
       object-position: center center
-      max-height: 20em
-      width: 36%
+      max-height: 80%
+      width: 12%
+      border-radius: 50%
+      //box-shadow: 0 0 2px 1px rgba(255, 255, 255, 60)
 
     .carousel-text
-      padding: 1.5em
+      margin-top: 2%
+      padding-left: 2%
+      //font-family: Phosphate
 
       blockquote
-        font-size: 1.4em
+        font-size: 1.1em
         max-width: 35em
-
+        .author
+          text-align: right
+          font-size: 0.6em
 
 =carousel-container
   width: 100%
@@ -62,6 +70,7 @@ $carousel-sizes: (2, 3, 4, 5) !default
   @content
 
 =carousel
+  background-color: $carousel-background-color
   position: relative
   overflow: hidden
   .carousel-container
