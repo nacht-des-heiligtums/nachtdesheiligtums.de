@@ -134,7 +134,13 @@ permalink: /anmeldung/registration.php
         'Content-Transfer-Encoding: 8bit' . "\r\n" .
         'X-Mailer: PHP/' . phpversion();
 
-    mail($mail_to, $mail_subject, $mail_message, $mail_headers);
+    try {
+      set_error_handler(function() { /* ignore errors */ });
+      mail($mail_to, $mail_subject, $mail_message, $mail_headers);
+      restore_error_handler();
+    } catch (Exception $e) {
+      // nothing to do
+    }
   }
 
   $validation = array(
