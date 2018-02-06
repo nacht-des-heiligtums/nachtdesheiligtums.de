@@ -4,6 +4,7 @@ permalink: /anmeldung/registration.php
 <?php
 
   $_c_filename = "jpq5laf2m9uodr2h3tl1veghn7c6lm08.csv";
+  $_c_mailfrom = "anmeldung@nachtdesheiligtums.de";
 
   $_registration_type = getPostInput('registration-type');
   $_group_id = getPostInput('group-id');
@@ -80,6 +81,60 @@ permalink: /anmeldung/registration.php
     ));
 
     fclose($_file);
+
+    $_registration_type_nice = $type_single ? 'Einzelanmeldung' : $type_group_leader ? 'Gruppenverantwortlicher' : 'Gruppenteilnehmer';
+    $_nutrition_habit_nice = $_nutrition_habit == 'vegetarian' ? 'Ja' : 'Nein';
+    $_room_type_nice = $_room_type == 'dorm'
+      ? 'Schlafsaal (Schlafack, Isomatte/Luftmatratze)'
+      : $_room_type == 'double'
+        ? 'Bett im Doppelzimmer (zzgl. 10 Euro/Nacht + bitte Schlafsack mitbringen)'
+        : 'Einzelzimmer (zzgl. 20 Euro/Nacht + bitte Schlafsack mitbringen)';
+    $_package_nice = $_package == 'package-a'
+      ? 'Wochenende komplett (55 Euro)'
+      : $_package == 'package-b'
+        ? 'Wochende Samstagnachmittag bis Sonntagmittag (35 Euro)'
+        : 'Wochenende ohne Übernachtung (45 Euro)';
+    $_payment_method_nice = $_payment_method == 'cash' ? 'Bar' : 'Überweisung';
+
+    $mail_to = $_email;
+    $mail_subject = 'Anmeldebestätigung: Nacht des Heiligtums 2018';
+    $mail_message = 'Hallo ' . $_first_name . ',' . "\r\n\r\n" .
+                    'wir haben Deine Anmeldung zur Nacht des Heiligtums 2018 (31. August bis 02. September) erhalten und freuen uns darüber.' . "\r\n\r\n" .
+                    'Deine Angaben:' . "\r\n" .
+                    'Anmeldungstyp: ' . $_registration_type_nice . "\r\n" .
+                    ($type_single ? '' : ('Gruppen-ID: ' . $_group_id . "\r\n")) .
+                    'Vorname: ' . $_first_name . "\r\n" .
+                    'Name: ' . $_last_name . "\r\n" .
+                    ($type_group_participant ? '' : ('Straße / Nr.: ' . $_street . "\r\n")) .
+                    ($type_group_participant ? '' : ('PLZ: ' . $_plz . "\r\n")) .
+                    ($type_group_participant ? '' : ('Wohnort: ' . $_residence . "\r\n")) .
+                    ($type_group_participant ? '' : ('Diözese: ' . $_diocese . "\r\n")) .
+                    'Email: ' . $_email . "\r\n" .
+                    ($type_group_participant ? '' : ('Telefonnummer: ' . $_phone . "\r\n")) .
+                    'Geburtsdatum: ' . $_date_of_birth . "\r\n" .
+                    'Vegetarier: ' . $_nutrition_habit_nice . "\r\n" .
+                    'Übernachtung: ' . $_room_type_nice . "\r\n" .
+                    'Paketwahl: ' . $_package_nice . "\r\n" .
+                    ($type_group_participant ? "\r\n" : ('Bezahlmethode: ' . $_payment_method_nice . "\r\n\r\n")) .
+                    'Du bist nun als Teilnehmer für die Nacht des Heiligtums 2018 registriert.' . "\r\n" .
+                    'Wenn Du als Bezahlmethode die Überweisung gewählt hast, dann überweise den Teilnehmerbeitrag' . "\r\n" .
+                    'bitte spätestens bis zum 20. August 2018 auf folgendes Konto:' . "\r\n\r\n" .
+                    'Schönstattbewegung Deutschland e.V. - Nacht des Heiligtums' . "\r\n" .
+                    'Kreditinstitut: Sparkasse Koblenz' . "\r\n" .
+                    'IBAN: DE31 5705 0120 0000 1346 50' . "\r\n" .
+                    'BIC: MALADE51KOB' . "\r\n" .
+                    'Verwendungszweck: Gruppenname + Teilnehmername + NdH 2018' . "\r\n\r\n" .
+                    'Noch nicht 18? Dann fülle bitte noch das Formular unter http://www.nachtdesheiligtums.de/anmeldung/anmeldeformular-pdf aus,' . "\r\n" .
+                    'lass es von deinen Eltern unterschreiben und schicke es uns oder lege es uns spätestens beim Einchecken vor.' . "\r\n\r\n" .
+                    'See you - wir sehen uns in Schönstatt!' . "\r\n\r\n" .
+                    'Dein Kernteam';
+    $mail_headers = 'From: ' . $_c_mailfrom . "\r\n" .
+        'Reply-To: ' . $_c_mailfrom . "\r\n" .
+        'Content-Type: text/plain; charset=UTF-8' . "\r\n" .
+        'Content-Transfer-Encoding: 8bit' . "\r\n" .
+        'X-Mailer: PHP/' . phpversion();
+
+    mail($mail_to, $mail_subject, $mail_message, $mail_headers);
   }
 
   $validation = array(
