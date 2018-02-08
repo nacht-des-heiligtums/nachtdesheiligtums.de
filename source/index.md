@@ -8,10 +8,13 @@ intro:
   blurbs:
     - text: Anmeldung
       url: /anmeldung
-    - text: Unterkunft
-      url: /unterkunft
+      image: /assets/icons/anmeldung.png
+#    - text: Programm
+#      url: /programm
+#      image: /assets/icons/programm.png
     - text: Anreise
       url: /anreise
+      image: /assets/icons/anreise.png
   description: >-
     Die Nacht des Heiligtums ist ein Festival rund um den Glauben. Dich erwarten
     lebendige Gottesdienste, eine tolle Gemeinschaft und grandiose Highlights.

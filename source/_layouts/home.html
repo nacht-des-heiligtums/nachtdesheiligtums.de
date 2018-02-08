@@ -11,23 +11,33 @@ layout: base
   </div>
 </section>
 
-<section class="container home">
-  <div class="intro">
+<section class="content container home">
+  <div class="content intro">
     {{ page.intro.description | markdownify }}
   </div>
+</section>
 
-  {{ ndh.datum }}
+  <div class="hero date">
+    Save the date: {{ ndh.datum }}
+  </div>
 
+
+{% include layout/registration-icons.html %}
+
+
+<section class="content container home">
+  {%comment%}
   <div class="blurbs">
     {% for blurb in page.intro.blurbs %}
     <div class="blurb">
       <a href="{{ blurb.url}}">
-        <img src="{{ blurb.image }}" />
-        {{ blurb.text }}
+        <img src="{{blurb.image}}"/>
+        <span class="icon-label">{{ blurb.text }}</span>
       </a>
     </div>
     {% endfor %}
   </div>
+  {%endcomment%}
 
   {{ content }}
 
@@ -38,6 +48,8 @@ layout: base
   {%- endif %}
 </section>
 
+<div style="clear:both"></div>
+
 <section>
   {% include slider.html %}
 </section>
@@ -47,22 +59,19 @@ layout: base
     {% assign related_posts = site.posts | where: "ndh", ndh.slug %}
     {% for post in related_posts %}
       <li>
-        <span class="post-meta">{{ post.date | localize: ":long" }}</span>
-
-        <strong>
-          <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
-        </strong>
+          <span class="post-meta">{{ post.date | localize: ":long" }}</span>
+          <strong>
+            <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+          </strong>
       </li>
     {% endfor %}
   </ul>
 
+  {%comment%}
   <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
-</div>
+  {%endcomment%}
+</section>
 
 <script>
   {% include scripts/carousel.js %}
 </script>
-<<<<<<< HEAD
-=======
-</section>
->>>>>>> f46c038... filled slider with images

@@ -1,3 +1,4 @@
+@import "../bulma/sass/elements/content.sass"
 $content-heading-color: $text-strong !default
 $content-heading-weight: $weight-normal !default
 $content-heading-line-height: 1.125 !default
@@ -17,8 +18,20 @@ $content-table-head-cell-border-width: 0 0 2px !default
 $content-table-head-cell-color: $text-strong !default
 $content-table-foot-cell-border-width: 2px 0 0 !default
 $content-table-foot-cell-color: $text-strong !default
+$theme-color: $blue !default
 
 .content
+  margin-left: 5em
+  margin-top: 2em
+  &.intro
+    font-size: 1.5em
+  &.date
+    background-color: $red
+    text-align: center
+    font-size: 2em
+    color: $theme-color
+    font-weight: $weight-bold
+    font-family: "Kohinoor Devanagari"
   +block
   // Inline
   li + li
@@ -143,3 +156,7 @@ $content-table-foot-cell-color: $text-strong !default
     font-size: $size-medium
   &.is-large
     font-size: $size-large
+  &.is-wide
+    padding: 0em
+    margin: 0em
+    white-space: normal

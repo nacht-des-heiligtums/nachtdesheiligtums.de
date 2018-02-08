@@ -1,5 +1,24 @@
 @import "../bulma/sass/layout/hero.sass"
+$hero-font: "Kohinoor Devanagari"
 
-.hero.has-background-image
-  background-position: center center
-  background-size: cover
+.hero
+  &.has-background-image
+    background-position: center center
+    background-size: cover
+
+  &.date
+    background-color: $gray
+    text-align: center
+    font-size: 2em
+    color: $yellow
+    font-weight: $weight-bold
+    font-family: $hero-font
+    padding: 1em
+
+  &.title
+    background-color: $gray
+    color: $blue
+    text-align: center
+    padding: 1em
+    font-family: $hero-font
+    font-weight: $weight-bold

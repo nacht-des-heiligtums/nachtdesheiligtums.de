@@ -13,7 +13,25 @@ layout: base
       <div class="page-meta">
         {% assign page_date = page.date | default: page.last_modified_at %}
         {% if page_date %}
-          <time datetime="{{ page_date | date_to_xmlschema }}" itemprop="datePublished">{{ page_date | localize: ':default' }}</time>
+          <time datetime="{{ page_date | date: '%d,%B,%Y' }}" itemprop="datePublished">
+            {% assign m = page.date | date: "%-m" %}
+            {{ page.date | date: "%-d" }}
+            {% case m %}
+            {% when '1' %}Januar
+            {% when '2' %}Februar
+            {% when '3' %}M&auml;rz
+            {% when '4' %}April
+            {% when '5' %}Mai
+            {% when '6' %}Juni
+            {% when '7' %}Juli
+            {% when '8' %}August
+            {% when '9' %}September
+            {% when '10' %}Oktober
+            {% when '11' %}November
+            {% when '12' %}Dezember
+            {% endcase %}
+            {{ page.date | date: "%Y" }}
+          </time>
         {% endif %}
         {% if page.author %}<span class="author" itemprop="author">{{ page.author }}</span>{% endif %}
         {% if page.read_time %}{% include post/read-time.html %}{% endif %}
@@ -27,10 +45,13 @@ layout: base
     <footer class="page-footer">
     </footer>
 
+    {%comment%}
     {% include metadata/page.html %}
+    {%endcomment%}
   </article>
 </div>
-
+{%comment%}
 {% include post/pagination.html %}
 
 {% include post/related_posts.html %}
+{%endcomment%}

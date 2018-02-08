@@ -1,0 +1,13 @@
+
+<section class = "registration-icons">
+  {% for blurb in page.intro.blurbs %}
+  <div class="blurb">
+    <a href="{{ blurb.url}}">
+      <img src="{{ blurb.image }}"/>
+
+      <p>{{ blurb.text }}</p>
+    </a>
+  </div>
+  {% endfor %}
+</section>
+

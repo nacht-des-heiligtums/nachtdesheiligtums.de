@@ -2,7 +2,7 @@
 title: WhatsApp News von deinem Lieblingsfestival direkt auf DEIN Handy
 ndh: 2018
 author: Benedikt Herkommer
-image: 
+image: assets/images/Whats-App-Logo.png
 ---
 Hey du da draußen! Verpasse keine Neuigkeit mehr von der Nacht des Heiligtums und bekomme die neuesten Infos direkt auf dein Handy!
 Und damit nicht genug: Um die Wartezeit zu verschönern und ein Stück des Geistes der NdH in deinen Alltag zu bringen bekommst du regelmäßig Impulse mit denen du dich schon auf die NdH einstellen kannst!
