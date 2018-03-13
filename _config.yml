@@ -39,7 +39,8 @@ locale: de-DE
 timezone: Europe/Berlin
 
 backend:
-  name: github
+  name: git-gateway
+  roles: [Admin]
   repo: nacht-des-heiligtums/nachtdesheiligtums.de
 
 identity_provider: netlify
