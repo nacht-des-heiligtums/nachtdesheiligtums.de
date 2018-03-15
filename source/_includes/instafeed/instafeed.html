@@ -1,0 +1,25 @@
+{% if site.instagram.user_id and site.instagram.access_token %}
+<div id="instafeed" class="instafeed"></div>
+
+<script>
+{% include instafeed/instafeed.js %}
+document.addEventListener('DOMContentLoaded', function() {
+  var feed = new Instafeed({
+    get: 'user',
+    userId: '{{ site.instagram.user_id }}',
+    accessToken: '{{ site.instagram.access_token }}',
+    sortBy: 'most-recent',
+    resolution: 'low_resolution',
+    template: '{% raw %}<div class="instafeed__entry"><a href="{{link}}" title="Bild bei Instagram öffnen"><img class="instafeed__image" src="{{image}}" /></a><span class="instafeed__location">{{location}}</span><span class="instafeed__caption">{{caption}}</span></div>{% endraw %}',
+    after: function() {
+      var captions = document.querySelectorAll('.instafeed__caption');
+      captions.forEach(function (caption){
+        var text = caption.innerText
+        caption.innerHTML = text.replace(/#([^ ]+)/g, '<a href="https://instagram.com/explore/tags/$1" class="instafeed__tag">#$1</a>');
+      })
+    }
+  });
+  feed.run()
+})
+</script>
+{% endif %}
