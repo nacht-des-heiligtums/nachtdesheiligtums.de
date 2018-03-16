@@ -12,6 +12,16 @@ layout: base
 
     <main class="page-main content" itemprop="text">
     {{ content }}
+      {% if page.images %}
+      {% capture folder %}images/{{page.images}}{%endcapture%}
+        <div class="columns">
+          {% for image in site.static_files %}
+          {% if image.path contains folder  %}
+          <div class="column"><img src="{{ site.baseurl }}{{ image.path }}" alt="image" /></div>
+          {% endif %}
+          {% endfor %}
+        </div>
+      {% endif %}
     </main>
 
     <footer class="page-footer">

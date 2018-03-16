@@ -2,6 +2,7 @@
 layout: page
 title: Helferwoche
 permalink: /helferwoche/
+images: Helferwoche
 ---
 Ein internationales Jugendwochenende schießt nicht so einfach aus dem Boden wie ein Pilz – leider. Deshalb braucht es jede Menge kreativer Gedanken und fleißiger Hände, die sich im Vorfeld dafür einsetzen, dass ein solches Wochenende gelingen kann. Auch Deine Talente sind gefragt! Ob in der Logistik oder bei der Deko, in der liturgischen und musikalischen Vorbereitung oder bei der Organisation: je mehr Fähigkeiten zur Verfügung stehen, desto besser wird das Ergebnis.
 
