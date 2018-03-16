@@ -16,11 +16,16 @@ $carousel-sizes: (2, 3, 4, 5) !default
   position: relative
   flex: 1 0 100%
   margin-left: 10%
+
+  &.is-overlay
+    align-items: center
+    justify-content: space-between
+    z-index: 20
+
   &.has-background
     .is-background
       object-fit: cover
       object-position: center center
-      height: 100%
       width: 100%
   .title
     position: absolute
@@ -38,12 +43,11 @@ $carousel-sizes: (2, 3, 4, 5) !default
     align-items: center
 
     .carousel-image
-      margin-top: 3%
+      margin-top: 0%
       object-fit: cover
       object-position: center center
-      max-height: 80%
-      width: 12%
-      border-radius: 50%
+
+
       //box-shadow: 0 0 2px 1px rgba(255, 255, 255, 60)
 
     .carousel-text
@@ -70,7 +74,6 @@ $carousel-sizes: (2, 3, 4, 5) !default
   @content
 
 =carousel
-  background-color: $carousel-background-color
   position: relative
   overflow: hidden
   .carousel-container
@@ -86,6 +89,16 @@ $carousel-sizes: (2, 3, 4, 5) !default
       &.is-#{$size}
         .carousel-container
           transform: translateX(calc(-100% / #{$size}))
+
+  &.is-testimonial
+    background-color: $carousel-background-color
+    .carousel-item
+      margin-left: 10%
+    .carousel-image
+      border-radius: 50%
+      max-height: 80%
+      width: 12%
+
 
 // Carousel Navigation (includes previous - next actions elements)
 =carousel-navigation
@@ -136,7 +149,7 @@ $carousel-sizes: (2, 3, 4, 5) !default
   left: 0
   bottom: 0
   right: 0
-  height: auto
+  height: 100%
   border: none
   margin: auto
   padding: 0
@@ -173,3 +186,9 @@ $carousel-sizes: (2, 3, 4, 5) !default
         opacity: 1
       &:not(.is-active)
         opacity: 0
+
+.hero-body
+  &.is-overlay
+    width: 60%
+    margin: 0 auto
+    height: 80%

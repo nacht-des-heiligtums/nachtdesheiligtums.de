@@ -31,7 +31,7 @@ title: Nacht des Heiligtums
 email: info@nacht-des-heiligtums.de
 description: >-
   Die Nacht des Heiligtums ist das Jugendfestival der Schönstattjugend in Deutschland.
-tagline: Verbum domini manet in eternum.
+tagline:
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 

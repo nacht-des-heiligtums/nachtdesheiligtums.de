@@ -2,13 +2,22 @@
 layout: base
 ---
 {% assign ndh = site.ndhs.last %}
-
-<section class="hero is-medium has-background-image" style="background-image:url({{ ndh.header_image }})">
-  <div class = "hero-body">
-    <div class="container">
-      <img src="{{ ndh.overlay_image }}"  style="margin-left: 20%; top: 50%; bottom: 50%; width: 60%"/>
+<section class="hero is-medium has-carousel">
+    <div class="hero-carousel carousel-animated carousel-animate-fade" data-autoplay="true" data-delay="8000">
+      <div class="carousel-container">
+        {% capture folder %}images/{{ndh.images}}{%endcapture%}
+        {% for image in site.static_files %}
+        {% if image.path contains folder  %}
+        <div class="carousel-item has-background is-active">
+        <img class="is-background" src="{{ site.baseurl }}{{ image.path }}" alt="" />
+        </div>
+        {% endif %}
+        {% endfor %}
+      </div>
     </div>
-  </div>
+    <div class="hero-body is-overlay container">
+      <img src="{{ ndh.overlay_image }}"/>
+    </div>
 </section>
 
 <section class="content container home">
