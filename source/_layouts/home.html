@@ -20,21 +20,21 @@ layout: base
     </div>
 </section>
 
-<section class="content container home">
-  <div class="content intro">
-    {{ page.intro.description | markdownify }}
+<section class="section">
+  <div class="container">
+    <div class="content intro">
+      {{ page.intro.description | markdownify }}
+    </div>
   </div>
 </section>
 
-  <div class="hero date">
-    Save the date: {{ ndh.datum }}
-  </div>
-
+<div class="hero date">
+  Save the date: {{ ndh.datum }}
+</div>
 
 {% include layout/registration-icons.html %}
 
-
-<section class="content container home">
+<section class="section">
   {%comment%}
   <div class="blurbs">
     {% for blurb in page.intro.blurbs %}
@@ -48,7 +48,11 @@ layout: base
   </div>
   {%endcomment%}
 
-  {{ content }}
+  <div class="container">
+    <div class="content">
+      {{ content }}
+    </div>
+  </div>
 
   {%- if page.quote %}
   <blockquote>
@@ -57,28 +61,28 @@ layout: base
   {%- endif %}
 </section>
 
-<div style="clear:both"></div>
-
-<section>
+<section class="section is-wide">
   {% include slider.html %}
 </section>
 
-<section class="container home">
-  <ul class="post-list">
-    {% assign related_posts = site.posts | where: "ndh", ndh.slug %}
-    {% for post in related_posts %}
-      <li>
-          <span class="post-meta">{{ post.date | localize: ":long" }}</span>
-          <strong>
-            <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
-          </strong>
-      </li>
-    {% endfor %}
-  </ul>
+<section class="section">
+  <div class="container">
+    <ul class="post-list">
+      {% assign related_posts = site.posts | where: "ndh", ndh.slug %}
+      {% for post in related_posts %}
+        <li>
+            <span class="post-meta">{{ post.date | localize: ":long" }}</span>
+            <strong>
+              <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+            </strong>
+        </li>
+      {% endfor %}
+    </ul>
 
-  {%comment%}
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
-  {%endcomment%}
+    {%comment%}
+    <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
+    {%endcomment%}
+  </div>
 </section>
 
 <script>
