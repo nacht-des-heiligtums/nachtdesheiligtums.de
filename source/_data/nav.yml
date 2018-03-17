@@ -31,10 +31,10 @@ main:
         label: Sponsoring
         title: Sponsoring
         url: /sponsoring
-      mitmachen:
-        label: Mitmachen
-        title: Mitmachen
-        url: /mitmachen
+      # mitmachen:
+      #   label: Mitmachen
+      #   title: Mitmachen
+      #   url: /mitmachen
       helferwoche:
         label: Helferwoche
         title: Helferwoche
