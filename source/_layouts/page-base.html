@@ -1,0 +1,19 @@
+---
+layout: base
+---
+<article class="page" itemscope itemtype="http://schema.org/CreativeWork">
+  {% include layout/page-header.html %}
+
+  <main class="page-main content" itemprop="text">
+  {{ content }}
+  </main>
+
+  <footer class="page-footer">
+    {% assign page_date = page.date | default: page.last_modified_at %}
+    {% if page_date %}
+      <time datetime="{{ page_date | date_to_xmlschema }}" itemprop="datePublished">{{ page_date | localize: ':default' }}</time>
+    {% endif %}
+  </footer>
+
+  {% include metadata/page.html %}
+</article>
