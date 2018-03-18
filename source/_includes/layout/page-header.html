@@ -15,12 +15,6 @@
         {% endif %}
         {% if page.author %}<span class="author" itemprop="author">{{ page.author }}</span>{% endif %}
         {% if page.read_time %}{% include post/read-time.html %}{% endif %}
-        {% if page.station %}
-          {% assign station = site.stationen | where: "slug", page.station | first %}
-          <a href="{{ station.url | relative_url }}">
-            {{ station.title }}
-          </a>
-        {% endif %}
       </div>
     {% endif %}
   </div>
