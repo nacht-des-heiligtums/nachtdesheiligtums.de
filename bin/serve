@@ -1,9 +1,17 @@
 #! /usr/bin/env bash
+set -e
 
-env=${1:-dev}
-if [ "$env" == "production" ]; then
-  config=""
-else
-  config=",_config.${env}.yml"
+ENV="${1:-dev}"
+if [ "${ENV}" != "production" ]; then
+  # load .env variables unless in production mode
+  source bin/dotenv
+  dotenv
 fi
-bundle exec jekyll serve --config "_config.yml${config}" --livereload --incremental
+
+config="_config.yml"
+env_config="_config.${ENV}.yml"
+if [ -f "${env_config}" ]; then
+  config="${config},${env_config}"
+fi
+
+bundle exec jekyll serve --config "${config}" --livereload --incremental
