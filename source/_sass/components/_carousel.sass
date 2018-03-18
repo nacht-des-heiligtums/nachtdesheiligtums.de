@@ -27,6 +27,7 @@ $carousel-sizes: (2, 3, 4, 5) !default
       object-position: center center
       width: 100%
       height: 100%
+
   .title
     position: absolute
     left: 0
@@ -41,18 +42,25 @@ $carousel-sizes: (2, 3, 4, 5) !default
     display: flex
     flex-direction: row
     align-items: center
+    justify-content: center
+
+    +mobile
+      flex-direction: column
+
+    .carousel-image,
+    .carousel-text
+      margin: $gap
+
+      +mobile
+        margin: $gap * 0.5
 
     .carousel-image
       object-fit: cover
       object-position: center center
 
-
       //box-shadow: 0 0 2px 1px rgba(255, 255, 255, 60)
 
     .carousel-text
-      margin-top: 2%
-      padding-left: 2%
-      //font-family: Phosphate
 
       blockquote
         font-size: 1.1em
@@ -91,14 +99,16 @@ $carousel-sizes: (2, 3, 4, 5) !default
 
   &.is-testimonial
     background-color: $carousel-background-color
-    .carousel-item
-      margin-left: 10%
+
     .carousel-image
-      margin-top: 3%
       border-radius: 50%
       max-height: 80%
-      width: 12%
+      width: 12em
 
+    .carousel-text
+      +tablet
+        // offset by height of author line to align main body with image
+        padding-top: 1em
 
 // Carousel Navigation (includes previous - next actions elements)
 =carousel-navigation
