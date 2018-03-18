@@ -1,16 +1,20 @@
 ---
-layout: page
+layout: page-base
 title: 404 Page not found
 sitemap: false
 permalink: /404.html
 ---
-<p>Du hast unsere <a href="https://de.wikipedia.org/wiki/Fehlerseite">404-Seite</a> gefunden! Wahrscheinlich hast du aber eigentlich etwas anderes gesucht. Das hat leider nicht geklappt. Vielleicht kommst du mit diesen Links weiter:</p>
+<section class="section">
+  <div class="container">
+    <p>Du hast unsere <a href="https://de.wikipedia.org/wiki/Fehlerseite">404-Seite</a> gefunden! Wahrscheinlich hast du aber eigentlich etwas anderes gesucht. Das hat leider nicht geklappt. Vielleicht kommst du mit diesen Links weiter:</p>
 
-<ul>
-  <li>Auf der <a href="{{ site.baseurl }}/">Homepage</a> findest du einen Überblick über diese Website.</li>
-  <li>Wir haben auch eine <a href="{{ site.baseurl }}/sitemap">Sitemap</a> mit allen Seiten.</li>
-</ul>
+    <ul>
+      <li>Auf der <a href="{{ '/' | relative_url }}">Homepage</a> findest du einen Überblick über diese Website.</li>
+      <li>Wir haben auch eine <a href="{{ '/sitemap' | relative_url }}">Sitemap</a> mit allen Seiten.</li>
+    </ul>
 
-<p>Für Fragen und Rückmeldungen schick uns einfache eine Mail an <a href="mailto:{{ site.email }}">{{ site.email }}</a>. Wenn du über einen Link auf diese Seite gelangt bist, freuen wir uns, wenn du uns auf diesen Fehler hinweist.</p>
+    <p>Für Fragen und Rückmeldungen schick uns einfache eine Mail an <a href="mailto:{{ site.email }}">{{ site.email }}</a>. Wenn du über einen Link auf diese Seite gelangt bist, freuen wir uns, wenn du uns auf diesen Fehler hinweist.</p>
 
-<!-- TODO: SUCHE -->
+    <!-- TODO: SUCHE -->
+  </div>
+</section>

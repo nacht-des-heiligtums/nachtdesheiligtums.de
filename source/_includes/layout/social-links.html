@@ -16,7 +16,7 @@
   <span class="icon-label">Instagram</span>
 </a>
 {% endif %}
-<a href="{{ site.baseurl }}/sitemap" title="Sitemap für {{ site.url | default: site.title }}">
+<a href="{{ '/sitemap' | relative_url }}" title="Sitemap für {{ site.url | default: site.title }}">
   <svg width="50" height="50" class="social-icon"><use class="icon" xlink:href="#icon-sitemap" /></svg>
   <span class="icon-label">Sitemap</span>
 </a>

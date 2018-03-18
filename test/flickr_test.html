@@ -1,0 +1,27 @@
+---
+layout: page-base
+title: Flickr Test
+permalink: /flickr_test/
+---
+<section class="section">
+  <div class="container">
+    <figure>
+      {% flickr_photo 40167202064 %}
+    </figure>
+    <figure>
+      {% flickr_photo 40167202064 size="medium" %}
+    </figure>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    {% flickr_album 72157694615042635 %}
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-fluid">
+    {% flickr_album 72157694615042635 size="medium" title="Album in fluid section" %}
+  </div>
+</section>

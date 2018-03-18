@@ -36,3 +36,7 @@ clean:
 .PHONY: watch
 watch:
 	bin/watch $(ENV)
+
+.PHONY: setup
+setup:
+	bin/setup

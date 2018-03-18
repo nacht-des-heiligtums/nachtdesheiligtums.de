@@ -5,7 +5,7 @@ stages:
   - deploy
 
 cache:
-  key: "$CI_BUILD_REF_NAME/$CI_BUILD_NAME"
+  key: "${CI_BUILD_REF_NAME}--${CI_BUILD_NAME}"
   paths:
     - vendor
 
@@ -24,31 +24,15 @@ before_script:
 jekyll_production:
   stage: build
   script:
-    - apt-get install -y libgsl0-dev
-    - bundle install --jobs $(nproc) --path vendor/ --without update_content
-    - bundle exec jekyll build -d public --lsi
+    # uncomment if you're using similar-posts feature
+    # - apt-get install -y libgsl0-dev
+    - bin/build
   artifacts:
     expire_in: 1 month
     paths:
-    - public
+    - _public
   only:
     - master
-
-pages: #Name required by Gitlab Pages!
-  stage: build
-  script:
-    - apt-get install -y libgsl0-dev
-    - bundle install --jobs $(nproc) --path vendor/ --without update_content
-    - bundle exec jekyll build -d public/$CI_BUILD_REF_NAME --baseurl /$CI_PROJECT_NAME/$CI_BUILD_REF_NAME --lsi
-  artifacts:
-    expire_in: 1 month
-    paths:
-    - public/$CI_BUILD_REF_NAME
-  dependencies:
-      - update_calendar
-  except:
-    - master # Master is already deployed to external hosting, don't necessarily need to host it on
-             # Gitlab Pages as well. Saves an additional job for master pipeline.
 
 link_checker:
   image: debian:jessie

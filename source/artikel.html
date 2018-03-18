@@ -1,0 +1,11 @@
+---
+title: Artikel
+permalink: /artikel/
+layout: page-base
+---
+<section class="section">
+  <div class="container">
+    {% assign length = site.posts | size %}
+    {% include post/list.html posts=site.posts limit=length %}
+  </div>
+</section>

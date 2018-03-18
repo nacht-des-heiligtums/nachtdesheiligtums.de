@@ -1,36 +1,8 @@
 ---
-layout: base
+layout: page-base
 ---
-<div class="section">
-  <article class="page container" itemscope itemtype="http://schema.org/CreativeWork">
-    <header class="page-header">
-      <h1 class="title" itemprop="headline name">{{ page.title | markdownify | remove: '<p>' | remove: '</p>' }}</h1>
-      {% if page.read_time %}
-        <div class="page-meta">{% include post/read-time.html %}</div>
-      {% endif %}
-    </header>
-
-    <main class="page-main content" itemprop="text">
+<section class="section">
+  <div class="container">
     {{ content }}
-      {% if page.images %}
-      {% capture folder %}images/{{page.images}}{%endcapture%}
-        <div class="columns">
-          {% for image in site.static_files %}
-          {% if image.path contains folder  %}
-          <div class="column"><img src="{{ site.baseurl }}{{ image.path }}" alt="image" /></div>
-          {% endif %}
-          {% endfor %}
-        </div>
-      {% endif %}
-    </main>
-
-    <footer class="page-footer">
-      {% assign page_date = page.date | default: page.last_modified_at %}
-      {% if page_date %}
-        <time datetime="{{ page_date | date_to_xmlschema }}" itemprop="datePublished">{{ page_date | localize: ':default' }}</time>
-      {% endif %}
-    </footer>
-
-    {% include metadata/page.html %}
-  </article>
-</div>
+  </div>
+</section>

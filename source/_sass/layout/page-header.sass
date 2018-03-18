@@ -1,0 +1,65 @@
+$page-header-background-color: $grey-dark !default
+
+.page-header
+  position: relative
+  display: flex
+  justify-content: flex-end
+  align-items: flex-end
+  flex-direction: column
+  min-height: 10em
+
+  &--no-image
+    background-color: $page-header-background-color
+
+  > .container
+    padding: $gap $gap #{$gap * .5}
+    background: $page-header-background-color
+    max-width: $container-width + $gutter * 4
+    max-width: calc(#{$container-width} + #{$gutter * 4})
+
+    +tablet
+      padding: #{$gap * 2} #{$gap * 2} $gap
+
+  &:not(.page-header--no-image) > .container
+    margin-top: -3rem
+
+h3.tagline
+  font-family: $family-primary
+  font-weight: 500
+
+.cover-image
+  width: 100%
+  overflow: hidden
+  z-index: -1
+  background-color: $page-header-image-background-color
+
+  order: -1
+
+  > img
+    display: block
+    width: 100%
+    height: 100%
+    object-fit: cover
+    max-height: 35vh
+
+    +tablet
+      max-height: 55vh
+
+hgroup
+  > .title:not(:last-child)
+    margin-bottom: 0
+
+.page-meta
+  margin-top: $gap * .5
+
+.page--page .title
+  font-size: 3em
+
+
+.head-pills
+  display: flex
+  flex-direction: row
+  margin: 0 $gutter * -.5
+
+  > *
+    margin: 0 $gutter * .5

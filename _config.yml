@@ -40,7 +40,7 @@ timezone: Europe/Berlin
 
 backend:
   name: git-gateway
-  roles: [Admin]
+  roles: [Admin, Redakteur]
   repo: nacht-des-heiligtums/nachtdesheiligtums.de
 
 identity_provider: netlify
@@ -60,6 +60,7 @@ source: source
 destination: _build
 include:
   - _pages
+  - _redirects
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list

@@ -1,0 +1,51 @@
+$gallery-margin: 0.25em
+$gallery-max-width: 320px
+
+@import "../bulma/sass/elements/image"
+
+@function gallery-width($screen-width)
+  @return 100% / ceil(($screen-width - (2 * $gap)) / $gallery-max-width)
+
+=gallery($gallery-margin: $gallery-margin, $gallery-max-width: $gallery-max-width, $gallery-default-width: $gallery-max-width)
+  display: flex
+  flex-direction: row
+  flex-wrap: wrap
+  margin: 0 #{-1 * $gallery-margin}
+
+  > .title
+    width: 100%
+    margin-left: $gallery-margin
+    margin-right: $gallery-margin
+
+  .gallery-item
+    width: $gallery-default-width
+    padding: $gallery-margin
+
+    > .image
+      overflow: hidden
+
+  .container &
+    .gallery-item
+      +mobile
+        width: 50%
+      +tablet
+        width: gallery-width($tablet)
+      +desktop
+        width: gallery-width($desktop - (2 * $gap))
+      +widescreen
+        width: gallery-width($widescreen - (2 * $gap))
+      +fullhd
+        width: gallery-width($fullhd - (2 * $gap))
+
+
+.gallery
+  +gallery($gallery-margin, $gallery-max-width)
+
+.gallery-image
+  object-fit: cover
+  transition: transform 1.2s
+
+  .gallery-item:hover &,
+  .gallery-item:focus &
+    transform: scale(1.06)
+

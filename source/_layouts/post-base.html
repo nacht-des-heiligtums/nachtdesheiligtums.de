@@ -1,0 +1,19 @@
+---
+layout: base
+---
+<article class="article" itemscope itemtype="http://schema.org/Article">
+  {% include layout/page-header.html show_meta=true %}
+
+  <main class="page-main content" itemprop="text">
+  {{ content }}
+  </main>
+
+  <footer class="page-footer">
+  </footer>
+
+  {% include metadata/page.html %}
+</article>
+
+{% include post/pagination.html %}
+
+{% include post/related_posts.html %}

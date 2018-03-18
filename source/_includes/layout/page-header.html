@@ -1,0 +1,27 @@
+<header class="page-header{% unless page.image.cover %} page-header--no-image{% endunless %}">
+  <div class="container">
+    <hgroup>
+      <h1 class="title" itemprop="headline name">{{ page.title | markdownify | remove: '<p>' | remove: '</p>' }}</h1>
+      {% if page.tagline %}
+      <h3 class="tagline" itemprop="alternativeHeadline">{{ page.tagline | markdownify | remove: '<p>' | remove: '</p>' }}</h3>
+      {% endif %}
+    </hgroup>
+
+    {% if include.show_meta %}
+      <div class="page-meta">
+        {% assign page_date = page.date | default: page.last_modified_at %}
+        {% if page_date %}
+          <time datetime="{{ page_date | date_to_xmlschema }}" itemprop="datePublished">{{ page_date | localize: '%e. %B %Y' }}</time>
+        {% endif %}
+        {% if page.author %}<span class="author" itemprop="author">{{ page.author }}</span>{% endif %}
+        {% if page.read_time %}{% include post/read-time.html %}{% endif %}
+      </div>
+    {% endif %}
+  </div>
+
+  {% if page.image.cover %}
+  <figure class="cover-image">
+    <img src="{{ page.image.cover }}" {% if page.image.position %}class="img--position--{{ page.image.position }}"{% endif %}>
+  </figure>
+  {% endif %}
+</header>

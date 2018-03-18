@@ -1,8 +1,9 @@
-_build
+/_build/
 .sass-cache
 .jekyll-metadata
 .git-metadata
 .bundle
 .env
-vendor
-node_modules
+.cache
+/vendor/
+/node_modules/
