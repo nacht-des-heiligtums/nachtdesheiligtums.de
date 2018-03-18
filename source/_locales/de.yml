@@ -35,6 +35,7 @@ de-DE:
       default: "%d.%m.%Y"
       long: "%e. %B %Y"
       short: "%e. %b"
+      date_long: "%e. %B %Y"
     month_names:
     -
     - Januar
