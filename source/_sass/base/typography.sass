@@ -1,0 +1,67 @@
+// Import webfonts
+// @import url(http://fonts.googleapis.com/css?family=Ubuntu:300,300italic,400,400italic,500,500italic,600,600italic)
+
+// Font defaults
+html
+  @include tablet-only
+    font-size: $body-size * 1.2
+
+  @include desktop
+    font-size: $body-size * 1.4
+
+body
+  margin: 0
+
+a
+  text-decoration: inherit
+  transition: color .5s
+
+  font-size: .96em
+
+  &:link,
+  &:visited
+    color: $link
+
+  &:hover,
+  &:focus
+    color: $link-hover
+
+  &:active
+    color: $link-hover
+
+  &.incognito
+    background-color: transparent
+    color: inherit
+    font-size: inherit
+    font-weight: inherit
+    text-decoration: inherit
+
+    &:link,
+    &:visited,
+    &:hover,
+    &:active
+      background-color: transparent
+      color: inherit
+      text-decoration: inherit
+
+h1,
+h2,
+h3
+  font-family: $family-primary
+
+  color: $text-strong
+  font-weight: 500
+
+h2.section-title
+  text-align: center
+  font-size: 2.5em
+
+.lead
+  font-size: 1.2em
+
+.small
+  font-size: .9em
+  font-weight: thin
+
+pre
+  text-align: left
