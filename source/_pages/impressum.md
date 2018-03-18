@@ -8,9 +8,9 @@ Angaben gemäß §5 <abbr title="Teledienstgesetz">TDG</abbr>
 
 Anbieter und Verantwortlicher für diese Internet-Domain im Sinne des § 6 des *Gesetzes über die Nutzung von Telediensten (TDG)*, des Gesetzes zur Regelung der Rahmenbedingungen für *Informations- und Kommunikationsdienste (IuKDG)* und bezüglich redaktioneller Inhalte, des Presserechts, sowie des § 6 II des *Staatsvertrages über Mediendienste (MDStV)* ist:
 
-<address class="pre">{{ site.impressum.name }}
-{{ site.impressum.address }}
-eMail: <a href="mailto:{{ site.impressum.email | default: site.email }}" title="Mail an {{ site.impressum.name | default: site.author | default: site.title }} senden">{{ site.impressum.mail }}</a>
+<address>{{ site.impressum.name }}<br>
+{{ site.impressum.address | newline_to_br }}<br>
+E-Mail: <a href="mailto:{{ site.impressum.email | default: site.email }}" title="Mail an {{ site.impressum.name | default: site.author | default: site.title }} senden">{{ site.impressum.mail | default: site.email }}</a>
 </address>
 
 {% if site.impressum.rstv %}
