@@ -2,7 +2,7 @@
 layout: base
 ---
 {% assign ndh = site.ndhs.last %}
-<section class="hero has-carousel">
+<section class="hero is-medium has-carousel">
     <div class="hero-carousel carousel-animated carousel-animate-fade" data-autoplay="true" data-delay="8000">
       <div class="carousel-container">
         {% capture folder %}images/{{ndh.images}}{%endcapture%}
@@ -71,7 +71,7 @@ layout: base
       {% assign related_posts = site.posts | where: "ndh", ndh.slug %}
       {% for post in related_posts %}
         <li>
-            <span class="post-meta">{{ post.date | localize: ":long" }}</span>
+            <span class="post-meta">{{ post.date | localize: ":date_long" }}</span>
             <strong>
               <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
             </strong>
