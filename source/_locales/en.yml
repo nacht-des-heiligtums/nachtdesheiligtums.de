@@ -210,4 +210,7 @@ en:
       default: "%a, %d %b %Y %H:%M:%S %z"
       long: "%B %d, %Y %H:%M"
       short: "%d %b %H:%M"
+      date_default: "%Y-%m-%d"
+      date_long: "%B %d, %Y"
+      date_short: "%b %d"
     pm: pm

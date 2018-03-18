@@ -33,9 +33,8 @@ de-DE:
     - Samstag
     formats:
       default: "%d.%m.%Y"
-      long: "%e. %B %Y"
-      short: "%e. %b"
-      date_long: "%e. %B %Y"
+      long: "%-d. %B %Y"
+      short: "%-d. %b"
     month_names:
     -
     - Januar
@@ -161,7 +160,10 @@ de-DE:
   time:
     am: vormittags
     formats:
-      default: "%d. %B %Y %H:%M Uhr"
-      long: "%A, %d. %B %Y, %H:%M Uhr"
-      short: "%d. %B, %H:%M Uhr"
+      default: "%-d. %B %Y %H:%M Uhr"
+      long: "%A, %-d. %B %Y, %H:%M Uhr"
+      short: "%-d. %B, %H:%M Uhr"
+      date_default: "%d.%m.%Y"
+      date_long: "%-d. %B %Y"
+      date_short: "%-d. %b"
     pm: nachmittags

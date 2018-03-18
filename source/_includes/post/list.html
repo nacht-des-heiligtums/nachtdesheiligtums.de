@@ -13,7 +13,7 @@
         </a>
       {% endif %}
       <div class="excerpt">
-        <span class="post__date">{{ post.date | localize: '%d. %B %Y' }}</span>
+        <span class="post__date">{{ post.date | localize: ':date_long' }}</span>
         {{ excerpt }}
       </div>
     </div>
