@@ -1,0 +1,65 @@
+$excerpt-line-height: 1.4em
+$excerpt-lines: 4
+
+.post-list
+  display: flex
+  flex-direction: row
+  flex-wrap: wrap
+  margin: 0 #{$gutter * -.5} $gutter
+  justify-content: center
+
+.post--teaser
+  display: flex
+  flex-direction: column
+  padding: $gutter * .5
+  width: 100%
+  max-width: 40em
+
+  @include tablet
+    width: 50%
+
+  @include widescreen
+    width: 33%
+
+  > h3
+    margin: 0.5em 0
+    font-family: $family-accent
+    font-weight: bold
+
+    > a
+      text-overflow: ellipsis
+      white-space: nowrap
+      overflow: hidden
+      display: block
+
+.post__image
+  order: -1
+  display: block
+
+  > img
+    object-fit: cover
+    height: 12em
+    width: 100%
+
+
+.excerpt
+  display: block
+  position: relative
+  line-height: $excerpt-line-height
+  height: $excerpt-line-height * $excerpt-lines
+  overflow: hidden
+
+  &::after
+    content: ""
+    display: block
+    position: absolute
+    bottom: 0
+    left: 0
+    width: 100%
+    height: $excerpt-line-height * 1.1
+    background-image: linear-gradient(to top, $body-background-color 0%, transparent 100%)
+
+.post__date
+  font-weight: 500
+  font-size: .9em
+  color: $grey-dark

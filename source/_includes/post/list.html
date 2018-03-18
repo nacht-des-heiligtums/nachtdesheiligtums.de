@@ -1,0 +1,21 @@
+<div class="post-list">
+  {% assign size = include.posts | size %}
+  {% assign limit = include.limit | default: size %}
+  {% for post in include.posts limit: limit %}
+    {%- assign excerpt = post.description | default: post.excerpt -%}
+    {% assign excerpt = post.content | markdownify | split: '</p>' | first | strip_html %}
+    {% assign image = post.image.medium | default: post.image.cover | default: post.image.thumb %}
+    <div class="post--teaser{% unless image %} no--image{% endunless %}">
+      <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+      {% if image %}
+        <a href="{{ post.url | relative_url }}" class="post__image">
+          <img src="{{ image }}" class="post__thumb{% if post.image.position %} img--position--{{ post.image.position }}{% endif %}">
+        </a>
+      {% endif %}
+      <div class="excerpt">
+        <span class="post__date">{{ post.date | localize: '%d. %B %Y' }}</span>
+        {{ excerpt }}
+      </div>
+    </div>
+  {% endfor %}
+</div>
