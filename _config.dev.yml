@@ -18,6 +18,7 @@ lsi: false
 # {% if site.environment == "development" %} do things {% endif %}
 environment: "development"
 port: 8310
+host: 0.0.0.0
 
 # livereload
 livereload: true
