@@ -4,5 +4,6 @@
 .git-metadata
 .bundle
 .env
+.cache
 /vendor/
 /node_modules/

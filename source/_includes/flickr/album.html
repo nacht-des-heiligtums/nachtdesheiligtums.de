@@ -1,0 +1,12 @@
+{% assign size = include['size'] | default: 'small320' %}
+<div class="gallery">
+  <h3 class="title">{{ include.title | default: album.title }}</h3>
+
+  {% for photo in album.photos %}
+    <a href="{{ photo.img_large }}" class="gallery-item">
+      <span class="image is-3by2">
+        <img alt="{{ photo.title }}" src="{{ photo.img[size] }}" class="gallery-image" />
+      </span>
+    </a>
+  {% endfor %}
+</div>
