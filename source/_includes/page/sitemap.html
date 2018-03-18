@@ -8,7 +8,7 @@
     <a href="{{ page.url | strip_index | relative_url }}">
       {{ page.title }}
     {% if page.last_modified_at %}
-      ({{ page.last_modified_at | localize: '%e. %B %Y' }})
+      ({{ page.last_modified_at | localize: ':date_long' }})
     {% endif %}
     </a>
   </li>
@@ -24,7 +24,7 @@
       <a href="{{ doc.url | strip_index | relative_url }}">
         {{ doc.title }}
       {% if doc.last_modified_at or doc.date %}
-        ({{ doc.last_modified_at | default: doc.date | localize: '%e. %B %Y' }})
+        ({{ doc.last_modified_at | default: doc.date | localize: ':date_long' }})
       {% endif %}
       </a>
     </li>
@@ -37,7 +37,7 @@
   <li>
     <a href="{{ file.path | relative_url }}">
       {{ file.title }}
-     ({{ file.modified_time | date_to_xmlschema }})
+     ({{ file.modified_time | localize: ':date_long' }})
       }
     </a>
   </li>

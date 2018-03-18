@@ -11,7 +11,7 @@
       <div class="page-meta">
         {% assign page_date = page.date | default: page.last_modified_at %}
         {% if page_date %}
-          <time datetime="{{ page_date | date_to_xmlschema }}" itemprop="datePublished">{{ page_date | localize: '%e. %B %Y' }}</time>
+          <time datetime="{{ page_date | date_to_xmlschema }}" itemprop="datePublished">{{ page_date | localize: ':date_long' }}</time>
         {% endif %}
         {% if page.author %}<span class="author" itemprop="author">{{ page.author }}</span>{% endif %}
         {% if page.read_time %}{% include post/read-time.html %}{% endif %}

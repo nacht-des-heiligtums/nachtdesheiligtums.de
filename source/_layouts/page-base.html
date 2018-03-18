@@ -22,7 +22,7 @@ layout: base
   <footer class="page-footer">
     {% assign page_date = page.date | default: page.last_modified_at %}
     {% if page_date %}
-      <time datetime="{{ page_date | date_to_xmlschema }}" itemprop="datePublished">{{ page_date | localize: ':default' }}</time>
+      <time datetime="{{ page_date | date_to_xmlschema }}" itemprop="datePublished">{{ page_date | localize: ':date_long' }}</time>
     {% endif %}
   </footer>
 

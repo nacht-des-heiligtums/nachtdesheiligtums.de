@@ -19,7 +19,7 @@
       {{ item.excerpt | markdownify }}
     </div>
     <div class="article__meta">
-      <time datetime="{{ item.date | date_to_xmlschema }}" class="article__date" itemprop="datePublished">{{ item.date | localize: '%e. %B %Y' }}</time>
+      <time datetime="{{ item.date | date_to_xmlschema }}" class="article__date" itemprop="datePublished">{{ item.date | localize: ':date_long' }}</time>
       {% if item.author %}<span class="article__author" itemprop="author">{{ item.author }}</span>{% endif %}
 
       {% include metadata/publisher.html %}
