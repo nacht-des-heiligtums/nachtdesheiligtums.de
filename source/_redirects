@@ -1,6 +1,12 @@
 # This file contains redirects defined as per Netlify redirects file format
 # see https://www.netlify.com/docs/redirects/
 
+# Redirect domain aliases to primary domain
+https://nacht-des-heiligtums.de/* https://nachtdesheiligtums.de/:splat 301!
+http://nacht-des-heiligtums.de/* https://nachtdesheiligtums.de/:splat 301!
+https://www.nacht-des-heiligtums.de/* https://nachtdesheiligtums.de/:splat 301!
+http://www.nacht-des-heiligtums.de/* https://nachtdesheiligtums.de/:splat 301!
+
 /anmeldung/gruppenanmeldung /anmeldung
 /anmeldung/gruppennachmeldung /anmeldung
 
