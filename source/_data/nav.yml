@@ -12,17 +12,17 @@ main:
         url: /kernteam
 
 
-  medien:
-    label: Medien
-    items:
-      foto-video:
-        label: Fotos & Videos
-        title: Fotos & Videos
-        url: /fotos-videos
-      zeitung:
-        label: "Zeitung: Night of the Shrine"
-        title: "Zeitung: Night of the Shrine"
-        url: /night-of-the-shrine
+#  medien:
+#    label: Medien
+#    items:
+#      foto-video:
+#       label: Fotos & Videos
+#        title: Fotos & Videos
+#        url: /fotos-videos
+#      zeitung:
+#        label: "Zeitung: Night of the Shrine"
+#        title: "Zeitung: Night of the Shrine"
+#        url: /night-of-the-shrine
 
   support:
     label: Unterstützen
