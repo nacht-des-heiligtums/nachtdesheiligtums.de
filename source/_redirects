@@ -1,2 +1,48 @@
 # This file contains redirects defined as per Netlify redirects file format
 # see https://www.netlify.com/docs/redirects/
+
+/anmeldung/gruppenanmeldung /anmeldung
+/anmeldung/gruppennachmeldung /anmeldung
+
+/category/* /artikel
+
+# /downloads/die-maus-erklart-den-schoenstatt-schonstatt-summer-mp3
+# /downloads/festival-zeitung-2010
+# /downloads/night-of-the-shrine-2009-pdf
+# /downloads/night-of-the-shrine-2011
+# /downloads/night-of-the-shrine-2012-an-vielen-kiosken-bereits-vergriffen
+# /downloads/night-of-the-shrine-2013-als-e-paper-herunterladen
+# /downloads/night-of-the-shrine-pdf
+# /downloads/songs-zur-nacht-2008-2009-mp3
+
+# /friends 404 # = Gästebuch
+
+# /e-card-senden 404
+# /weitersagen 404
+
+/idee/die-jugend-wird-es-sich-nicht-nehmen-lassen /idee
+/idee/die-nacht-des-heiligtums /idee
+/idee/helferwoche /helferwoche
+# /idee/liebesbundnis-und-iphone-%e2%80%93-ein-vergleich 404
+# /idee/wir-haben-der-kirche-etwas-zu-geben 404
+
+# /schonstatt/die-gnadenkapelle
+# /schonstatt/liebesbundnis-mit-maria
+# /schonstatt/pater-josef-kentenich
+# /schonstatt/schonstatt-bewegung
+
+/sponsoring/helfen-sie-mit /sponsoring
+/sponsoring/ohne-moos-nix-los /sponsoring
+/sponsoring/wir-suchen-sie-als-paten /sponsoring
+
+# /kontakt 404
+
+# TODO: Migration der Bestandsartikel
+# /news/*
+# /ruckblick/*
+# /ticker/*
+
+/news       /artikel/
+/ruckblick  /artikel/
+/ticker     /artikel/
+/news/5455  /artikel/2017-08-30-packen-wirs-an-helferwoche-in-vollem-gange/
