@@ -145,8 +145,8 @@ defaults:
 #
 # Verifications for several webmaster tools:
 webmaster_verification:
-  google:
-  bing:
+  google: e4FjsCvLG8FWSs9mLvNPa2dadwtqwU7JJ8qaOj3qSRQ
+  bing: F3A0B2D5EBD1B0CCB081F277B95A8824
   alexa:
   yandex:
 
