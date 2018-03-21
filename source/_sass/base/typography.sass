@@ -1,12 +1,15 @@
+$heading-color: $text-strong !default
+$heading-family: $family-primary !default
+
 // Import webfonts
 // @import url(http://fonts.googleapis.com/css?family=Ubuntu:300,300italic,400,400italic,500,500italic,600,600italic)
 
 // Font defaults
 html
-  @include tablet-only
+  +tablet-only
     font-size: $body-size * 1.2
 
-  @include desktop
+  +desktop
     font-size: $body-size * 1.4
 
 body
@@ -47,9 +50,9 @@ a
 h1,
 h2,
 h3
-  font-family: $family-primary
+  font-family: $heading-family
 
-  color: $text-strong
+  color: $heading-color
   font-weight: 500
 
 h2.section-title
