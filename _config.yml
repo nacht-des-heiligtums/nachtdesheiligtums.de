@@ -137,8 +137,6 @@ defaults:
 webmaster_verification:
   google:
   bing:
-  alexa:
-  yandex:
 
 # # Settings for impressum.html
 impressum:
