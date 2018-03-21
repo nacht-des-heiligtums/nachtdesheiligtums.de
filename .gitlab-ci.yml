@@ -24,13 +24,13 @@ before_script:
 jekyll_production:
   stage: build
   script:
-    # uncomment if you're using similar-posts feature
+    # uncomment if you're using related-posts feature
     # - apt-get install -y libgsl0-dev
     - bin/build
   artifacts:
     expire_in: 1 month
     paths:
-    - _public
+    - _build
   only:
     - master
 
