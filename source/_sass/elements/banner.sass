@@ -6,8 +6,9 @@ $banner-background-color: $lightblue !default
   align-items: center
   padding: 3rem 1.5rem 5rem
 
-  p
-    margin-left: 5em
+  > .container
+    +desktop
+      padding: 0 3 * $gap
 
   .subtitle
     color: $blue
