@@ -2,7 +2,7 @@
   {% include scripts/navbar.js %}
 </script>
 
-{%- if site.identity_provider == "netlify" and page.path == "/" %}
+{%- if site.identity_provider == "netlify" and page.url == "/" %}
 <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 <script>
   if (window.netlifyIdentity) {
