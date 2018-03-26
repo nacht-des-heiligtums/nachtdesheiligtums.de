@@ -3,6 +3,7 @@ layout: post
 title: >-
   „Wir ziehen los mit ganz großen Schritten...“ - produktives zweites
   Vorbereitungstreffen der Nacht des Heiligtums
+ndh: 2018
 author: Benedikt Herkommer
 categories: Kernteam
 ---
@@ -22,7 +23,6 @@ Nach der Mittagspause schließlich wird der zeitliche Rahmen abgesteckt und mit 
 
 ![Erst die Arbeit...](/assets/uploads/harte_arbeit.jpg)
 
-\
 **Wer hart arbeitet darf auch feiern**
 
 „Wir ziehen los mit ganz großen Schritten ...“ - passend zur fünften Jahreszeit wird am Abend zusammen gefeiert. Adilia bereitet ein kleines Programm vor: eine Polonaise durch die gesamte Sonnenau, Wattepusten und weitere Spiele sorgen für einen unterhaltsamen, stimmungsvollen Abend. Geschmacklich wird der Abend von Lucas durch super leckere Cocktails versüßt.
