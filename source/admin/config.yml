@@ -19,6 +19,7 @@ collections: # A list of collections the CMS should be able to edit
     fields: # The fields each document in this collection have
       - {label: "Layout", name: "layout", widget: "hidden", default: "post"}
       - {label: "Titel", name: "title", widget: "string", tagname: "h1"}
+      - {label: "Jahr", name: "ndh", widget: "string", default: "2018"}
       - {label: "Autor", name: "author", widget: "string"}
       - {label: "Body", name: "body", widget: "markdown"}
       - {label: "Categories", name: "categories", widget: "string"}
