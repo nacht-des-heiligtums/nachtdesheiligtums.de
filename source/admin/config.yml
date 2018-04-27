@@ -19,10 +19,10 @@ collections: # A list of collections the CMS should be able to edit
     fields: # The fields each document in this collection have
       - {label: "Layout", name: "layout", widget: "hidden", default: "post"}
       - {label: "Titel", name: "title", widget: "string", tagname: "h1"}
-      - {label: "Jahr", name: "ndh", widget: "string", default: "2018"}
       - {label: "Autor", name: "author", widget: "string"}
       - {label: "Body", name: "body", widget: "markdown"}
-      - {label: "Categories", name: "categories", widget: "string"}
+      - {label: "Jahr", name: "ndh", widget: "string", default: "2018"}
+      - {label: "Categories", name: "categories", widget: "string", required: false}
     meta: # Meta data fields. Just like fields, but without any preview element
       - {label: "Publish Date", name: "date", widget: "datetime", format: "YYYY-MM-DD hh:mm:ss"}
   - name: "event"
@@ -42,4 +42,32 @@ collections: # A list of collections the CMS should be able to edit
           ]}
         ]}
       - {label: "Text", name: "body", widget: "markdown"}
+  - name: "pages"
+    label: "Seiten"
+    sort: "slug"
+    create: false
+    delete: false
+    files:
+      - label: "Kernteam"
+        name: "kernteam"
+        file: "source/_pages/kernteam.html"
+        fields:
+        - {label: "Titel", name: "title", widget: "string", tagname: "h1" }
+      - label: "Anreise"
+        name: "anreise"
+        file: "source/_pages/anreise.html"
+        fields:
+        - {label: "Titel", name: "title", widget: "string", tagname: "h1" }
+      - label: "Helferwoche"
+        name: "helferwoche"
+        file: "source/_pages/helferwoche.html"
+        fields:
+        - {label: "Titel", name: "title", widget: "string", tagname: "h1" }
+      - label: "Sponsoring"
+        name: "sponsoring"
+        file: "source/_pages/sponsoring.html"
+        fields:
+        - {label: "Titel", name: "title", widget: "string", tagname: "h1" }
+
+
 
