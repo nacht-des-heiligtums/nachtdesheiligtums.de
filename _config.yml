@@ -142,6 +142,11 @@ defaults:
 #   publisher:
 #   app_id:
 #   name: # default: site.title
+instagram:
+  username: nachtdesheiligtums
+  user_id: 3576375140
+  access_token: 4652415135.142d78d.83ad50503e764462a5de8f2643066ce3
+
 #
 # Verifications for several webmaster tools:
 webmaster_verification:

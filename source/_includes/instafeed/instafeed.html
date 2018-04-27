@@ -1,6 +1,6 @@
 {% if site.instagram.user_id and site.instagram.access_token %}
 <div id="instafeed" class="instafeed"></div>
-
+{% comment %}https://api.instagram.com/oauth/authorize/?client_id=142d78d13ffe47ad81779ce9d46bba24&&redirect_uri=https://nachtdesheiligtums.de&response_type=token{% endcomment %}
 <script>
 {% include instafeed/instafeed.js %}
 document.addEventListener('DOMContentLoaded', function() {
