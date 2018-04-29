@@ -1,8 +1,6 @@
 $gallery-margin: 0.25em
 $gallery-max-width: 320px
 
-@import "../bulma/sass/elements/image"
-
 @function gallery-width($screen-width)
   @return 100% / ceil(($screen-width - (2 * $gap)) / $gallery-max-width)
 
