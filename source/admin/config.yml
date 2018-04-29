@@ -15,7 +15,7 @@ collections: # A list of collections the CMS should be able to edit
     folder: "source/_posts" # The path to the folder where the documents are stored
     sort: "date:desc" # Default is Titel:asc
     create: true # Allow users to create new documents in this collection
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    slug: {% raw %}"{{year}}-{{month}}-{{day}}-{{slug}}"{% endraw %}
     fields: # The fields each document in this collection have
       - {label: "Layout", name: "layout", widget: "hidden", default: "post"}
       - {label: "Titel", name: "title", widget: "string", tagname: "h1"}
