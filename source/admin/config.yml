@@ -53,21 +53,25 @@ collections: # A list of collections the CMS should be able to edit
         file: "source/_pages/kernteam.html"
         fields:
         - {label: "Titel", name: "title", widget: "string", tagname: "h1" }
+        - {label: "Text", name: "body", widget: "markdown"}
       - label: "Anreise"
         name: "anreise"
         file: "source/_pages/anreise.html"
         fields:
         - {label: "Titel", name: "title", widget: "string", tagname: "h1" }
+        - {label: "Text", name: "body", widget: "markdown"}
       - label: "Helferwoche"
         name: "helferwoche"
-        file: "source/_pages/helferwoche.html"
+        file: "source/_pages/helferwoche.md"
         fields:
         - {label: "Titel", name: "title", widget: "string", tagname: "h1" }
+        - {label: "Text", name: "body", widget: "markdown"}
       - label: "Sponsoring"
         name: "sponsoring"
-        file: "source/_pages/sponsoring.html"
+        file: "source/_pages/sponsoring.md"
         fields:
         - {label: "Titel", name: "title", widget: "string", tagname: "h1" }
+        - {label: "Text", name: "body", widget: "markdown"}
 
 
 
