@@ -1,1 +1,56 @@
-@import "../bulma/sass/elements/image.sass"
+$dimensions: 16 24 32 48 64 96 128 !default
+
+@mixin aspect-ratio($ratio)
+  position: relative
+
+  &:before
+    display: block
+    content: ""
+    width: 100%
+    padding-top: $ratio * 100%
+
+  > *
+    +overlay
+    height: 100%
+    width: 100%
+
+.image
+  display: block
+  position: relative
+
+  img
+    display: block
+    height: auto
+    width: 100%
+
+  // Ratio
+  &.is-square,
+  &.is-1by1,
+  &.is-4by3,
+  &.is-3by2,
+  &.is-16by9,
+  &.is-2by1
+    +aspect-ratio(1)
+
+  &.is-square,
+  &.is-1by1
+    &::before
+      padding-top: 100%
+
+  &.is-4by3::before
+    padding-top: 75%
+
+  &.is-3by2::before
+    padding-top: 66.6666%
+
+  &.is-16by9::before
+    padding-top: 56.25%
+
+  &.is-2by1::before
+    padding-top: 50%
+
+  // Sizes
+  @each $dimension in $dimensions
+    &.is-#{$dimension}x#{$dimension}
+      height: $dimension * 1px
+      width: $dimension * 1px
