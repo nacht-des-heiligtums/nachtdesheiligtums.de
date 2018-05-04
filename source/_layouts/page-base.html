@@ -7,6 +7,16 @@ layout: base
   <main class="page-main content" itemprop="text">
   {{ content }}
 
+  {% if page.testimonials %}
+    <div class="banner">
+      {% include page/testimonials-slider.html %}
+    </div>
+
+    <script>
+      {% include scripts/carousel.js %}
+    </script>
+  {% endif %}
+
   {% if page.images %}
   {% capture folder %}images/{{page.images}}{%endcapture%}
     <div class="columns">

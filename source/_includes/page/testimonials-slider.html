@@ -1,6 +1,7 @@
+{% assign testimonials = include.testimonials | default: page.testimonials %}
 <div class="carousel is-testimonial slide carousel-animated carousel-animate-slide" data-autoplay="true" data-delay="8000">
   <div class="carousel-container">
-    {% for item in site.data.testimonials.slider.slides %}
+    {% for item in testimonials %}
       <div class="carousel-item has-image {% if forloop.first %} is-active{% endif %}">
         <img class="carousel-image" src="{{ item.image }}" alt="">
         <div class="carousel-text">
