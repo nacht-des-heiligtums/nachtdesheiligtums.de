@@ -47,31 +47,48 @@ collections: # A list of collections the CMS should be able to edit
     sort: "slug"
     create: false
     delete: false
+    fields:
     files:
       - label: "Kernteam"
         name: "kernteam"
         file: "source/_pages/kernteam.html"
         fields:
+        - {name: "layout", widget: "hidden", required: false}
         - {label: "Titel", name: "title", widget: "string", tagname: "h1" }
         - {label: "Text", name: "body", widget: "markdown"}
+        - {name: "permalink", widget: "hidden", required: false}
+        - {name: "sitemap", widget: "hidden", required: false}
+        - {name: "images", widget: "hidden", required: false}
       - label: "Anreise"
         name: "anreise"
         file: "source/_pages/anreise.html"
         fields:
+        - {name: "layout", widget: "hidden", required: false}
         - {label: "Titel", name: "title", widget: "string", tagname: "h1" }
         - {label: "Text", name: "body", widget: "markdown"}
+        - {name: "permalink", widget: "hidden", required: false}
+        - {name: "sitemap", widget: "hidden", required: false}
+        - {name: "images", widget: "hidden", required: false}
       - label: "Helferwoche"
         name: "helferwoche"
         file: "source/_pages/helferwoche.md"
         fields:
+        - {name: "layout", widget: "hidden", required: false}
         - {label: "Titel", name: "title", widget: "string", tagname: "h1" }
         - {label: "Text", name: "body", widget: "markdown"}
+        - {name: "permalink", widget: "hidden", required: false}
+        - {name: "sitemap", widget: "hidden", required: false}
+        - {name: "images", widget: "hidden", required: false}
       - label: "Sponsoring"
         name: "sponsoring"
         file: "source/_pages/sponsoring.md"
         fields:
+        - {name: "layout", widget: "hidden", required: false}
         - {label: "Titel", name: "title", widget: "string", tagname: "h1" }
         - {label: "Text", name: "body", widget: "markdown"}
+        - {name: "permalink", widget: "hidden", required: false}
+        - {name: "sitemap", widget: "hidden", required: false}
+        - {name: "images", widget: "hidden", required: false}
 
 
 
