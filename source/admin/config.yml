@@ -59,6 +59,11 @@ collections: # A list of collections the CMS should be able to edit
         - {name: "permalink", widget: "hidden", required: false}
         - {name: "sitemap", widget: "hidden", required: false}
         - {name: "images", widget: "hidden", required: false}
+        - {name: "testimonials", label: "Testimonials", label_singular: "Testimonial", required: false, widget: "list", fields: [
+            {name: "name", label: "Name", widget: "string", tagname: "strong"},
+            {name: "image", label: "Bild", widget: "file", tagname: "img"},
+            {name: "quote", label: "Zitat", widget: "text"}
+          ]}
       - label: "Anreise"
         name: "anreise"
         file: "source/_pages/anreise.html"
