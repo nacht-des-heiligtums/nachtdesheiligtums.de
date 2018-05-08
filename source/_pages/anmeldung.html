@@ -98,7 +98,7 @@ permalink: /anmeldung/
         </div>
       </div>
     </div>
-    <div class="field is-horizontal">
+    <div class="field is-horizontal" id="room-type">
       <div class="field-label is-normal"><label class="label">Übernachtung</label></div>
       <div class="field-body">
         <div class="select is-fullwidth">
@@ -114,10 +114,11 @@ permalink: /anmeldung/
       <div class="field-label is-normal"><label class="label">Paketwahl</label></div>
       <div class="field-body">
         <div class="select is-fullwidth">
-            <select name="package">
+            <select name="package" id="package-field" onchange="onPackageChange()">
               <option value="package-a">Wochenende komplett (58 Euro)</option>
               <option value="package-b">Wochende Samstagnachmittag bis Sonntagmittag (35 Euro)</option>
               <option value="package-c">Wochenende ohne Übernachtung (45 Euro)</option>
+              <option value="help-week" id="help-week">Teilnahme an der Helferwoche (45 Euro)</option>
             </select>
         </div>
       </div>
@@ -155,8 +156,15 @@ function onRegistrationTypeChange() {
 
    if (registrationType === 'single') {
      document.getElementById('group-id').classList.add('is-removed');
+     document.getElementById('help-week').classList.remove('is-removed');
    } else {
      document.getElementById('group-id').classList.remove('is-removed');
+     document.getElementById('help-week').classList.add('is-removed');
+
+     var package_field = document.getElementById('package-field');
+     if (package_field.value === 'help-week') {
+       package_field.value = 'package-a';
+     }
    }
 
    if (registrationType === 'group-participant') {
@@ -175,6 +183,16 @@ function onRegistrationTypeChange() {
      //document.getElementById('email').classList.remove('is-removed');
      document.getElementById('phone').classList.remove('is-removed');
      document.getElementById('payment-method').classList.remove('is-removed');
+   }
+}
+
+function onPackageChange() {
+   var package_field = document.getElementById('package-field').value;
+
+   if (package_field === 'help-week') {
+     document.getElementById('room-type').classList.add('is-removed');
+   } else {
+     document.getElementById('room-type').classList.remove('is-removed');
    }
 }
 
