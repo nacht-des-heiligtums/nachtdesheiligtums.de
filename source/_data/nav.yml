@@ -39,4 +39,7 @@ main:
         label: Helferwoche
         title: Helferwoche
         url: /helferwoche
+  registration:
+    label: Anmeldung
+    url: /anmeldung
 
