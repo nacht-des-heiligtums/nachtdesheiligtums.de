@@ -4,7 +4,7 @@ title: '"Feuer und Flame für den Glauben": Artikel in "unser weg"'
 author: Antonia Hofmeier
 ndh: '2018'
 ---
-_In der Zeitschrift „unser weg“ hat Antonia Hofmeier einen Erfahrungsbericht über die NdH geschrieben. Mit freundlicher Genehmigung der Redaktion von „unser weg“ ( _[_www.unserweg.com_](www.unserweg.com)_ ) dürfen wir euch diesen Artikel nun auch auch hier präsentieren!_
+_In der Zeitschrift „unser weg“ hat Antonia Hofmeier einen Erfahrungsbericht über die NdH geschrieben. Mit freundlicher Genehmigung der Redaktion von „unser weg“ (_[_www.unserweg.com_](www.unserweg.com)_) dürfen wir euch diesen Artikel nun auch auch hier präsentieren!_
 
 **Jedes Jahr findet in Schönstatt die „Nacht des Heiligtums“ für Jugendliche statt – ein Glaubensfestival, dass eine perfekte Mischung aus Spritualität und Tiefe, Spaß und Ausgelassenheit bietet. Eine Teilnehmerin berichtet von ihren Erfahrungen. **
 
@@ -19,7 +19,5 @@ Seitdem ist die NdH jedes Jahr eins der größten Highlights meines Sommers und 
 Einer der Höhepunkte jedes NdH-Wochenendes ist die Liebesbündnisnacht am Samstagabend. Alle Teilnehmer singen und beten miteinander, werden still und hören Impulse, die in die Tiefe gehen. Mit einer Lichterprozession gehen alle zur Wiese am Urheiligtum um dort Anbetung zu halten. Abschließend dürfen alle nacheinander kurz ins Urheiligtum gehen und die Gottesmutter zu „besuchen“. Dafür bilden sich lange Warteschlangen. Durch dieses Erlebnis mit alle den anderen Jugendlichen wird spürbar, dass der Glaube auch in unserer Generation lebt. 
 
 Darüber hinaus ist die NdH auch DIE Gelegenheit neue Leute mit nach Schönstatt zu bringen und ihnen zu zeigen, was die Schönstattjugend eigentlich ist. Manchmal frage ich mich, wem ich gerne Schönstatt einmal zeigen möchte und dann habe ich zur letzten NdH recht kurzfristig zwei Freundinnen mitgebracht. So konnten sie selbst erleben, wovon ich so oft erzähle. Eine meinte später, dass sie noch nie an einem Ort so freundlich und interessiert begrüßt wurde und sie war von der Atmosphäre und den vielen helfenden Händen, die das Wochenende gemeinsam möglich machen, sehr beeindruckt. Und es stimmt wirklich, bei der NdH ist eine super gute Stimmung, Tiefe, die Suche nach Mehr und ein großartiges Miteinander garantiert. Das Lied zum jeweiligen Motto bleibt mir meistens noch Tage lang im Ohr und die vielen guten Impulse begleiten mich stets noch lange Zeit in meinem Alltag und beflügeln mich, meinen Glauben authentisch und voller Freude zu leben.
-
-
 
 Viele Dank an Antonia, für diesen klasse Artikel!
