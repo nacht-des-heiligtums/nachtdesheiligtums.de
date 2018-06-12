@@ -28,7 +28,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Nacht des Heiligtums
-email: info@nacht-des-heiligtums.de
+email: info@nachtdesheiligtums.de
 description: >-
   Die Nacht des Heiligtums ist das Jugendfestival der Schönstattjugend in Deutschland.
 tagline:
