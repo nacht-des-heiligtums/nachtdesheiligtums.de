@@ -11,5 +11,3 @@ Und wie geht das ganze? Ganz einfach:
 -	Füge die Handynummer 017692654701 als neuen Kontakt „Nacht des Heiligtums“ in das Adressbuch deines Smartphones hinzu.
 -	Schick uns eine WhatsApp-Nachricht mit „Ich bin dabei!“. 
 -	Und schon bist du versorgt mit den neuesten Updates zum coolsten Wochenende des Jahres!
-
-{% flickr_album 72157623090077850 %}
