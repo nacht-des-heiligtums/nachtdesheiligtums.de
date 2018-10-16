@@ -58,3 +58,15 @@ Optimizers are not strictly required but nice tools to keep file sizes small and
   * `sass` - Style sheets
   * `admin` - Netlify CMS
   * `assets` - static images, javascript, css etc.
+
+## Plugins
+
+### Flickr integration
+
+`flickr_album` and `flickr_photo` tags can be used to insert images from Flickr. The only argument is the album or photo ID which can be extracted from the URL on the flickr website.
+
+```liquid
+{% flickr_album 72157623090077850 %}
+or:
+{% flickr_photo 12342345455 %}
+```
