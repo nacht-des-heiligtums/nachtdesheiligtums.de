@@ -34,8 +34,8 @@ Vielen Dank für Ihre Unterstützung! Bitte überweisen Sie den entsprechenden B
 
 Schönstatt-Bewegung Deutschland e. V. – Nacht des Heiligtums<br />
 Sparkasse Koblenz<br />
-IBAN DE31 5705 0120 0000 1346 50<br />
-BIC  MALADE51KOB
+IBAN: DE31 5705 0120 0000 1346 50<br />
+BIC: MALADE51KOB
 
 Ihre Fragen beantworten wir gern. Nehmen Sie Kontakt auf:
 
