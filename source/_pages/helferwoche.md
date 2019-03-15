@@ -4,8 +4,20 @@ title: Helferwoche
 permalink: /helferwoche/
 images: Helferwoche
 ---
-Ein internationales Jugendwochenende schießt nicht so einfach aus dem Boden wie ein Pilz – leider. Deshalb braucht es jede Menge kreativer Gedanken und fleißiger Hände, die sich im Vorfeld dafür einsetzen, dass ein solches Wochenende gelingen kann. Auch Deine Talente sind gefragt! Ob in der Logistik oder bei der Deko, in der liturgischen und musikalischen Vorbereitung oder bei der Organisation: je mehr Fähigkeiten zur Verfügung stehen, desto besser wird das Ergebnis.
+## Pack mit an!
 
-![Vorbereitungen für die Nacht des Heiligtums](/assets/images/helferwoche.jpg "Helferwoche")
+Ein internationales Jugendwochenende schießt nicht so einfach aus dem Boden wie ein Pilz – leider. Deshalb braucht es jede Menge <strong>kreative Gedanken und fleißige Hände</strong>, die sich im Vorfeld dafür einsetzen, dass ein solches Wochenende gelingen kann. 
 
-Und damit es nicht nur heißt: "ackern bis zum Umfallen", sondern damit auch schon bei der Vorbereitung Gemeinschaft und Freude entstehen können, dauert das Helfercamp eine ganze Woche. Neben dem "Ranklotzen" bleibt da auch genug Zeit für den Spaß, für das Miteinander und für gemeinsame Erlebnisse und Gottesdienste.
+## Auch Deine Talente sind gefragt!
+
+![null](/assets/uploads/img_0468.webp)
+
+Ob in der Logistik oder bei der Deko, in der liturgischen und musikalischen Vorbereitung oder bei der Organisation: je mehr helfende Hände und Ideen zur Verfügung stehen, desto besser wird das Ergebnis.
+
+![](/assets/uploads/img_4992.jpg)
+
+Damit neben all der Arbeit Gemeinschaft, Spaß und Freude nicht zu kurz kommt, dauert das Helfercamp eine ganze Woche. Neben dem „Ranklotzen“ bleibt da auch genug Zeit für die schönen Seiten des Lebens.
+
+## Willst du uns mit Rat und Tat unterstützen?
+
+Dann wähle bei der Anmeldung einfach die Option Helferwoche aus und wir melden uns bei dir.
