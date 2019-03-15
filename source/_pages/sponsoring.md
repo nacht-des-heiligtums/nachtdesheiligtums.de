@@ -3,11 +3,11 @@ layout: page
 title: Werden Sie NdH-Pate!
 permalink: /sponsoring/
 ---
-Vieles muss für die Nacht des Heiligtums angeschafft werden. Die Spanne reicht von vielen Kleinigkeit bis zu großen Anschaffungen. Ohne Spenden ist die Veranstaltung in diesem Rahmen leider nicht tragbar.
+<p>Vieles muss für die Nacht des Heiligtums angeschafft werden. Die Spanne reicht von vielen Kleinigkeit bis zu großen Anschaffungen. Ohne Spenden ist die Veranstaltung in diesem Rahmen leider nicht tragbar.</p>
 
-Wir bitten Sie deshalb, unsere Arbeit zu unterstützen und aus der nachfolgenden Liste ein für Sie passendes Patenschafts-Paket zusammenzustellen.
+<p>Wir bitten Sie deshalb, unsere Arbeit zu unterstützen und aus der nachfolgenden Liste ein für Sie passendes Patenschafts-Paket zusammenzustellen.</p>
 
-Für die Nacht des Heiligtums 2019 werden benötigt:
+<p>Für die Nacht des Heiligtums 2019 werden benötigt:
 
 <em> Unter 10 Euro </em>
 
@@ -30,20 +30,18 @@ Für die Nacht des Heiligtums 2019 werden benötigt:
 * Spülmobil (250 €)
 * Mischpult (300 €)
 
-Sehr gerne stellen wir Ihnen für Beträge ab 50 EUR auch eine Spendenquittung aus.
+Sehr gerne stellen wir Ihnen für Beträge ab 50 EUR auch eine Spendenquittung aus.</p>
 
-<strong> Vielen Dank für Ihre Unterstützung! </strong>
+<p><strong> Vielen Dank für Ihre Unterstützung! </strong></p>
 
-Wir freuen uns über Ihre Kontakaufnahme:
+<p>Wir freuen uns über Ihre Kontakaufnahme:
 
-Benedikt Herkommer, Telefon: +491749813064, Mail: benedikt.herkommer@gmx.net
+Benedikt Herkommer, Telefon: +491749813064, Mail: benedikt.herkommer@gmx.net</p>
 
-
-
-Schönstatt-Bewegung Deutschland e. V. – Nacht des Heiligtums
+<p>Schönstatt-Bewegung Deutschland e. V. – Nacht des Heiligtums
 
 Sparkasse Koblenz
 
 IBAN: DE31 5705 0120 0000 1346 50
 
-BIC: MALADE51KOB
+BIC: MALADE51KOB</p>
