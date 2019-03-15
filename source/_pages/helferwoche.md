@@ -20,4 +20,4 @@ Damit neben all der Arbeit Gemeinschaft, Spaß und Freude nicht zu kurz kommt, d
 
 ## Willst du uns mit Rat und Tat unterstützen?
 
-Dann wähle bei der Anmeldung einfach die Option Helferwoche aus und wir melden uns bei dir.
+Dann wähle bei der <strong>Anmeldung</strong> einfach die Option <strong>Helferwoche</strong> aus und wir melden uns bei dir.
