@@ -18,12 +18,12 @@ Für die Nacht des Heiligtums 2019 werden benötigt:
 * Farbfilter für die Lichtanlage am Urheiligtums (je 5 €): 5 Stück
 * Schlafplatz für Teilnehmer (je Nacht 6 €)
 
-\_Unter 50 Euro\_
+<em> Unter 50 Euro </em>
 
 * Unterkunft und Verpflegung der Helfer (je Tag 20 €)
 * bedruckte T-Shirts zur Kennzeichnung des Kernteams (je 25 €): 12 Stück
 
-\_Über 100 Euro\_
+<em> Über 100 Euro </em>
 
 * Druck der Werbe-Flyer (170 €)
 * Papier für die Festival-Zeitung “Night of the Shrine” (200 €)
@@ -32,13 +32,13 @@ Für die Nacht des Heiligtums 2019 werden benötigt:
 
 Sehr gerne stellen wir Ihnen für Beträge ab 50 EUR auch eine Spendenquittung aus.
 
-\*\*Vielen Dank für Ihre Unterstützung!\*\* 
+<strong> Vielen Dank für Ihre Unterstützung! </strong>
 
 Wir freuen uns über Ihre Kontakaufnahme:
 
 Benedikt Herkommer, Telefon: +491749813064, Mail: benedikt.herkommer@gmx.net
 
-Bitte überweisen Sie den entsprechenden Betrag dann an
+
 
 Schönstatt-Bewegung Deutschland e. V. – Nacht des Heiligtums
 
