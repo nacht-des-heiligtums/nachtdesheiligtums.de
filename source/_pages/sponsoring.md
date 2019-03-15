@@ -1,11 +1,15 @@
 ---
 layout: page
-title: Werden Sie NdH-Pate!
+title: Sponsoring
 permalink: /sponsoring/
 ---
-Vieles muss für die Nacht des Heiligtums angeschafft werden. Die Spanne reicht von vielen Kleinigkeit bis zu großen Anschaffungen. Ohne Spenden ist die Veranstaltung in diesem Rahmen leider nicht tragbar.<br />
+## Werden Sie NdH-Pate
+
+Vieles muss für die <strong>Nacht des Heiligtums</strong> angeschafft werden. Die Spanne reicht von vielen Kleinigkeit bis zu großen Anschaffungen. Ohne Spenden ist die Veranstaltung in diesem Rahmen leider nicht tragbar.<br />
 
 Wir bitten Sie deshalb, unsere Arbeit zu unterstützen und aus der nachfolgenden Liste ein für Sie passendes <strong>Patenschafts-Paket</strong> zusammenzustellen.<br /><br />
+
+## Patenschaften
 
 <em> Unter 10 Euro </em>
 
