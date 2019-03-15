@@ -1,13 +1,17 @@
 ---
 layout: page
-title: Wir suchen Sie als Paten
+title: Werden Sie NdH-Pate!
 permalink: /sponsoring/
 ---
-Vieles muss für die Nacht des Heiligtums angeschafft werden, manche Kleinigkeit genauso wie ein paar wirklich große Gegenstände. Sie haben hier die Möglichkeit, aus folgender Liste etwas auszuwählen und dafür in von Ihnen gewünschter Stückzahl eine Patenschaft zu übernehmen.
+Vieles muss für die Nacht des Heiligtums angeschafft werden. Die Spanne reicht von vielen Kleinigkeit bis zu großen Anschaffungen. Ohne Spenden ist die Veranstaltung in diesem Rahmen leider nicht tragbar.
+
+Wir bitten Sie deshalb, unsere Arbeit zu unterstützen und aus der nachfolgenden Liste ein für Sie passendes Patenschafts-Paket zusammenzustellen.
+
+\--
 
 Für die Nacht des Heiligtums 2019 werden benötigt:
 
-**bis 10 Euro**
+_Unter 10 Euro_
 
 * Kerzen für die Gebetsnacht (je 0,50 €): 600 Stück
 * Programmhefte (je 1 €): 600 Stück
@@ -16,27 +20,42 @@ Für die Nacht des Heiligtums 2019 werden benötigt:
 * Farbfilter für die Lichtanlage am Urheiligtums (je 5 €): 5 Stück
 * Schlafplatz für Teilnehmer (je Nacht 6 €)
 
-**bis 50 Euro**
+
+
+_Unter 50 Euro_
 
 * Unterkunft und Verpflegung der Helfer (je Tag 20 €)
-* bedruckte T-Shirts zur Kennzeichnung des Kernteams (je 25 €): 8 Stück
+* bedruckte T-Shirts zur Kennzeichnung des Kernteams (je 25 €): 12 Stück
 
-**über 100 Euro**
+
+
+_Über 100 Euro_
 
 * Druck der Werbe-Flyer (170 €)
 * Papier für die Festival-Zeitung “Night of the Shrine” (200 €)
 * Spülmobil (250 €)
 * Mischpult (300 €)
 
-Für Beträge ab 50 Euro stellen wir gerne auch eine Spendenquittung aus.
 
-Vielen Dank für Ihre Unterstützung! Bitte überweisen Sie den entsprechenden Betrag dann an
 
-Schönstatt-Bewegung Deutschland e. V. – Nacht des Heiligtums<br />
-Sparkasse Koblenz<br />
-IBAN: DE31 5705 0120 0000 1346 50<br />
+Sehr gerne stellen wir Ihnen für Beträge ab 50 EUR auch eine Spendenquittung aus.
+
+\--
+
+**Vielen Dank für Ihre Unterstützung! **
+
+**Wir freuen uns über Ihre Kontakaufnahme:**
+
+Benedikt Herkommer, Telefon: +491749813064, Mail: benedikt.herkommer@gmx.net
+
+\--
+
+Bitte überweisen Sie den entsprechenden Betrag dann an
+
+Schönstatt-Bewegung Deutschland e. V. – Nacht des Heiligtums
+
+Sparkasse Koblenz
+
+IBAN: DE31 5705 0120 0000 1346 50
+
 BIC: MALADE51KOB
-
-Ihre Fragen beantworten wir gern. Nehmen Sie Kontakt auf:
-
-Benedikt Herkommer, Telefon: [+491749813064](tel:+4915140427797),  Mail: <mailto:benedikt.herkommer@gmx.net>
