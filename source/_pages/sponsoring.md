@@ -3,11 +3,9 @@ layout: page
 title: Werden Sie NdH-Pate!
 permalink: /sponsoring/
 ---
-Vieles muss für die Nacht des Heiligtums angeschafft werden. Die Spanne reicht von vielen Kleinigkeit bis zu großen Anschaffungen. Ohne Spenden ist die Veranstaltung in diesem Rahmen leider nicht tragbar.<br /><br />
+Vieles muss für die Nacht des Heiligtums angeschafft werden. Die Spanne reicht von vielen Kleinigkeit bis zu großen Anschaffungen. Ohne Spenden ist die Veranstaltung in diesem Rahmen leider nicht tragbar.<br />
 
-Wir bitten Sie deshalb, unsere Arbeit zu unterstützen und aus der nachfolgenden Liste ein für Sie passendes Patenschafts-Paket zusammenzustellen.<br /><br />
-
-Für die Nacht des Heiligtums 2019 werden benötigt:<br />
+Wir bitten Sie deshalb, unsere Arbeit zu unterstützen und aus der nachfolgenden Liste ein für Sie passendes <strong>Patenschafts-Paket</strong> zusammenzustellen.<br /><br />
 
 <em> Unter 10 Euro </em>
 
@@ -30,11 +28,11 @@ Für die Nacht des Heiligtums 2019 werden benötigt:<br />
 * Spülmobil (250 €)
 * Mischpult (300 €)
 
-Sehr gerne stellen wir Ihnen für Beträge ab 50 EUR auch eine Spendenquittung aus.<br /><br />
+<em> Sehr gerne stellen wir Ihnen für Beträge ab 50 EUR auch eine Spendenquittung aus.</em> <br /><br />
 
-<strong> Vielen Dank für Ihre Unterstützung! </strong><br />
+<strong><strong> Vielen Dank für Ihre Unterstützung! </strong></strong><br /><br />
 
-Wir freuen uns über Ihre Kontakaufnahme:
+## Wir freuen uns über Ihre Kontakaufnahme:
 
 Benedikt Herkommer, Telefon: +491749813064, Mail: benedikt.herkommer@gmx.net<br /><br />
 
