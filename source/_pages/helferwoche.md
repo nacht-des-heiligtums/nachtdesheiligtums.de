@@ -14,7 +14,7 @@ Ein internationales Jugendwochenende schießt nicht so einfach aus dem Boden wie
 
 Ob in der Logistik oder bei der Deko, in der liturgischen und musikalischen Vorbereitung oder bei der Organisation: je mehr helfende Hände und Ideen zur Verfügung stehen, desto besser wird das Ergebnis.
 
-![](/assets/uploads/img_4992.jpg)
+![null](/assets/uploads/img_49921.webp)
 
 Damit neben all der Arbeit Gemeinschaft, Spaß und Freude nicht zu kurz kommt, dauert das Helfercamp eine ganze Woche. Neben dem „Ranklotzen“ bleibt da auch genug Zeit für die schönen Seiten des Lebens.
 
