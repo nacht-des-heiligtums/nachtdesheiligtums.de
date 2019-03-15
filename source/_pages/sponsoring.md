@@ -7,11 +7,12 @@ Vieles muss für die Nacht des Heiligtums angeschafft werden. Die Spanne reicht 
 
 Wir bitten Sie deshalb, unsere Arbeit zu unterstützen und aus der nachfolgenden Liste ein für Sie passendes Patenschafts-Paket zusammenzustellen.
 
-\--
+
 
 Für die Nacht des Heiligtums 2019 werden benötigt:
 
-_Unter 10 Euro_
+\_Unter 10 Euro\_
+
 
 * Kerzen für die Gebetsnacht (je 0,50 €): 600 Stück
 * Programmhefte (je 1 €): 600 Stück
@@ -20,35 +21,33 @@ Für die Nacht des Heiligtums 2019 werden benötigt:
 * Farbfilter für die Lichtanlage am Urheiligtums (je 5 €): 5 Stück
 * Schlafplatz für Teilnehmer (je Nacht 6 €)
 
+\_Unter 50 Euro\_
 
-
-_Unter 50 Euro_
 
 * Unterkunft und Verpflegung der Helfer (je Tag 20 €)
 * bedruckte T-Shirts zur Kennzeichnung des Kernteams (je 25 €): 12 Stück
 
+\_Über 100 Euro\_
 
-
-_Über 100 Euro_
 
 * Druck der Werbe-Flyer (170 €)
 * Papier für die Festival-Zeitung “Night of the Shrine” (200 €)
 * Spülmobil (250 €)
 * Mischpult (300 €)
 
+Sehr gerne stellen wir Ihnen für Beträge ab 50 EUR auch eine Spendenquittung aus.
 
 
-Sehr gerne stellen wir Ihnen für Beträge ab 50 EUR auch eine Spendenquittung aus.
 
-\--
+\*\*Vielen Dank für Ihre Unterstützung!\*\* 
 
-**Vielen Dank für Ihre Unterstützung! **
 
-**Wir freuen uns über Ihre Kontakaufnahme:**
+Wir freuen uns über Ihre Kontakaufnahme:
 
-Benedikt Herkommer, Telefon: +491749813064, Mail: benedikt.herkommer@gmx.net
 
-\--
+Benedikt Herkommer, Telefon: +491749813064, Mail: benedikt.herkommer@gmx.net
+
+
 
 Bitte überweisen Sie den entsprechenden Betrag dann an
 
