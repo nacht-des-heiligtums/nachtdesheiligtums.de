@@ -10,7 +10,7 @@ Ein internationales Jugendwochenende schießt nicht so einfach aus dem Boden wie
 
 ## Auch Deine Talente sind gefragt!
 
-![null](/assets/uploads/img_0468.webp)
+![null](/assets/uploads/img_0468-1-.webp)
 
 Ob in der Logistik oder bei der Deko, in der liturgischen und musikalischen Vorbereitung oder bei der Organisation: je mehr helfende Hände und Ideen zur Verfügung stehen, desto besser wird das Ergebnis.
 
