@@ -3,7 +3,7 @@ layout: page
 title: Die Nacht des Heiligtums
 permalink: /idee/
 ---
-![]()
+![](/assets/uploads/img_0517.webp)
 
 ## Was bedeutet NdH?
 
@@ -37,7 +37,7 @@ Abgeschlossen wird die NdH am Sonntag mit einem <strong>Abschlussgottesdienst</s
 
 
 
-![]()
+![](/assets/uploads/img_3663.webp)
 
 
 
@@ -67,4 +67,4 @@ Aufgrund des Jubiläums entfiel die Nacht des Heiligtums 2014, so fand doch im O
 * 2007:	My face for your faith
 * 2006:	My home is your home
 
-![]()
+![](/assets/uploads/img_1652.webp)
