@@ -19,4 +19,4 @@ v.l.n.r.: Verena Häffner, Pater Frank, Sr.M. Anrika, Sr.M. Anastasia, Benedikt 
 
 ## Aufgabenbereiche
 
-![null](/assets/uploads/kopie-von-kernteamsprecher_.webp)
+![null](/assets/uploads/kernteamsprecher_-1-.jpg)
