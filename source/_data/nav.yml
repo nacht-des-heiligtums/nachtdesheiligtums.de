@@ -10,6 +10,10 @@ main:
         label: Kernteam
         title: Kernteam
         url: /kernteam
+      schoenstatt:
+        label: Schönstatt
+        title: Schönstatt
+        url: /schoenstatt
 
 
 #  medien:
@@ -35,10 +39,10 @@ main:
       #   label: Mitmachen
       #   title: Mitmachen
       #   url: /mitmachen
-      helferwoche:
-        label: Helferwoche
-        title: Helferwoche
-        url: /helferwoche
+      # helferwoche:
+      #  label: Helferwoche
+      #  title: Helferwoche
+      #  url: /helferwoche
   registration:
     label: Anmeldung
     url: /anmeldung
