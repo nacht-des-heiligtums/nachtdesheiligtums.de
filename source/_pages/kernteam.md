@@ -3,20 +3,20 @@ layout: page-base
 title: Unser Kernteam
 permalink: /kernteam/
 ---
-## Organisation<br /> <br /> 
+## Organisation
 
-Die <strong>Nacht des Heiligtums</strong> ist nicht möglich ohne Diejenigen, die während der Helferwoche und auch schon lange davor fleißig sind und alles vorbereiten. <br /> <br /> 
+Die <strong>Nacht des Heiligtums</strong> ist nicht möglich ohne Diejenigen, die während der Helferwoche und auch schon lange davor fleißig sind und alles vorbereiten.
 
-Diese geballte Arbeitsenergie muss koordiniert werden und genau das macht das Kernteam. Hier engagieren sich elf junge Erwachsene, sowie zwei Marienschwestern und zwei Patres. Sie bereiten innerhalb eines Jahres die Nacht des Heiligtums vor. <br /> <br /> 
+Diese geballte Arbeitsenergie muss koordiniert werden und genau das macht das Kernteam. Hier engagieren sich elf junge Erwachsene, sowie zwei Marienschwestern und zwei Patres. Sie bereiten innerhalb eines Jahres die Nacht des Heiligtums vor.
 
-Die Kernteammitglieder spezialisieren sich auf verschiedene Bereiche, wie Logistik, Technik, Dekoration, Programm oder Liturgie und werden durch den Kernteamsprecher zusammengehalten.<br /> <br /> 
+Die Kernteammitglieder spezialisieren sich auf verschiedene Bereiche, wie Logistik, Technik, Dekoration, Programm oder Liturgie und werden durch den Kernteamsprecher zusammengehalten.
 
-## Unser Kernteam 2019<br />
+## Unser Kernteam 2019
 
-![null](/assets/uploads/img_3379.webp)
+![](/assets/uploads/img_3379.webp)
 
-<br /> v.l.n.r.: Verena Häffner, Pater Frank, Sr.M. Anrika, Sr.M. Anastasia, Benedikt Kramer, Helena Reich, Jonas Schick, Pater Hans-Martin, Alex Bersch, Benedikt Herkommer, Andi Becker, Maria Gerber, Lucas Jall, Adilia Schweizer; leider nicht im Bild: Magdalena Lindner<br /> <br />   
+v.l.n.r.: Verena Häffner, Pater Frank, Sr.M. Anrika, Sr.M. Anastasia, Benedikt Kramer, Helena Reich, Jonas Schick, Pater Hans-Martin, Alex Bersch, Benedikt Herkommer, Andi Becker, Maria Gerber, Lucas Jall, Adilia Schweizer; leider nicht im Bild: Magdalena Lindner
 
-## Aufgabenbereiche<br />
+## Aufgabenbereiche
 
-![null](/assets/uploads/kopie-von-kernteamsprecher_.webp)
+![](/assets/uploads/kopie-von-kernteamsprecher_.webp)
