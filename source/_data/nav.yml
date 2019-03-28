@@ -1,11 +1,14 @@
 main:
-  about:
-    label: Über uns
+  ndh:
+    label: Nacht des Heiligtums
     items:
       idee:
         label: Die Nacht des Heiligtums
         title: Die Nacht des Heiligtums
         url: /idee
+  about:
+    label: Über uns
+    items:
       kernteam:
         label: Kernteam
         title: Kernteam
@@ -39,10 +42,10 @@ main:
       #   label: Mitmachen
       #   title: Mitmachen
       #   url: /mitmachen
-      # helferwoche:
-      #  label: Helferwoche
-      #  title: Helferwoche
-      #  url: /helferwoche
+      helferwoche:
+        label: Helferwoche
+        title: Helferwoche
+        url: /helferwoche
   registration:
     label: Anmeldung
     url: /anmeldung
