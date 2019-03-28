@@ -162,7 +162,7 @@ permalink: /anmeldung/
 <div id="registration-finished" class="registration-form container is-removed">
   <div class="box content">
     <p>Deine Anmeldung wurde erfolgreich abgeschickt. Du solltest in kürze eine Email zur Bestätigung erhalten.</p>
-    <p><a href="{{ site.baseurl }}{% link _pages/anmeldung.html %}" onclick="return resetRegistration()">Weitere Anmeldung</a></p>
+    <p><a href="{{ site.baseurl }}{% link _pages/anmeldung.md %}" onclick="return resetRegistration()">Weitere Anmeldung</a></p>
     <p><a href="{{ site.baseurl }}{% link index.md %}">Zurück zur Startseite</a></p>
   </div>
 </div>

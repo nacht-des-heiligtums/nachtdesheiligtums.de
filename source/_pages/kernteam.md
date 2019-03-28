@@ -1,5 +1,5 @@
 ---
-layout: page-base
+layout: page
 title: Unser Kernteam
 permalink: /kernteam/
 ---
