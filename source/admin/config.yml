@@ -45,6 +45,7 @@ collections: # A list of collections the CMS should be able to edit
           ]}
         ]}
       - {label: "Text", name: "body", widget: "markdown"}
+      - {name: "layout", widget: "hidden", required: false, default: "event"}
   - name: "pages"
     label: "Seiten"
     sort: "slug"

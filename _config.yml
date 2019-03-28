@@ -106,7 +106,7 @@ defaults:
     read_time: false
 - scope:
     path: ""
-    type: events
+    type: ndhs
   values:
     layout: event
 
