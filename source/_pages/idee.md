@@ -3,13 +3,11 @@ layout: page
 title: Die Nacht des Heiligtums
 permalink: /idee/
 ---
+Immer am ersten Septemberwochenende findet in Schönstatt die <strong>Nacht des Heiligtums (NdH)</strong> statt.
+
 ![](/assets/uploads/img_0517.webp)
 
 ## Was bedeutet NdH?
-
-Immer am ersten Septemberwochenende findet in Schönstatt die <strong>Nacht des Heiligtums (NdH)</strong> statt.
-
-
 
 Inspiriert vom Weltjugendtag in Köln kam die Idee für ein Jugendfestival der Schönstattjugend auf. Das Resultat ist die NdH, ein Festival das inzwischen einen festen Platz im Kalender der Schönstatt Jugend hat. Inzwischen sind es mehr als 500 Jugendliche die jedes Jahr zur NdH kommen.
 
