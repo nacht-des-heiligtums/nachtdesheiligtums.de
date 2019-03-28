@@ -1,0 +1,64 @@
+---
+layout: base
+---
+<section class="hero is-medium has-carousel">
+    <div class="hero-carousel carousel-animated carousel-animate-fade" data-autoplay="true" data-delay="8000">
+      <div class="carousel-container">
+        {% capture folder %}images/{{page.images}}{%endcapture%}
+        {% for image in site.static_files %}
+        {% if image.path contains folder  %}
+        <div class="carousel-item has-background is-active">
+        <img class="is-background" src="{{ site.baseurl }}{{ image.path }}" alt="" />
+        </div>
+        {% endif %}
+        {% endfor %}
+      </div>
+    </div>
+    <div class="hero-body is-overlay container ndh-logo">
+      {% include ndh-logo.svg %}
+    </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="content intro">
+      {{ page.intro.description | markdownify }}
+    </div>
+  </div>
+</section>
+
+<!-- Deaktiviert bis die Registrierung live geschaltet ist -->
+{% include layout/registration-icons.html %}
+
+
+<section class="section">
+  <div class="container">
+    <div class="content">
+      {{ content }}
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <ul class="post-list">
+      {% assign related_posts = site.posts | where: "ndh", page.slug %}
+      {% for post in related_posts %}
+        <li>
+            <span class="post-meta">{{ post.date | localize: ":date_long" }}</span>
+            <strong>
+              <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+            </strong>
+        </li>
+      {% endfor %}
+    </ul>
+
+    {%comment%}
+    <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
+    {%endcomment%}
+  </div>
+</section>
+
+<script>
+  {% include scripts/carousel.js %}
+</script>

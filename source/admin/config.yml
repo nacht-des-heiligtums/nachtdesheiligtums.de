@@ -25,16 +25,19 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Categories", name: "categories", widget: "string", required: false}
     meta: # Meta data fields. Just like fields, but without any preview element
       - {label: "Publish Date", name: "date", widget: "datetime", format: "YYYY-MM-DD hh:mm:ss"}
-  - name: "event"
-    label: "Event"
-    folder: "source/_events"
+
+  - name: "ndh"
+    label: "NdHs"
+    folder: "source/_ndhs"
     sort: "slug"
     create: true
     fields:
       - {label: "Titel", name: "title", widget: "string", tagname: "h1"}
+      - {label: "Motto", name: "motto", widget: "string", tagname: "h2"}
+      - {label: "Datum", name: "datum", widget: "string"}
       - {label: Intro, name: intro, widget: object, fields: [
           {label: Heading, name: heading, widget: string},
-          {label: Description, name: description, widget: text},
+          {label: Description, name: description, widget: markdown},
           {label: Blurbs, name: blurbs, widget: list, fields: [
             {label: Image, name: image, widget: image},
             {label: Text, name: text, widget: text},

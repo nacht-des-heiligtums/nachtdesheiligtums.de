@@ -93,7 +93,7 @@ sass:
 collections:
   ndhs:
     output: true
-    permalink: /nacht:name
+    permalink: /ndh/:name
 
 defaults:
 - scope:

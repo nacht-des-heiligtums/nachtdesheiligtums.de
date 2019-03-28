@@ -6,6 +6,10 @@ main:
         label: Die Nacht des Heiligtums
         title: Die Nacht des Heiligtums
         url: /idee
+      2019:
+        label: NdH 2019
+        title: Die Nacht des Heiligtums 2019
+        url: /ndh/2019
   about:
     label: Über uns
     items:
