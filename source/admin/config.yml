@@ -51,7 +51,7 @@ collections: # A list of collections the CMS should be able to edit
     files:
       - label: "Kernteam"
         name: "kernteam"
-        file: "source/_pages/kernteam.html"
+        file: "source/_pages/kernteam.md"
         fields:
         - {name: "layout", widget: "hidden", required: false}
         - {label: "Titel", name: "title", widget: "string", tagname: "h1" }
@@ -66,7 +66,7 @@ collections: # A list of collections the CMS should be able to edit
           ]}
       - label: "Anreise"
         name: "anreise"
-        file: "source/_pages/anreise.html"
+        file: "source/_pages/anreise.md"
         fields:
         - {name: "layout", widget: "hidden", required: false}
         - {label: "Titel", name: "title", widget: "string", tagname: "h1" }
