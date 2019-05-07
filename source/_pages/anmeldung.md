@@ -97,7 +97,7 @@ permalink: /anmeldung/
     <div class="field is-horizontal">
       <div class="field-label is-normal"><label class="label">Geburtsdatum*</label></div>
       <div class="field-body">
-        <input name="date-of-birth" class="input" type="date" placeholder="Geburtsdatum">
+        <input name="date-of-birth" class="input" type="date" value="" max="2019-01-01" placeholder="Geburtsdatum">
       </div>
     </div>
     <div class="field is-horizontal">
@@ -141,8 +141,8 @@ permalink: /anmeldung/
       <div class="field-body">
         <div class="select is-fullwidth">
             <select name="payment-method">
-              <option value="cash">Bar</option>
               <option value="transfer">Überweisung</option>
+              <option value="cash">Bar (zzgl. 3 Euro)</option>
             </select>
         </div>
       </div>
