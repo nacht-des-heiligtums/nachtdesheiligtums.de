@@ -5,7 +5,7 @@ layout: base
 <section class="hero is-medium has-carousel">
     <div class="hero-carousel carousel-animated carousel-animate-fade" data-autoplay="true" data-delay="8000">
       <div class="carousel-container">
-        {% capture folder %}images/{{ndh.images}}{%endcapture%}
+        {% capture folder %}images/{{ndh.images | default: "Header" }}{%endcapture%}
         {% for image in site.static_files %}
         {% if image.path contains folder  %}
         <div class="carousel-item has-background is-active">
