@@ -9,6 +9,7 @@ http://www.nacht-des-heiligtums.de/* https://nachtdesheiligtums.de/:splat 301!
 
 /anmeldung/gruppenanmeldung /anmeldung
 /anmeldung/gruppennachmeldung /anmeldung
+/anmeldung/anmeldeformular-pdf/ /anmeldung/einverständniserklärung
 
 /category/* /artikel
 

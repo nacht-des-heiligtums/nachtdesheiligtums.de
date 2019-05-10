@@ -159,6 +159,8 @@ permalink: /anmeldung/
   </p>
 </div>
 
+<a href="{{ "anmeldung/einverständniserklärung" | relative_url }}">Einverständniserklärung</a>
+
 <div id="registration-finished" class="registration-form container is-removed">
   <div class="box content">
     <p>Deine Anmeldung wurde erfolgreich abgeschickt. Du solltest in kürze eine Email zur Bestätigung erhalten.</p>
