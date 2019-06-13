@@ -128,12 +128,15 @@ permalink: /anmeldung/
       <div class="field-body">
         <div class="select is-fullwidth">
             <select name="package" id="package-field" onchange="onPackageChange()">
-              <option value="package-a">Wochenende komplett (58 Euro)</option>
-              <option value="package-b">Wochende Samstagnachmittag bis Sonntagmittag (35 Euro)</option>
-              <option value="package-c">Wochenende ohne Übernachtung (45 Euro)</option>
-              <!--option value="help-week" id="help-week">Teilnahme an der Helferwoche (103 Euro)</option-->
+              <option value="package-a">Wochenende komplett (58 €)</option>
+              <option value="package-b">Wochende Samstagnachmittag bis Sonntagmittag (35 €)</option>
+              <option value="package-c">Wochenende ohne Übernachtung (45 €)</option>
+              <option value="help-week" id="help-week">Helferwoche (110 €)</option>
             </select>
         </div>
+        <p class="small"><strong>Helferwoche:</strong> Du kannst auf der Helferwoche die Vorbereitungen für die Nacht des Heiligtums unterstützen.
+        Die Helferwoche geht von Montag, 26. August (Abendessen) bis Sonntag, 1. September (Abendessen). Der Teilnehmerbeitrag setzt sich zusammen aus 58 € für die Nacht des Heilgtums plus 52 € für die Helferwoche.
+        Anmeldeschluss am 1. August. Teilnahme ab 18 Jahren.</p>
       </div>
     </div>
     <div class="field is-horizontal" id="payment-method">
