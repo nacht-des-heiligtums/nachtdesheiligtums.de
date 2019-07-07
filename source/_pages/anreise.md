@@ -15,7 +15,7 @@ Meldet euch einfach in der Pilgerzentrale an - Vor Ort wird alles ausgeschildert
 
 Großraum Würzburg:
 
-Für alle die aus dem Großraum Würzburg kommen, kümmert sich Julius Glaser um die Koordination von Mitfahrgelegenheiten. Erreichen könnt ihr ihn per E-Mail: dioezesanleitung@smj-bistum-wuerzburg.de
+Für alle die aus dem Großraum Würzburg kommen, kümmert sich Julius Glaser um die Koordination von Mitfahrgelegenheiten. Erreichen könnt ihr ihn per E-Mail: <mailto:dioezesanleitung@smj-bistum-wuerzburg.de>
 
 
 
