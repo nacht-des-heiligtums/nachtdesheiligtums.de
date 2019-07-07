@@ -9,7 +9,7 @@ permalink: /anreise/
 
 Meldet euch einfach in der Pilgerzentrale an - Vor Ort wird alles ausgeschildert sein - und dort erfahrt ihr, wo es für euch weitergeht.<br /><br />
 
-  </div>
+
 
 <strong>Mitfahrgelegenheiten, Busse, etc.</strong><br />
 
