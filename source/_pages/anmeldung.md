@@ -131,7 +131,7 @@ permalink: /anmeldung/
               <option value="package-a">Wochenende komplett (58 €)</option>
               <option value="package-b">Wochende Samstagnachmittag bis Sonntagmittag (35 €)</option>
               <option value="package-c">Wochenende ohne Übernachtung (45 €)</option>
-              <option value="help-week" id="help-week">Helferwoche (110 €)</option>
+              <option value="help-week" id="help-week" disabled="disabled">Helferwoche (110 €)</option>
             </select>
         </div>
         <p class="small"><strong>Helferwoche:</strong> Du kannst auf der Helferwoche die Vorbereitungen für die Nacht des Heiligtums unterstützen.
