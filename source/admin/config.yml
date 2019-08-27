@@ -127,6 +127,15 @@ collections: # A list of collections the CMS should be able to edit
         - {name: "body", label: "Text", widget: "markdown"}
         - {name: "permalink", widget: "hidden", required: false}
         - {name: "sitemap", widget: "hidden", required: false}
+      - label: "Workshops"
+        name: "workshops"
+        file: "source/_pages/workshops.md"
+        fields:
+        - {name: "layout", widget: "hidden", required: false}
+        - {name: "title", label: "Titel", widget: "string", tagname: "h1"}
+        - {name: "body", label: "Text", widget: "markdown"}
+        - {name: "permalink", widget: "hidden", required: false}
+        - {name: "sitemap", widget: "hidden", required: false}
 
 
 
