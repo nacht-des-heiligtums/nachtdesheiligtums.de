@@ -1,8 +1,8 @@
 ---
 layout: page
-title: Workshops
+title: Workshops Samstag 31.08.
 permalink: workshops
 ---
-# \- Test - 
+![](/assets/uploads/workshop-online.png)
 
-![null](/assets/uploads/workshops-beispiel.png)
+![](/assets/uploads/workshops-online-2.png)
