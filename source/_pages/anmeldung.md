@@ -16,6 +16,13 @@ permalink: /anmeldung/
 </section>
 {%endcomment%}
 
+<section class="section">
+  <div class="container">
+    Die Anmeldung zur Nacht des Heiligtums 2020 ist noch nicht freigeschaltet.
+  </div>
+</section>
+
+{% comment %}
 <form id="registration-form" class="container registration-form" method="post" action="https://registrierung.nachtdesheiligtums.de/registration.php" onsubmit="return onRegistrationSubmit(this)">
   <div class="box">
     <p class="help">Mit * markierte Felder sind erforderlich</p>
@@ -311,3 +318,4 @@ function resetRegistration() {
 }
 
 </script>
+{% endcomment %}
