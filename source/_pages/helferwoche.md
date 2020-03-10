@@ -10,13 +10,13 @@ Ein internationales Jugendwochenende schießt nicht einfach so aus dem Boden wie
 
 ## Auch Deine Talente sind gefragt!
 
-![null](/assets/uploads/img_0468-1-.webp)
+![](/assets/uploads/immler-p1140554.jpg)
 
 **Ob in der Logistik oder bei der Deko, in der liturgischen Vorbereitung oder als Fotograf und Mitglied des Filmteams, bei der NdH ist Vielseitigkeit und Einsatz gefragt.**
 
 Wenn du ein besonderes Talent mit dir bringst oder dich in einem der Teams gerne ausprobieren möchtest, dann <strong>nimm früh per Mail direkt mit dem Kernteam Kontakt</strong> auf, um es uns zu ermöglichen die Woche zu planen. Denn auch helfende Hände müssen geplant werden und wir wollen uns nicht gegenseitig auf den Füßen stehen.
 
-![null](/assets/uploads/img_49921.webp)
+![](/assets/uploads/immler-p1130770.jpg)
 
 Um den **Charakter** der Helferwoche zu erhalten, den **Fokus** auf der Nacht des Heiligtums zu legen und die gesamte Veranstaltung **finanziell** tragbar zu behalten, haben wir im Kernteam lange diskutiert und uns auf den folgenden Rahmen geeinigt:
 
@@ -28,7 +28,9 @@ Um den **Charakter** der Helferwoche zu erhalten, den **Fokus** auf der Nacht de
 * **Die Helferwoche beginnt Montag (31.08.2020)**. Der späteste Anreisetag zur Helferwoche ist der Mittwoch vor der Nacht des Heiligtums. (02.09.2020) Ab Donnerstag werden Anreisende im Matratzenlager untergebracht.
 * Das **Mindestalter** zur Helferwoche ist **18 Jahre**.
 * Der **Beitrag für die NdH inklusive Helferwoche** beträgt 110 Euro. Das beinhaltet den Beitrag zum NdH-Wochenende
-  .
+
+
+![](/assets/uploads/immler-p1130699.jpg)
 
 ## Willst du uns mit Rat und Tat unterstützen?
 
