@@ -39,6 +39,7 @@ Aufgrund des Jubiläums entfiel die Nacht des Heiligtums 2014, so fand doch im O
 
 ## Mottos der Nacht des Heiligtums in den verschiedenen Jahren:
 
+* 2020: R**ƎVO⅃**UTION – die Welt ist nicht zu groß?!
 * 2019:	Break ❚❚ der Beat deines Herzens
 * 2018:	VerWIRklICHen. All in!
 * 2017:	Bühne frei - mit Dir geht mehr.
