@@ -34,3 +34,19 @@ Deko: **Verena Häffner**
 Technik: **Benjamin Brehm**
 
 Logistik: **Martin Stetter**
+
+
+
+## So erreichen Sie uns
+
+per Mail: 
+
+**info@nachtdesheiligtums** (Allgemeine Fragen etc.)
+
+**pr@nachtdesheiligtums** (Fragen und Anregungen, die die Öffentlichkeitsarbeit                 und Spenden betreffen)
+
+per Handy/ Telefon:
+
+**0176 92654701** (nur über Whatsapp möglich)
+
+**0174 9813064 **(Benedikt Herkommer, Kernteamsprecher)
