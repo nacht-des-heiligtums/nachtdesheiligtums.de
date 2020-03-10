@@ -52,4 +52,4 @@ Aufgrund des Jubiläums entfiel die Nacht des Heiligtums 2014, so fand doch im O
 * 2007:	My face for your faith
 * 2006:	My home is your home
 
-![null](/assets/uploads/img_0677.webp)
+![null](/assets/uploads/poppe-img_0810.jpg)
