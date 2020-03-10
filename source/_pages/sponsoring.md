@@ -1,48 +1,45 @@
 ---
 layout: page
-title: Sponsoring
+title: Spenden
 permalink: /sponsoring/
 ---
-## Werden Sie NdH-Pate
+## Wie kann man uns unterstützen?
 
-Vieles muss für die <strong>Nacht des Heiligtums</strong> angeschafft werden. Die Spanne reicht von vielen Kleinigkeit bis zu großen Anschaffungen. Ohne Spenden ist die Veranstaltung in diesem Rahmen leider nicht tragbar.<br />
+Ein Projekt in einer solchen Größenordnung ehrenamtlich zu planen und umzusetzen ist sehr kostenintensiv. Die verschiedenen Anschaffungen, sowie die Unterkunft und Verpflegung aller Teilnehmer sind durch den Teilnehmerbeitrag nicht refinanzierbar. Damit das Event weiterhin tragbar für Schüler/innen sowie Studierende bleibt, sind wir auf Spenden angewiesen. 
 
-Wir bitten Sie deshalb, unsere Arbeit zu unterstützen und aus der nachfolgenden Liste ein für Sie passendes <strong>Patenschafts-Paket</strong> zusammenzustellen.<br /><br />
+**Daher bitten wir Sie hiermit um Ihre Unterstützung! **
 
-![](/assets/uploads/dscn0978_12.webp)
+![null](/assets/uploads/dscn0978_12.webp)
 
-## Patenschaften
+**Geldspenden** helfen uns besonders bei großen Anschaffungen, z.B. die Miete des Festzeltes oder der Technik und der Bezahlung der Unterkünfte oder Talk-Gästen. 
 
-<em> Unter 10 Euro </em>
+**Sachspenden** können uns vor allem im Rahmen der Verpflegung während des Events und der Helferwoche (z.B. Frühstück) und in Form von Helfergeschenken unterstützen. 
 
-* Kerzen für die Gebetsnacht (je 0,50 €): 600 Stück
-* Programmhefte (je 1 €): 600 Stück
-* Dankeschön für die Helfer (je 2 €): 100 Stück
-* Biertisch-Garnituren (je 4 €): 50 Stück
-* Farbfilter für die Lichtanlage am Urheiligtums (je 5 €): 5 Stück
-* Schlafplatz für Teilnehmer (je Nacht 6 €)
 
-<em> Unter 50 Euro </em>
 
-* Unterkunft und Verpflegung der Helfer (je Tag 20 €)
-* bedruckte T-Shirts zur Kennzeichnung des Kernteams (je 25 €): 12 Stück
-
-<em> Über 100 Euro </em>
-
-* Druck der Werbe-Flyer (170 €)
-* Papier für die Festival-Zeitung “Night of the Shrine” (200 €)
-* Spülmobil (250 €)
-* Mischpult (300 €)
-
-<em> Sehr gerne stellen wir Ihnen für Beträge ab 50 EUR auch eine Spendenquittung aus.</em> <br /><br />
+Ab einer Spende im Wert von von 50 € stellen wir Ihnen gerne eine Spendenquittung aus.
 
 <strong><strong> Vielen Dank für Ihre Unterstützung! </strong></strong><br /><br />
 
-![](/assets/uploads/12.webp)
+![null](/assets/uploads/12.webp)
 
-## Wir freuen uns über Ihre Kontakaufnahme:
+## Wir freuen uns über Ihre Kontakaufnahme
 
-Benedikt Herkommer, Telefon: +491749813064, Mail: benedikt.herkommer@gmx.net<br /><br />
+Anne-Kathrin Simon
+
+Sponsoring 
+
+Tel.: 	0176 3418 5035 
+
+E-Mail: 	pr@nachtdesheiligtums.de 
+
+Schönstattbewegung Deutschland e.V. 
+
+Nacht des Heiligtums
+
+Höhrer Str. 103a, 56179 Vallendar
+
+**Kontodaten:**
 
 Schönstatt-Bewegung Deutschland e. V. – Nacht des Heiligtums
 
