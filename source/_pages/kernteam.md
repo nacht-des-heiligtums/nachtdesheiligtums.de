@@ -35,13 +35,13 @@ Technik: **Benjamin Brehm**
 
 Logistik: **Martin Stetter**
 
-
-
 ## So erreichen Sie uns
 
 per Mail: 
 
 **info@nachtdesheiligtums** (Allgemeine Fragen etc.)
+
+**kontakt@nachtdesheiligtums** (Fragen zur Anmeldung)
 
 **pr@nachtdesheiligtums** (Fragen und Anregungen, die die Öffentlichkeitsarbeit                 und Spenden betreffen)
 
