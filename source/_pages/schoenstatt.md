@@ -13,7 +13,7 @@ Basierend auf der Kentenichpädagogik bieten die unterschiedlichen Gliederungen 
 
 Die Jugendgemeinschaften der Schönstattbewegung (Schönstatt Mädchen/ Junge Frauen, Schönstatt Mannesjugend) stellen mit der <strong>Nacht des Heiligtums</strong> neben Ferienwoche und Zeltlagern einmal im Jahr auch ein Glaubens-Festival auf die Beine, bei welchem erfahrene Schönstätter/innen mit neuen Teilnehmern zusammenkommen, Freundschaften gepflegt werden und neue Freundschaften entstehen.
 
-![null](/assets/uploads/img_1652.webp)
+![null](/assets/uploads/gaertner-img_9969.jpg)
 
 Für weitere Informationen zur Schönstattbewegung leiten wir gerne weiter:
 
