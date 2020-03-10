@@ -9,16 +9,6 @@ permalink: /anreise/
 
 Meldet euch einfach in der Pilgerzentrale an - Vor Ort wird alles ausgeschildert sein - und dort erfahrt ihr, wo es für euch weitergeht.<br /><br />
 
-
-
 <strong>Mitfahrgelegenheiten, Busse, etc.</strong><br />
 
-Großraum Würzburg:
-
-Für alle die aus dem Großraum Würzburg kommen, kümmert sich Julius Glaser um die Koordination von Mitfahrgelegenheiten. Erreichen könnt ihr ihn per E-Mail: <mailto:dioezesanleitung@smj-bistum-wuerzburg.de>
-
-
-
-Großraum Münster:
-
-![](/assets/uploads/ndh-bus-münster.webp)
+![](/assets/uploads/whatsapp-image-2020-03-06-at-13.37.46.jpeg)
