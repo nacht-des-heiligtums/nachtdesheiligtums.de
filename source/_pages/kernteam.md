@@ -11,12 +11,26 @@ Diese geballte Arbeitsenergie muss koordiniert werden und genau das macht das Ke
 
 Die Kernteammitglieder spezialisieren sich auf verschiedene Bereiche, wie Logistik, Technik, Dekoration, Programm oder Liturgie und werden durch den Kernteamsprecher zusammengehalten.
 
-## Unser Kernteam 2019
+## Unser Kernteam 2020
 
-![null](/assets/uploads/img_3379-1-1-.webp)
+![null](/assets/uploads/kt-treffen-2-.jpeg)
 
-v.l.n.r.: Verena Häffner, Pater Frank, Sr.M. Anrika, Sr.M. Anastasia, Benedikt Kramer, Helena Reich, Jonas Schick, Pater Hans-Martin, Alex Bersch, Benedikt Herkommer, Andi Becker, Maria Gerber, Lucas Jall, Adilia Schweizer; leider nicht im Bild: Magdalena Lindner
+v.l.n.r.: Benedikt Herkommer, Pater Frank, Christoph Höfle, Martin Stetter, Benjamin Brehm, Alexander Bersch, Verena Häffner, Magdalena Lindner, Sr. M. Anastasia, Helena Reich, Pater Horst, Maria Gerber, Adilia Schweizer, Sr. M. Anrika, Felicitas Gut; leider nicht im Bild: Anne Simon
 
 ## Aufgabenbereiche
 
-![null](/assets/uploads/kernteamsprecher_-1-.jpg)
+Kernteamsprecher: **Benedikt Herkommer**
+
+Adminisatration: **Felicitas Gut**
+
+Programmteam: **Alexander Bersch, Helena Reich, Sr. M. Anrika, Pater Horst**
+
+Liturgieteam: **Magdalena Lindner, Christoph Höfle, Sr. M. Anastasia, Pater Frank**
+
+PR & Sponsoring: **Maria Gerber, Anne Simon**
+
+Deko: **Verena Häffner**
+
+Technik: **Benjamin Brehm**
+
+Logistik: **Martin Stetter**
