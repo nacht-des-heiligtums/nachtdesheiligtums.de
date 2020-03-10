@@ -9,19 +9,17 @@ Ein Projekt in einer solchen Größenordnung ehrenamtlich zu planen und umzusetz
 
 **Daher bitten wir Sie hiermit um Ihre Unterstützung! **
 
-![null](/assets/uploads/dscn0978_12.webp)
+![null](/assets/uploads/wussler-img_2024.jpg)
 
 **Geldspenden** helfen uns besonders bei großen Anschaffungen, z.B. die Miete des Festzeltes oder der Technik und der Bezahlung der Unterkünfte oder Talk-Gästen. 
 
 **Sachspenden** können uns vor allem im Rahmen der Verpflegung während des Events und der Helferwoche (z.B. Frühstück) und in Form von Helfergeschenken unterstützen. 
 
-
-
 Ab einer Spende im Wert von von 50 € stellen wir Ihnen gerne eine Spendenquittung aus.
 
 <strong><strong> Vielen Dank für Ihre Unterstützung! </strong></strong><br /><br />
 
-![null](/assets/uploads/12.webp)
+![null](/assets/uploads/immler-p1150306.jpg)
 
 ## Wir freuen uns über Ihre Kontakaufnahme
 
