@@ -43,9 +43,9 @@ main:
     label: Unterstützen
     items:
       sponsoring:
-        label: Sponsoring
-        title: Sponsoring
-        url: /sponsoring
+        label: Spenden
+        title: Spenden
+        url: /spenden
       # mitmachen:
       #   label: Mitmachen
       #   title: Mitmachen
