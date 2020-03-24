@@ -1,5 +1,11 @@
 @import "../bulma/sass/layout/section.sass"
 
-.section.is-wide
-  padding-left: 0
-  padding-right: 0
+.section
+  &.is-wide
+    padding-left: 0
+    padding-right: 0
+
+  &.extra
+    > .container
+      background-color: $lightblue
+      padding: $gap
