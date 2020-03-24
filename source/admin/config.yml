@@ -53,6 +53,26 @@ collections: # A list of collections the CMS should be able to edit
     delete: false
     fields:
     files:
+      - label: "Home"
+        name: "index"
+        file: "source/index.md"
+        fields:
+        - {name: "layout", widget: "hidden", required: false}
+        - {label: "Titel", name: "title", widget: "string", tagname: "h1" }
+        - {name: "body", widget: "hidden", required: false}
+        - {name: "permalink", widget: "hidden", required: false}
+        - {name: "sitemap", widget: "hidden", required: false}
+        - {name: "images", widget: "hidden", required: false}
+        - label: "Inhalt"
+          name: "intro"
+          widget: "object"
+          fields:
+          - {label: "Blurbs", label_singular: "Blurb", name: "blurbs", widget : "list", fields: [
+              {name: "text", label: "Titel", widget: "string"},
+              {name: "url", label: "URL", widget: "string"},
+              {name: "image", label: "Bild", widget: "image"}
+            ]}
+          - {label: "Beschreibung", name: "description", widget: "markdown"}
       - label: "Kernteam"
         name: "kernteam"
         file: "source/_pages/kernteam.md"
