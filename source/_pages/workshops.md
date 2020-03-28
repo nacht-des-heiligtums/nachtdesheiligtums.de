@@ -22,11 +22,13 @@ _Bridge:_ Wofür brennt mein Herz, was trag ich in die Welt? Wöfür brennt mein
 **Antwortgesang: Zukunft beleben**
 
 1. Schaue nicht nach hinten! Traue dich nach vorn zu geh´n. Lass die Ketten fallen, um den neuen Schritt zu geh´n. Lass deine Träume aufblühn, deine Begeisterung spür´n.
+
 2. Manchmal ist dein Blickfeld eingeschränkt und klein. Trotz des großen Zweifels, ist der Auftrag dein. Nutz´deine Chance pack sie an. Damit du was verändern kannst.
 
 _Ref:_ Zukunft beleben! Lass deine Träume frei. Zukunft beleben! Hab keine Angst dabei! Lass dich von dem Glauben tragen, Mut den nächsten Schritt zu wagen. Zukunft beleben! Zukunft beleben!
 
 3. Sehnsüchte sind wichtig, treiben dich im Innern an. Entscheidungen zu fällen, Perspektiven zu erkennen. Nimm deine Sendung wahr. Aktiver leben, alles klar.
+
 4. Mensch, du bist wertvoll, schaue an, was in dir lebt. Gott schenkt dir die Freiheit, auf diese Weise uns erhebt, Liebe ist was größer macht. Vom Vater allen zugedacht. _\->Ref._
 
 **Glaubensbekenntnis: Ich glaube an den Vater**
