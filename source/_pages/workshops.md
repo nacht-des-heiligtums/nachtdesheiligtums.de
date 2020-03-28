@@ -65,11 +65,12 @@ O meine Königin, o meine Mutter, dir bringe ich mich ganz dar. Und um dir meine
 
 **Schlusslied: Gott segne dich**
 
-1. Ich wünsch dir Gottes Segen, ich wünsch dir seine Nähe, seine Kraft. Ein reich erfülltes Leben, über dem die Hand des Höchsten wacht. Liebe und Wärme, Gelassenheit in allem, was du tust, dass du auch in Stürmen sicher und im Frieden mit dir ruhst. Ich wünsch dir diesen Segen!
-2. Ich wünsch dir Gottes Segen, Geborgenheit in Vater, Sohn und Geist, Glaube wie ein Feuer, das wärmt und nicht in den Augen beißt. Sehnsucht und Hoffnung, Menschen, die dich in die Weite führen, Freunde, die dich tragen, Gedanken, die die Seele inspirieren. Ich wünsch dir diesen Segen!
+1 Ich wünsch dir Gottes Segen, ich wünsch dir seine Nähe, seine Kraft. Ein reich erfülltes Leben, über dem die Hand des Höchsten wacht. Liebe und Wärme, Gelassenheit in allem, was du tust, dass du auch in Stürmen sicher und im Frieden mit dir ruhst. Ich wünsch dir diesen Segen!
+
+2 Ich wünsch dir Gottes Segen, Geborgenheit in Vater, Sohn und Geist, Glaube wie ein Feuer, das wärmt und nicht in den Augen beißt. Sehnsucht und Hoffnung, Menschen, die dich in die Weite führen, Freunde, die dich tragen, Gedanken, die die Seele inspirieren. Ich wünsch dir diesen Segen!
 
 _Ref:_ Gott segne dich, behüte dich, erfülle dich mit Geist und Licht, Gott segne dich! Erhebe dich und fürchte nichts, denn du lebst vor seinem Angesicht, Gott segne dich!
 
-3. Ich wünsch dir Gottes Segen, entfalte alles, was du in dir spürst. Die Dinge, die dir liegen, auch wenn du mal gewinnst und mal verlierst. Wag neue Wege, probier dich einfach immer wieder aus, lass dich nicht verbiegen, lebe mutig offen gradeaus. Ich wünsch dir diesen Segen! _\-> Ref._
+3 Ich wünsch dir Gottes Segen, entfalte alles, was du in dir spürst. Die Dinge, die dir liegen, auch wenn du mal gewinnst und mal verlierst. Wag neue Wege, probier dich einfach immer wieder aus, lass dich nicht verbiegen, lebe mutig offen gradeaus. Ich wünsch dir diesen Segen! _\-> Ref._
 
 _Bridge:_ Manchmal ist die Hand vor unsren Augen gar nicht mehr zu sehen, und wir hoffen nur noch dieses Dunkel irgendwie zu überstehen. Doch kein Schatten, den wir spüren, kann das Licht in uns zerstörn. _\-> Ref._
