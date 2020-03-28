@@ -40,12 +40,13 @@ _Ref:_ Zukunft beleben! Lass deine Träume frei. Zukunft beleben! Hab keine Angs
 
 **Gabenbereitung: Du bist das Leben**
 
-1. Du bist das Brot, das den Hunger stillt, du bist der Wein, der die Krüge füllt.
+1 Du bist das Brot, das den Hunger stillt, du bist der Wein, der die Krüge füllt.
 
 _Ref:_ Du bist das Leben, du bist das Leben, du bist das Leben, Gott.
 
-2. Du bist der Atem der Ewigkeit, du bist der Weg in die neue Zeit.
-3. Du bist der Blick, der uns ganz durchdringt, du bist das Licht, das uns Hoffnung bringt.
+2 Du bist der Atem der Ewigkeit, du bist der Weg in die neue Zeit.
+
+4 Du bist der Blick, der uns ganz durchdringt, du bist das Licht, das uns Hoffnung bringt.
 
 **Sanctus: Heilig, heilig, heilig**
 
