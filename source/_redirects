@@ -7,6 +7,10 @@ http://nacht-des-heiligtums.de/* https://nachtdesheiligtums.de/:splat 301!
 https://www.nacht-des-heiligtums.de/* https://nachtdesheiligtums.de/:splat 301!
 http://www.nacht-des-heiligtums.de/* https://nachtdesheiligtums.de/:splat 301!
 
+/hausordnung /assets/uploads/Hausordnung_NachtDesHeiligtums.pdf
+
+# Legacy URLs from old Website
+
 /anmeldung/gruppenanmeldung /anmeldung
 /anmeldung/gruppennachmeldung /anmeldung
 /anmeldung/anmeldeformular-pdf/ /anmeldung/einverständniserklärung

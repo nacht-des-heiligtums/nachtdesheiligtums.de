@@ -141,9 +141,11 @@ permalink: /anmeldung/
               <option value="help-week" id="help-week" disabled="disabled">Helferwoche (110 €)</option>
             </select>
         </div>
+        {% comment %}
         <p class="small"><strong>Helferwoche:</strong> Du kannst auf der Helferwoche die Vorbereitungen für die Nacht des Heiligtums unterstützen.
         Die Helferwoche geht von Montag, 26. August (Abendessen) bis Sonntag, 1. September (Abendessen). Der Teilnehmerbeitrag setzt sich zusammen aus 58 € für die Nacht des Heilgtums plus 52 € für die Helferwoche.
         Anmeldeschluss am 1. August. Teilnahme ab 18 Jahren.</p>
+        {% endcomment %}
       </div>
     </div>
     <div class="field is-horizontal" id="payment-method">
@@ -157,7 +159,19 @@ permalink: /anmeldung/
         </div>
       </div>
     </div>
-    <div class="field is-grouped is-grouped-centered"><div class="control"><button class="button is-link" id="submit" name="submit" type="submit">Absenden</button></div></div>
+    <div class="field is-grouped" style="padding-top: 1rem;">
+      <div class="control">
+        <label class="checkbox">
+          <input type="checkbox" name="accept-hausordnung" value="yes">
+          Ich habe die <a href="/hausordnung">Hausordnung</a> gelesen und stimme ihr zu.
+        </label>
+      </div>
+    </div>
+    <div class="field is-grouped is-grouped-centered">
+      <div class="control">
+        <button class="button is-link" id="submit" name="submit" type="submit">Absenden</button>
+      </div>
+    </div>
     <p class="help is-danger is-removed" id="registration-validation">Die Anmeldung konnte nicht erfolgreich abgeschlossen werden.<br />Stelle sicher, dass alle erforderlichen Felder ausgefüllt sind.</p>
     <p class="help is-danger is-removed" id="registration-validation-error">Die Anmeldung konnte aufgrund eines Fehlers nicht erfolgreich abgeschlossen werden.<br />Bitte versuche es später noch einmal.</p>
   </div>
