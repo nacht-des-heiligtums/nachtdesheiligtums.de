@@ -4,7 +4,7 @@ title: Anmeldung
 permalink: /anmeldung/
 ---
 
-{%comment%}
+{% comment %}
 <section class="section">
   <div class="container">
     <p>
@@ -14,15 +14,16 @@ permalink: /anmeldung/
     </p>
   </div>
 </section>
-{%endcomment%}
+{% endcomment %}
 
+{% comment %}
 <section class="section">
   <div class="container">
     Die Anmeldung zur Nacht des Heiligtums 2020 ist noch nicht freigeschaltet.
   </div>
 </section>
+{% endcomment %}
 
-{% comment %}
 <form id="registration-form" class="container registration-form" method="post" action="https://registrierung.nachtdesheiligtums.de/registration.php" onsubmit="return onRegistrationSubmit(this)">
   <div class="box">
     <p class="help">Mit * markierte Felder sind erforderlich</p>
@@ -332,4 +333,3 @@ function resetRegistration() {
 }
 
 </script>
-{% endcomment %}
