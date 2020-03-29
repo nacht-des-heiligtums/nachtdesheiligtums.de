@@ -60,6 +60,12 @@ Hosanna in der Höhe, hochgelobt sei der da kommt im Namen des Herrn. Hosanna in
 2. Lamm Gottes, du nimmst hinweg die Sünde der Welt. Lamm Gottes, erbarme dich unser.
 3. Lamm Gottes, du nimmst hinweg die Sünde der Welt. Lamm Gottes gib uns deinen Frieden, gib uns deinen Frieden, gib uns deinen Frieden.
 
+**Kommunion: Ich trau auf dich**
+
+1. Ich trau auf dich, o Herr, ich sage: Du bist mein Gott. In Deiner Hand steht meine Zeit in Deiner Hand steht meine Zeit.
+
+2. Gelobet sei der Herr, denn Er hat wunderbar. Seine Liebe mir erwiesen und Güte mir gezeigt.
+
 **Kleine Weihe - Gebet zur Gottesmutter**
 
 O meine Königin, o meine Mutter, dir bringe ich mich ganz dar. Und um dir meine Hingabe zu bezeigen, weihe ich dir heute meine Augen, meine Ohren, meinen Mund, mein Herz, mich selber ganz und gar. Weil ich also dir gehöre, o gute Mutter, bewahre mich, beschütze mich, als dein Gut und Eigentum. Amen.
