@@ -164,7 +164,7 @@ permalink: /anmeldung/
       <div class="control">
         <label class="checkbox">
           <input type="checkbox" name="accept-hausordnung" value="yes">
-          Ich habe die <a href="/hausordnung">Hausordnung</a> gelesen und stimme ihr zu.
+          Ich habe die <a href="{{ 'hausordnung' | relative_url }}">Hausordnung</a> gelesen und stimme ihr zu.
         </label>
       </div>
     </div>
@@ -184,8 +184,6 @@ permalink: /anmeldung/
   </p>
 </div>
 
-<a href="{{ "anmeldung/einverständniserklärung" | relative_url }}">Einverständniserklärung</a>
-
 <div id="registration-finished" class="registration-form container is-removed">
   <div class="box content">
     <p>Deine Anmeldung wurde erfolgreich abgeschickt. Du solltest in kürze eine Email zur Bestätigung erhalten.</p>
@@ -194,6 +192,13 @@ permalink: /anmeldung/
   </div>
 </div>
 
+<div class="registration-form container">
+  <h4>Dokumente</h4>
+  <ul>
+    <li><a href="{{ 'hausordnung' | relative_url }}">Hausordnung</a></li>
+    <li><a href="{{ 'anmeldung/einverständniserklärung' | relative_url }}">Einverständniserklärung für Minderjährige</a></li>
+  </ul>
+</div>
 
 <script>
 function onRegistrationTypeChange() {
