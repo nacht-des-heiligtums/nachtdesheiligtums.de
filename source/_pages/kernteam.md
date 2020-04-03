@@ -49,4 +49,4 @@ per Handy/ Telefon:
 
 **0176 92654701** (nur über Whatsapp möglich)
 
-**0174 9813064 **(Benedikt Herkommer, Kernteamsprecher)
+**0174 9813064** (Benedikt Herkommer, Kernteamsprecher)
