@@ -17,23 +17,13 @@ Die Kernteammitglieder spezialisieren sich auf verschiedene Bereiche, wie Logist
 
 v.l.n.r.: Benedikt Herkommer, Pater Frank, Christoph Höfle, Martin Stetter, Benjamin Brehm, Alexander Bersch, Verena Häffner, Magdalena Lindner, Sr. M. Anastasia, Helena Reich, Pater Horst, Maria Gerber, Adilia Schweizer, Sr. M. Anrika, Felicitas Gut; leider nicht im Bild: Anne Simon
 
-## Aufgabenbereiche
+![](/assets/uploads/kernteam-1.png)
 
-Kernteamsprecher: **Benedikt Herkommer**
+![](/assets/uploads/kernteam-2.png)
 
-Adminisatration: **Felicitas Gut**
+![](/assets/uploads/kernteam-3.png)
 
-Programmteam: **Alexander Bersch, Helena Reich, Sr. M. Anrika, Pater Horst**
-
-Liturgieteam: **Magdalena Lindner, Christoph Höfle, Sr. M. Anastasia, Pater Frank**
-
-PR & Sponsoring: **Maria Gerber, Anne Simon**
-
-Deko: **Verena Häffner**
-
-Technik: **Benjamin Brehm**
-
-Logistik: **Martin Stetter**
+![](/assets/uploads/kernteam-4.png)
 
 ## So erreichen Sie uns
 
