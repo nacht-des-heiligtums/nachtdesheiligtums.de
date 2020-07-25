@@ -4,6 +4,8 @@ title: Helferwoche
 permalink: /helferwoche/
 images: Helferwoche
 ---
+![](/assets/uploads/homepage-helferwoche.png)
+
 ## Pack mit an!
 
 Ein internationales Jugendwochenende schießt nicht einfach so aus dem Boden wie ein Pilz – leider. Es braucht jede Menge <strong>kreative Köpfe und fleißige Hände</strong>, die mithelfen die Nacht des Heiligtums innerhalb von fünf Tagen auf die Beine zu stellen. 
@@ -19,8 +21,6 @@ Wenn du ein besonderes Talent mit dir bringst oder dich in einem der Teams gerne
 ![null](/assets/uploads/immler-p1130770.jpg)
 
 Um den **Charakter** der Helferwoche zu erhalten, den **Fokus** auf der Nacht des Heiligtums zu legen und die gesamte Veranstaltung **finanziell** tragbar zu behalten, haben wir im Kernteam lange diskutiert und uns auf den folgenden Rahmen geeinigt:
-
-
 
 ![null](/assets/uploads/immler-p1130699.jpg)
 
