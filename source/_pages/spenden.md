@@ -15,7 +15,7 @@ Die Umsetzung unserer digitalen Programmpunkte im Summer of Revolution und im Nd
 
 In Kooperation mit der Volksbank RheinAhrEifell haben wir eine Crowdfunding Kampagne ins Leben gerufen. Unter dem unten stehenden Link gelangst du auf die Website der Crowdfunding Kampagne und kannst direkt dort eine Spende an uns überweisen. Das Schöne an dieser Aktion ist, dass die Volksbank jede Spende ab einem Betrag von 5€ mit weiteren 10€ unterstützt. Also alle kleinen Beträge helfen uns unglaublich weiter! 
 
-[<script type="text/javascript" src="https://voba-rheinahreifel.viele-schaffen-mehr.de/js/widgets.js"></script>             <script type="text/javascript">             try { w.load({ "id":'nacht-des-heiligtums-2020',"lang":'de' }); }catch(e){};             </script>](<<script type="text/javascript" src="https://voba-rheinahreifel.viele-schaffen-mehr.de/js/widgets.js"></script>             <script type="text/javascript">             try { w.load({ "id":'nacht-des-heiligtums-2020',"lang":'de' }); }catch(e){};             </script>>)
+[<script type="text/javascript" src="https://voba-rheinahreifel.viele-schaffen-mehr.de/js/widgets.js"></script>             <script type="text/javascript">             try { w.load({ "id":'nacht-des-heiligtums-2020',"lang":'de' }); }catch(e){};             </script>](<<script type="text/javascript" src="https://voba-rheinahreifel.viele-schaffen-mehr.de/js/widgets.js"></script> 
 
 ![null](/assets/uploads/crowdfunding.png)
 
