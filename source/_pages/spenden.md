@@ -9,6 +9,20 @@ Ein Projekt in einer solchen Größenordnung ehrenamtlich zu planen und umzusetz
 
 **Daher bitten wir Sie hiermit um Ihre Unterstützung! **
 
+## NdH-Crowdfunding - _Wir brauchen deine Unterstützung!_
+
+Die Umsetzung unserer digitalen Programmpunkte im Summer of Revolution und im NdH-Livestream benötigt viele krative und motivierte Köpfe, aber auch technische Ausstattung, ein Studio, Dekoration sowie Druckmaterialien. Dafür werden einige Kosten anfallen. Wir haben dieses Jahr keine Teilnehmereinnahmen, deshalb sind wir auf finazielle Unterstüzung angewiesen.
+
+In Kooperation mit der Volksbank RheinAhrEifell haben wir eine Crowdfunding Kampagne ins Leben gerufen. Unter dem unten stehenden Link gelangst du auf die Website der Crowdfunding Kampagne und kannst direkt dort eine Spende an uns überweisen. Das Schöne an dieser Aktion ist, dass die Volksbank jede Spende ab einem Betrag von 5€ mit weiteren 10€ unterstützt. Also alle kleinen Beträge helfen uns unglaublich weiter! 
+
+[<script type="text/javascript" src="https://voba-rheinahreifel.viele-schaffen-mehr.de/js/widgets.js"></script>             <script type="text/javascript">             try { w.load({ "id":'nacht-des-heiligtums-2020',"lang":'de' }); }catch(e){};             </script>](<<script type="text/javascript" src="https://voba-rheinahreifel.viele-schaffen-mehr.de/js/widgets.js"></script>             <script type="text/javascript">             try { w.load({ "id":'nacht-des-heiligtums-2020',"lang":'de' }); }catch(e){};             </script>>)
+
+[<iframe width="302" height="462" frameborder="0" scrolling="no" allowtransparency="true" style="height:462px;width:302px;" src="https://voba-rheinahreifel.viele-schaffen-mehr.de/de/nacht-des-heiligtums-2020/widget/?w=302&h=462"></iframe>](<<iframe width="302" height="462" frameborder="0" scrolling="no" allowtransparency="true" style="height:462px;width:302px;" src="https://voba-rheinahreifel.viele-schaffen-mehr.de/de/nacht-des-heiligtums-2020/widget/?w=302&h=462"></iframe>>)
+
+![](/assets/uploads/crowdfunding.png)
+
+Liegt dir die NdH am Herzen? Würdest du dir die digitalen Inhalte anschauen? Dann unterstütze uns doch gerne mit einer Spende!
+
 ![null](/assets/uploads/wussler-img_2024.jpg)
 
 **Geldspenden** helfen uns besonders bei großen Anschaffungen, z.B. die Miete des Festzeltes oder der Technik und der Bezahlung der Unterkünfte oder Talk-Gästen. 
