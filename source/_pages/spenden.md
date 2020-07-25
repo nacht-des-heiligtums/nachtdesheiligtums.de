@@ -7,7 +7,7 @@ permalink: /spenden/
 
 Ein Projekt in einer solchen Größenordnung ehrenamtlich zu planen und umzusetzen ist sehr kostenintensiv. Die verschiedenen Anschaffungen, sowie die Unterkunft und Verpflegung aller Teilnehmer sind durch den Teilnehmerbeitrag nicht refinanzierbar. Damit das Event weiterhin tragbar für Schüler/innen sowie Studierende bleibt, sind wir auf Spenden angewiesen. 
 
-**Daher bitten wir Sie hiermit um Ihre Unterstützung! **
+**Daher bitten wir Sie hiermit um Ihre Unterstützung!**
 
 ## NdH-Crowdfunding - _Wir brauchen deine Unterstützung!_
 
@@ -17,9 +17,7 @@ In Kooperation mit der Volksbank RheinAhrEifell haben wir eine Crowdfunding Kamp
 
 [<script type="text/javascript" src="https://voba-rheinahreifel.viele-schaffen-mehr.de/js/widgets.js"></script>             <script type="text/javascript">             try { w.load({ "id":'nacht-des-heiligtums-2020',"lang":'de' }); }catch(e){};             </script>](<<script type="text/javascript" src="https://voba-rheinahreifel.viele-schaffen-mehr.de/js/widgets.js"></script>             <script type="text/javascript">             try { w.load({ "id":'nacht-des-heiligtums-2020',"lang":'de' }); }catch(e){};             </script>>)
 
-[<iframe width="302" height="462" frameborder="0" scrolling="no" allowtransparency="true" style="height:462px;width:302px;" src="https://voba-rheinahreifel.viele-schaffen-mehr.de/de/nacht-des-heiligtums-2020/widget/?w=302&h=462"></iframe>](<<iframe width="302" height="462" frameborder="0" scrolling="no" allowtransparency="true" style="height:462px;width:302px;" src="https://voba-rheinahreifel.viele-schaffen-mehr.de/de/nacht-des-heiligtums-2020/widget/?w=302&h=462"></iframe>>)
-
-![](/assets/uploads/crowdfunding.png)
+![null](/assets/uploads/crowdfunding.png)
 
 Liegt dir die NdH am Herzen? Würdest du dir die digitalen Inhalte anschauen? Dann unterstütze uns doch gerne mit einer Spende!
 
