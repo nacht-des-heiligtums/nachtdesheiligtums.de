@@ -156,6 +156,15 @@ collections: # A list of collections the CMS should be able to edit
         - {name: "body", label: "Text", widget: "markdown"}
         - {name: "permalink", widget: "hidden", required: false}
         - {name: "sitemap", widget: "hidden", required: false}
-
+      - label: "Spenden"
+        name: "spenden"
+        file: "source/_pages/spenden.md"
+        fields:
+        - {name: "layout", widget: "hidden", required: false}
+        - {label: "Titel", name: "title", widget: "string", tagname: "h1" }
+        - {label: "Text", name: "body", widget: "markdown"}
+        - {name: "permalink", widget: "hidden", required: false}
+        - {name: "sitemap", widget: "hidden", required: false}
+        - {name: "images", widget: "hidden", required: false}
 
 
