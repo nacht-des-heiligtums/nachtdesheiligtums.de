@@ -23,7 +23,6 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Body", name: "body", widget: "markdown"}
       - {label: "Jahr", name: "ndh", widget: "string", default: "2018"}
       - {label: "Categories", name: "categories", widget: "string", required: false}
-    meta: # Meta data fields. Just like fields, but without any preview element
       - {label: "Publish Date", name: "date", widget: "datetime", format: "YYYY-MM-DD hh:mm:ss"}
 
   - name: "ndh"
@@ -51,7 +50,6 @@ collections: # A list of collections the CMS should be able to edit
     sort: "slug"
     create: false
     delete: false
-    fields:
     files:
       - label: "Home"
         name: "index"
