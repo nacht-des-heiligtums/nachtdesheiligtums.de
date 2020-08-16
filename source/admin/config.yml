@@ -178,9 +178,9 @@ collections: # A list of collections the CMS should be able to edit
           widget: "list"
           fields:
           - {name: "title", label: "Titel", widget: "string", tagname: "strong"}
-          - { name: "datum", label: "Datum", widget: "string"}
+          - {name: "datum", label: "Datum", widget: "datetime"}
           - {name: "image", label: "Bild", widget: "file", tagname: "img"}
           - {name: "file", label: "Datei", widget: "file", tagname: "a"}
-          - {name: "description", label: "Beschreibung", widget: "text"}
+          - {name: "description", label: "Beschreibung", widget: "markdown"}
         - {name: "permalink", widget: "hidden", required: false}
         - {name: "sitemap", widget: "hidden", required: false}
