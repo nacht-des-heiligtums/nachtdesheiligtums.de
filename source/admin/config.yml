@@ -176,7 +176,7 @@ collections: # A list of collections the CMS should be able to edit
           label_singular: "Eintrag"
           required: false
           widget: "list"
-          fields: [
+          fields:
           - {name: "title", label: "Titel", widget: "string", tagname: "strong"}
           - { name: "datum", label: "Datum", widget: "string"}
           - {name: "image", label: "Bild", widget: "file", tagname: "img"}
