@@ -2,9 +2,13 @@
 layout: base
 ---
 
+{% include layout/page-header.html %}
+
 <div class="section">
   <div class="container">
-    {{ content | markdownify }}
+    <div class="content intro">
+      {{ content | markdownify }}
+    </div>
   </div>
 </div>
 
@@ -16,9 +20,10 @@ layout: base
           <div class="content">
             <p>
               <strong>{{ entry.title }}</strong> <small>{{ entry.date | date_to_string }}</small>
-              <br>
-              {{ entry.body | markdownify }}
             </p>
+            <div class="content">
+              {{ entry.body | markdownify }}
+            </div>
           </div>
           {% if entry.file %}
           <a href="{{ entry.file }}" class="button">Download</a>

@@ -4,7 +4,7 @@ permalink: /summer-of-revolution
 layout: summer-of-revolution
 ---
 
-### Der Summer of Revolution findet vom 18. August bis 4. September statt. Hier findet ihr alle Angebote des Summer of Revolution auf einen Blick. Schaut einfach mal durch.
+Der Summer of Revolution findet vom 18. August bis 4. September statt. Hier findet ihr alle Angebote des Summer of Revolution auf einen Blick. Schaut einfach mal durch.
 
 ![](assets/uploads/microsoftteams-image.png)
 
