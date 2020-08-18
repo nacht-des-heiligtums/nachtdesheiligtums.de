@@ -1,0 +1,33 @@
+---
+layout: base
+---
+
+<div class="section">
+  <div class="container">
+    {{ content | markdownify }}
+  </div>
+</div>
+
+<div class="section">
+  <div class="container">
+    {% for entry in page.entries %}
+      <article class="media">
+        <div class="media-content">
+          <div class="content">
+            <p>
+              <strong>{{ entry.title }}</strong> <small>{{ entry.date | date_to_string }}</small>
+              <br>
+              {{ entry.body | markdownify }}
+            </p>
+          </div>
+          {% if entry.file %}
+          <a href="{{ entry.file }}" class="button">Download</a>
+          {% endif %}
+          {% if entry.image %}
+          <img src="{{ entry.image }}" />
+          {% endif %}
+        </div>
+      </article>
+    {% endfor %}
+  </div>
+</div>

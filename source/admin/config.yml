@@ -166,7 +166,7 @@ collections: # A list of collections the CMS should be able to edit
         - {name: "images", widget: "hidden", required: false}
       - label: "Summer of Revolution"
         name: "summer-of-revolution"
-        file: "source/_pages/summer-of-revolution.html"
+        file: "source/_pages/summer-of-revolution.md"
         fields:
         - {name: "layout", widget: "hidden", required: false}
         - {name: "title", label: "Titel", widget: "string", tagname: "h1"}
@@ -178,9 +178,10 @@ collections: # A list of collections the CMS should be able to edit
           widget: "list"
           fields:
           - {name: "title", label: "Titel", widget: "string", tagname: "strong"}
-          - {name: "datum", label: "Datum", widget: "datetime"}
+          - {name: "date", label: "Datum", widget: "datetime"}
           - {name: "image", label: "Bild", widget: "file", tagname: "img"}
           - {name: "file", label: "Datei", widget: "file", tagname: "a"}
-          - {name: "description", label: "Beschreibung", widget: "markdown"}
+          - {name: "body", label: "Text", widget: "markdown"}
         - {name: "permalink", widget: "hidden", required: false}
+        - {name: "layout", widget: "hidden", required: false}
         - {name: "sitemap", widget: "hidden", required: false}
