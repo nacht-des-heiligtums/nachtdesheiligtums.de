@@ -183,5 +183,4 @@ collections: # A list of collections the CMS should be able to edit
           - {name: "file", label: "Datei", widget: "file", tagname: "a"}
           - {name: "body", label: "Text", widget: "markdown"}
         - {name: "permalink", widget: "hidden", required: false}
-        - {name: "layout", widget: "hidden", required: false}
         - {name: "sitemap", widget: "hidden", required: false}
